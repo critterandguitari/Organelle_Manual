@@ -95,9 +95,9 @@ img {
 
 <h2>WAIT…&nbsp;AM I IN THE RIGHT PLACE?</h2>
 
-<p>Before we get started, please note that this version of the Organelle manual is for hardware units running version 2.1 (v2.1) or later of the Organelle software. You can check your <code>Version</code> number from the <code>SYSTEM</code> menu (see chapter three).</p>
+<p>Before we get started, please note that this version of the Organelle manual is for hardware units running version 2.1 (v2.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see chapter three).</p>
 
-<p>If your hardware unit is running a version earlier than v2.1, you should reference the updated original Organelle manual. It is available as a PDF file.</p>
+<p>If your hardware unit is running a version earlier than v2.1, you should update your Organelle OS.  You can download the update patch here.</p>
 
 <blockquote>
 <p><strong>NOTE:</strong> Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch’s friendliness with software previous to v2.1.&lt;/2.1&gt;</p>
@@ -654,7 +654,7 @@ img {
 
 <p>Well, you have made it to the final chapter. Mazel tov! We hope you have enjoyed the journey thus far, and it is worth mentioning that repeat visits to this document tend to be rewarding.</p>
 
-<p>This chapter deals with Organelle’s HDMI port, which has been sitting there the whole time. The reason for our longstanding neglect is simple: only users who want to tweak/program their own patches might benefit from connecting Organelle to a monitor, television, or what have you.</p>
+<p>This chapter covers the basics of running the Organelle with a monitor, keyboard and mouse attached for the purpose of editing or creating patches.  The actual process of creating and editing patches is covered in a series of tutorial videos.</p>
 
 <p>While we have continually mentioned the microcomputer within Organelle, we have also pointed out the “un-computer” nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse —&nbsp;some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it’s your choice.</p>
 
@@ -730,9 +730,9 @@ img {
 <p>To better understand the full relationship at hand, let’s take a step back for a moment. Anytime a patch is loaded, Organelle goes through a sequence of steps.</p>
 
 <ol>
-	<li>If a patch is currently loaded, it receives a <code>bang</code> message over the <code>quitting</code> remote buss. This allows any “cleanup” processes to be executed.</li>
+	<li>If a patch is currently loaded, it receives a quitting message. This allows any “cleanup” processes to be executed.</li>
 	<li>If a patch is currently loaded, it then prompts the Pure Data application to quit. This effectively closes any and all open patches, including the <code>mother.pd</code> helper patch.</li>
-	<li>The Pure Data application is relaunched, and the patch we have requested is then opened.</li>
+	<li>The Pure Data application is relaunched, and the patch we have requested is then opened, specifically the file main.pd in the patche's folder.</li>
 	<li>The <code>mother.pd</code> helper patch is loaded.</li>
 </ol>
 
