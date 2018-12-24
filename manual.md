@@ -1,10 +1,10 @@
 Chapter Zero: Quick-start Guide
 ===============================
 
-### Letâ€™s get sound. Now!
+### Let's get sound. Now!
 
 Welcome to the world of Organelle! You seem to be in a hurry so here is
-the short version for getting up and runningâ€¦
+the short version for getting up and running.
 
 ------------------------------------------------------------------------
 
