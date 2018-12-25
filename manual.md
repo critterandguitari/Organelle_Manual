@@ -10,18 +10,14 @@ the short version for getting up and running.
 ## WAIT AM I IN THE RIGHT PLACE?
 
 
-Before we get started, please note that this version of the Organelle
-manual is for hardware units running version 2.1 (v2.1) or later of the
+Before we get started, please note that this version of the Organelle manual is for hardware units running version 2.1 (v2.1) or later of the
 Organelle OS. You can check your OS version number from the Info menu
 item in the SYSTEM menu (see chapter three).
 
 If your hardware unit is running a version earlier than v2.1, you should
 update your Organelle OS. You can download the update patch here.
 
-> **NOTE:** Even if your hardware unit is running an earlier operating
-> system, this current website contains contains the patch repository
-> for you as well. Just take notice of any notes about a patch's
-> friendliness with software previous to v2.1.
+> **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v2.1.
 
 ------------------------------------------------------------------------
 
@@ -31,12 +27,8 @@ update your Organelle OS. You can download the update patch here.
 Along with this card, there are two main items in the box you just
 opened.
 
--   **Your Organelle.** Also note that a tiny white USB drive is also
-    plugged in on the right side of the unit. This drive houses the
-    patches that will bring Organelle to musical life.
--   **Its power adapter.** While the power supply has prongs for
-    US-style wall sockets, it will work with input voltages from 100 to
-    240VAC at 50/60Hz. You may need an adapter for the shape of your
+-   **Your Organelle.** Also note that a tiny white USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life.
+-   **Its power adapter.** While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your
     wall socket.
 
 ------------------------------------------------------------------------
@@ -66,14 +58,15 @@ For the simplest configuration, follow these steps.
     Immediately to the left of the volume knob is the *Selector*
     encoder. Turn this encoder to select one of the listed patches, and
     then press down the top of the encoder to load the patch.
+    
 4.  **Play!** The wooden keys that are arranged in a piano-layout
     represent two octaves of notes. Play them, adjust some parameters
     (via the four knobs on the left), and enjoy! And if you want to try
     a different patch, simply turn the Selector encoder and select
     another patch.
+    
 5.  **When you have had enough fun for now, properly shut down
-    Organelle.** This is achieved by turning the Selector encoder so
-    that the menu screen appears again. From here, scroll upward (by
+    Organelle.** This is achieved by turning the Selector encoder so that the menu screen appears again. From here, scroll upward (by
     turning the encoder to the left) until you go past the `PATCHES` and
     reach the `SYSTEM` options. Select the first option, `Shutdown`, and
     then press down the encoder to engage this function. Finally,

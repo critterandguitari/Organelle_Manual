@@ -2,40 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Marked in the browser</title>
+  <title>Organelle Manual</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/w3.css">
-<link rel="stylesheet" href="assets/w3-theme-blue.css">
-<link rel="stylesheet" href="assets/Roboto.css">
-<link rel="stylesheet" href="assets/font-awesome.min.css">
 
 <script src="assets/jquery.min.js" type="text/javascript"></script>
 <script src="assets/jquery.toc.js" type="text/javascript"></script>
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
-.w3-bar a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
 
-:target:before {
-content:"";
-display:block;
-height:40px; /* fixed header height*/
-margin:-40px 0 0; /* negative fixed header height */
-}
-
-.break {page-break-before: always;}
-h1 {
-    margin-top: 128px;
-}
-
-img {
-    max-width:100%;
-}
 ul {
       list-style-type: none;
 }
@@ -43,19 +19,13 @@ ul {
 
 </head>
 <body>
-
     
-
 <h4><b>Contents</b></h4>
 <ul id="toc"></ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
-<div id="md" class="w3-main" style="margin-left:250px; max-width:700px;"></div>
+<div id="md" style="max-width:700px;"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
@@ -64,36 +34,11 @@ ul {
     
         $.get( "manual.md", function( data ) {
               $( "#md" ).html( marked(data) );
-              $("#toc").toc({content: "div.w3-main", headings: "h1,h2"});
+              $("#toc").toc({content: "#md", headings: "h1,h2"});
         });
     });
   
   </script>
-
-<script>
-// Get the Sidenav
-var mySidenav = document.getElementById("mySidenav");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidenav, and add overlay effect
-function w3_open() {
-    if (mySidenav.style.display === 'block') {
-        mySidenav.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidenav.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidenav with the close button
-function w3_close() {
-    mySidenav.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
 
 </body>
 </html>
