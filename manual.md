@@ -82,12 +82,14 @@ For the simplest configuration, follow these steps.
 
 # 1. Organelle Concepts
 
-## 1.1 What is this pretty thing?
-
 Again, welcome to the world of Organelle! As this instrument can work
 for people in many different ways and at multiple depths of operation,
 let us begin by getting a few ideas straight, starting with the most
-obvious question"¦
+obvious question...
+
+## 1.1 What is this pretty thing?
+
+
 
 ------------------------------------------------------------------------
 
