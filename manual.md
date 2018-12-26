@@ -148,8 +148,6 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 #### Right-side Panel 
 
-![](Ch2%20-%202%20rightpanel.png) 
-
 Compared to the back panel, the right-side panel is downright simple, housing two USB 2.0, Type A ports. One of these identical ports must be used for connecting a USB drive that houses your Pure Data patches (such as the one included with Organelle). They can also connect class compliant devices that utilize MIDI over USB or other computer peripherals. 
 
 #### Main Face 
