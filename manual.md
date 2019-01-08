@@ -66,7 +66,7 @@ In truth, Organelle is a vessel for your musical ideas, connecting your own desi
 
 In short, yes. Organelle is a hardware device that comprises both controller elements (the ports, knobs, keys, etc.) and a modern microcomputer housed inside the case. The microcomputer itself is running a version of the Linux operating system, and one use of the USB ports is to connect a drive that contains your software patches. (The USB drive included with your Organelle is preloaded with the factory patches and ready to go.) 
 
-### What are these "patches" you speak of? 
+### What are these "patches" you speak of? 
 
 They are files configured with the program *Pure Data*. While the term "patch" often refers to the settings and parameter values that create one sound in a synthesizer (or some other predefined system), Pure Data patches are a bit more expansive. Each patch represents the entire software system for taking any/all input received by Organelle, processing it as desired, and then delivering the output as audio, etc., via Organelle's output ports. (So by analogy, these patches are closer to both the synthesizer structure itself *and* all the settings and parameters that define its initial sound.) 
 
