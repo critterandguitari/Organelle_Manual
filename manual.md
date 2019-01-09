@@ -163,7 +163,7 @@ The main face is both Organelle's primary interface with you and the place that 
 
 -   The *Selector* encoder accompanies Organelle's display because they     are dependent upon one another. While a patch is loaded, turning the     Selector causes the display to show the menu screen. By leaving the     Selector alone for a few seconds, the display will revert to the     patch information screen. 
 
-> **NOTE:** In some of the factory patches, the Selector encoder is used > to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often > indicated by a message like *&lt;-- HOME* in the bottom line of > Organelle's on-board display. This functionality can also be built > into your own patches. 
+> **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches. 
 
 -   The `Vol`(ume) knob governs the potential audio output level of     Organelle. The knob ranges from silence (in audio terms, -âˆž) at the     far left to no attenuation (unity gain) at the far right. Any     adjustments to the Volume knob take effect immediately. 
 
@@ -259,7 +259,7 @@ After the patch is successfully loaded, Organelle's display shifts to show us th
 
 ![](Ch3%20-%203%20patches%20menu%20again%20with%20active%20patch%20shown.png) 
 
-> **NOTE:** One neat performance trick is that Organelle remembers its > selection in the patches menu. So if you want to cue up the next patch > you will need, you can turn the Selector and leave that patch > selected. Now all you have to do to load that patch is press down the > Selector knob "”Â you don't even have to turn the Selector or call up > the patches menu. 
+> **NOTE:** One neat performance trick is that Organelle remembers its selection in the patches menu. So if you want to cue up the next patch you will need, you can turn the Selector and leave that patch selected. Now all you have to do to load that patch is press down the Selector knob — you don't even have to turn the Selector or call up the patches menu. 
 
 #### System Menu 
 
@@ -269,11 +269,21 @@ At the top of the menu screen is the *system menu*. The top of this section is l
 
 To engage one of these options, follow the same procedure as loading a patch: select the desired option by turning the Selector and then press down on the top of the Selector. 
 
--   `Eject` safely unmounts an attached USB drive. The display will     notify you when it is safe to unplug the USB drive. -   `Reload` rescans the `Patches` folder of the attached USB drive and     then refreshes Organelle's patches menu. (This also unloads the     current patch so note that all sound will stop until you load     another patch.) Any time that you connect a USB drive to Organelle     while the unit is already powered up, you should run this function.     Once the reload process has completed, you will be left in the     patches menu in order to load an available patch. -   `Info` displays the *system information screen*, which presents four     pieces of information. (To exit this screen, turn the Selector left     or right.) 
+-   `Eject` safely unmounts an attached USB drive. The display will     notify you when it is safe to unplug the USB drive. 
+-   `Reload` rescans the `Patches` folder of the attached USB drive and     then refreshes Organelle's patches menu. (This also unloads the     current patch so note that all sound will stop until you load     another patch.) Any time that you connect a USB drive to Organelle     while the unit is already powered up, you should run this function.     Once the reload process has completed, you will be left in the     patches menu in order to load an available patch. 
+-   `Info` displays the *system information screen*, which presents four     pieces of information. (To exit this screen, turn the Selector left     or right.) 
 
 ![](Ch3%20-%205%20system%20info%20screen.png) 
 
--   `Version` represents the version number of Organelle's operating     system.     -   `MIDI` will list any recognized MIDI controllers that are         connected. When no controllers are connected, nothing will be         shown.     -   `USB drive` presents the ID number of the attached USB drive.         When no drive is connected, nothing will be shown.     -   `CPU` reports the current usage that the microcomputer's CPU is         experiencing. This value is regularly updated. -   `Shutdown` safely prepares Organelle to be powered off. The display     will notify you when it is safe to unplug the power supply from the     unit. (Once the unit has been shut down, you must remove and     reconnect power to start using it again.)\ -   `MIDI Channel` sets the default channel for outgoing MIDI messages     and the expected channel for incoming MIDI messages. (After     selecting this option and pressing down the Selector encoder,     another screen allows the setting of the `MIDI Channel` with the     Selector. Pressing the Selector again returns to the system menu.) -   `Save` stores the current parameter settings with the open patch,     essentially printing the values that have been set with the knobs.     Whenever this patch is reloaded, all of your previous parameters     will be recalled regardless of the current knob positions. Once a     knob is moved, however, its physical position will regain control. -   `Save New` duplicates the current patch and all of its associated     files into a new patch folder and then loads that patch. The new     patch also stores the parameter values of the knobs, just as the     `Save` function does.\     The new patch takes the name of the original patch and adds an     incremented number. So triggering `Save New` while a patch named     `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And     selecting `Save New` again with either `Basic Poly` or     `Basic Poly 2` loaded would spawn `Basic Poly 3`. -   *Custom scripts* can also appear at the end of this menu. 
+-   `Version` represents the version number of Organelle's operating     system.     
+	-   `MIDI` will list any recognized MIDI controllers that are         connected. When no controllers are connected, nothing will be         shown.     
+	-   `USB drive` presents the ID number of the attached USB drive.         When no drive is connected, nothing will be shown.     
+	-   `CPU` reports the current usage that the microcomputer's CPU is         experiencing. This value is regularly updated. 
+-   `Shutdown` safely prepares Organelle to be powered off. The display     will notify you when it is safe to unplug the power supply from the     unit. (Once the unit has been shut down, you must remove and     reconnect power to start using it again.)\ 
+-   `MIDI Channel` sets the default channel for outgoing MIDI messages     and the expected channel for incoming MIDI messages. (After     selecting this option and pressing down the Selector encoder,     another screen allows the setting of the `MIDI Channel` with the     Selector. Pressing the Selector again returns to the system menu.) 
+-   `Save` stores the current parameter settings with the open patch,     essentially printing the values that have been set with the knobs.     Whenever this patch is reloaded, all of your previous parameters     will be recalled regardless of the current knob positions. Once a     knob is moved, however, its physical position will regain control. 
+-   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
+-   *Custom scripts* can also appear at the end of this menu. 
 
 #### Patch Information Screen 
 
@@ -285,15 +295,16 @@ Once a patch is loaded, Organelle treats this page as your "home screen." You ca
 
 On this primary screen, each line tends to show particular information related to the current patch. (Individual patches can vary this pattern when deemed appropriate.) 
 
--   The top line provides level meters. These are representations of the     audio levels that are reaching the device's `I`(nputs) and those     that are ending up at its `O`(utputs). Each meter is actually a     stereo representation, with the top rows showing left levels and the     bottom rows showing those for the right channels. 
+-   The top line provides level meters. These are representations of the audio levels that are reaching the device's `I`(nputs) and those that are ending up at its `O`(utputs). Each meter is actually a stereo representation, with the top rows showing left levels and the bottom rows showing those for the right channels. 
 
     In the example pictured above, the audio output seems to be of     similar strength on both the left and right channels. And no audio     input is being received at this moment in time. 
 
-> **NOTE:** The on-screen output meter is operating in a "post fader" > mode, where the displayed signal is scaled based on the unit's current > volume setting. 
+> **NOTE:** The on-screen output meter is operating in a "post fader" mode, where the displayed signal is scaled based on the unit's current volume setting. 
 
--   The middle four lines are prefaced with `1`, `2`, `3`, and `4`, each     representing that respective knob. Following the knob number is     usually a short name for the parameter being altered and then a     numeric representation of that parameter's current value. So in the     example shown above, Knob 2 is controlling a parameter named     `Vibrato Rate` that is current set to `8 Hz`. -   The bottom line is prefaced with `Aux` as it tends to provide more     information about the assignment and/or current state of the Aux     button. In the example above, this patch seems to toggle the     waveform being used an oscillator, with a `Sine Wave` currently in     use. 
+-   The middle four lines are prefaced with `1`, `2`, `3`, and `4`, each representing that respective knob. Following the knob number is usually a short name for the parameter being altered and then a numeric representation of that parameter's current value. So in the example shown above, Knob 2 is controlling a parameter named `Vibrato Rate` that is current set to `8 Hz`. 
+-   The bottom line is prefaced with `Aux` as it tends to provide more information about the assignment and/or current state of the Aux button. In the example above, this patch seems to toggle the     waveform being used an oscillator, with a `Sine Wave` currently in     use. 
 
-> **NOTE:** As was mentioned in the previous chapter, some factory > patches use the Selector encoder to switch the knobs through pages of > parameter assignments. In this case, the middle lines of the on-board > display (starting with `1`, `2`, `3`, and `4`) will be updated as the > Selector encoder is turned and the knob assignments shift. The bottom > line of the on-board display may also suggest that the Aux button > returns you to the *HOME* menu. 
+> **NOTE:** As was mentioned in the previous chapter, some factory > patches use the Selector encoder to switch the knobs through pages of parameter assignments. In this case, the middle lines of the on-board display (starting with `1`, `2`, `3`, and `4`) will be updated as the Selector encoder is turned and the knob assignments shift. The bottom line of the on-board display may also suggest that the Aux button returns you to the *HOME* menu. 
 
 ------------------------------------------------------------------------ 
 
@@ -410,7 +421,29 @@ Patches are run directly from an attached USB drive. This could be the flash dri
 
 An example directory listing of an Organelle-friendly USB drive would start like this. You can see here at least four patches, each with a required `main.pd` file. 
 
-    Patches/             32 Oscillators/                 main.pd             Analog Style/                 blsaw.pd                 distort.pd                 main.pd                 sequencer2.pd                 simple.pd             Arpeggio - Double/                 counter-down.pd                 counter-up.pd                 counter-updown.pd                 delay2sec.pd                 main.pd                 master-metronome.pd                 sequencer2.pd             Basic Poly/                 main.pd                 voice.pd              "¦ 
+```
+Patches/
+		32 Oscillators/
+			main.pd
+		Analog Style/
+			blsaw.pd
+			distort.pd
+			main.pd
+			sequencer2.pd
+			simple.pd
+		Arpeggio - Double/
+			counter-down.pd
+			counter-up.pd
+			counter-updown.pd
+			delay2sec.pd
+			main.pd
+			master-metronome.pd
+			sequencer2.pd
+		Basic Poly/
+			main.pd
+			voice.pd 
+			...
+```
 
 ## 4.2 Working with the USB Drive on a Computer 
 
@@ -450,14 +483,17 @@ Assuming your USB drive is formatted correctly and the Patches folder is appropr
 
 Taken together, these basic functions make it easy for you to organize and sort your patches. Another useful idea is to prepare a set of patches for a live performance by doing something like this. 
 
-1.  Back up all of your patches from the USB drive onto your computer (a     good general starting point). 2.  Copy any new patches you will need from your computer to the USB     drive. 3.  Delete any patches off of the USB drive that you will not need for     this set. 4.  Sort the remaining patches by adding a number to the front of each     patch name (e.g., if Basic Poly was the first patch needed, I would     rename it something like 1-Basic Poly.) This allows you to order the     patches you will need while preserving their names. 
+1. Back up all of your patches from the USB drive onto your computer (a good general starting point). 
+2. Copy any new patches you will need from your computer to the USB drive. 
+3. Delete any patches off of the USB drive that you will not need for this set. 
+4. Sort the remaining patches by adding a number to the front of each patch name (e.g., if Basic Poly was the first patch needed, I would rename it something like 1-Basic Poly.) This allows you to order the patches you will need while preserving their names. 
 
 ## 4.3 Additional USB Information
 
 Here are a couple of other procedures and facts to bearing in mind while working with USB on Organelle. 
 
--   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your     USB drive. 
--     **USB devices are not immediately hot-swappable.** While Organelle     does not need to be power cycled when a USB device is removed, any     device removal will trigger Organelle to quit the running instance     of Pure Data and close out the current patch. The display will     notify you when this has happened (including after you disconnect a     safely ejected USB drive). You can then use the Selector to load or     reload your patch from the menu screen's patches section. 
+-   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
+-     **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
 # 5. Editing and Creating Patches
 
@@ -526,7 +562,7 @@ In short, this helper patch is executing the raw communications with the Organel
 
 Accordingly, `mother.pd` is necessary for the general operation of Organelle. That is why this patch is loaded concurrently with any patch that you call up. 
 
-> **NOTE:** In general, you should not edit `mother.pd`. > > That being said, Organelle will use any file named `mother.pd` that it > finds within the `Patches` folder of your USB drive. By copying the > root directory's `mother.pd` to your `Patches` folder, you could > experiment with editing this patch while keeping the master version > clean. Again, you probably don't want to do this. 
+> **NOTE:** In general, you should not edit `mother.pd`. That being said, Organelle will use any file named `mother.pd` that it finds within the `Patches` folder of your USB drive. By copying the root directory's `mother.pd` to your `Patches` folder, you could experiment with editing this patch while keeping the master version clean. Again, you probably don't want to do this. 
 
 #### The Patch Load Sequence 
 
@@ -544,7 +580,7 @@ Just a few parting notes on this mode of operation.
 
 -   **The Linux file browser can be used as you would *File Explorer*     (on Windows) or *Finder* (on Mac).** If you are running Organelle as     a computer, you can navigate to your USB drive in order to rename or     delete files in the same fashion described earlier (see chapter     three). -   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained     `main.pd` patch for editing. (You could also create your own "new     patch" template for this purpose.) -   **Explore the factory patches.** In addition to finding ideas and     platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution.     To use an external in a patch of your own, copy it to your patch's     folder. 
 
-> **NOTE:** Externals that you encounter here are built for the Linux > operating system that Organelle is running. If you are building > patches on your own computer, these externals will only work if you > are also running Linux (these compiled externals are > platform-specific). 
+> **NOTE:** Externals that you encounter here are built for the Linux operating system that Organelle is running. If you are building patches on your own computer, these externals will only work if you are also running Linux (these compiled externals are platform-specific). 
 
 -   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI     monitor and resume working with Organelle as usual, this will leave     some processing resources allocated for graphics that you are no     longer using. It is better to revert Organelle to its normal CLI     mode and keep the processor focused on audio tasks. 
 
