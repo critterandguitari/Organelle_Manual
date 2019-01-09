@@ -1,4 +1,4 @@
-# Quick-start Guide !!
+# Quick-start Guide !! Hi dudes
 
 ### Let's get sound. Now! 
 
