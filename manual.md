@@ -57,7 +57,7 @@ In addition to audio output ports, Organelle also has an audio input port. Accor
 
 ### Organelle is a generator. 
 
-There is no requirement that the patches you load into Organelle are triggered by playing notes on the device. You could create patches that simply drone and/or create evolving textures on their own over time. The audio input could even be used as a source. As this definition is starting to become circular, let's cut to the chase"¦ 
+There is no requirement that the patches you load into Organelle are triggered by playing notes on the device. You could create patches that simply drone and/or create evolving textures on their own over time. The audio input could even be used as a source. As this definition is starting to become circular, let's cut to the chase... 
 
 ### Organelle is whatever you want it to be. 
 
@@ -109,7 +109,7 @@ As we begin to explore the universe that Organelle makes available to us, we sho
 
 ## 2.1 Acquainting yourself with the box. 
 
-In this age of software and "virtual" devices, please do not neglect the hardware side of things! While its microcomputer does indeed run everything that Organelle does, we endeavored to make Organelle an "un-computer." Configuring and then interacting with the physical interface is just as critical as anything you do on the software side. In fact, this is how the pretty box can become an instrument"¦ 
+In this age of software and "virtual" devices, please do not neglect the hardware side of things! While its microcomputer does indeed run everything that Organelle does, we endeavored to make Organelle an "un-computer." Configuring and then interacting with the physical interface is just as critical as anything you do on the software side. In fact, this is how the pretty box can become an instrument. 
 
 ------------------------------------------------------------------------ 
 
@@ -149,6 +149,8 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 #### Right-side Panel 
 
+![] (Ch2%20-%202%20rightpanel.png)
+
 Compared to the back panel, the right-side panel is downright simple, housing two USB 2.0, Type A ports. One of these identical ports must be used for connecting a USB drive that houses your Pure Data patches (such as the one included with Organelle). They can also connect class compliant devices that utilize MIDI over USB or other computer peripherals. 
 
 #### Main Face 
@@ -165,11 +167,11 @@ The main face is both Organelle's primary interface with you and the place that 
 
 > **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches. 
 
--   The `Vol`(ume) knob governs the potential audio output level of     Organelle. The knob ranges from silence (in audio terms, -âˆž) at the     far left to no attenuation (unity gain) at the far right. Any     adjustments to the Volume knob take effect immediately. 
+-   The `Vol`(ume) knob governs the potential audio output level of     Organelle. The knob ranges from silence (in audio terms, -∞) at the     far left to no attenuation (unity gain) at the far right. Any     adjustments to the Volume knob take effect immediately. 
 
--   The maple key at the far left and its accompanying LED comprise one     special unit: the *Aux button*. By default, the Aux button does     nothing, but each patch can be configured to use the input from the     key for any type of mode switch or anything else. The LED has eight     static states (off plus seven color options) and is generally used     to provide the user with visual feedback of the Aux button's status.     As with so much about patches, the function of this control will be     anything the patch designer deems appropriate. 
+-   The maple key at the far left and its accompanying LED comprise one     special unit: the *Aux button*. By default, the Aux button does nothing, but each patch can be configured to use the input from the key for any type of mode switch or anything else. The LED has eight static states (off plus seven color options) and is generally used to provide the user with visual feedback of the Aux button's status. As with so much about patches, the function of this control will be anything the patch designer deems appropriate. 
 
--   After the Aux button, the 24 other maple keys work together as a     group. As their piano-style layout may have indicated, these keys     are for playing notes. By default, each key triggers a "note on" MIDI message when it is pressed down and a corresponding "note off" MIDI message when it is released. For patches that use note messages     to trigger or affect audio output, these keys will be your primary     performance vehicle. \[For information on the default MIDI operation     of Organelle, see chapter three.\] 
+-   After the Aux button, the 24 other maple keys work together as a     group. As their piano-style layout may have indicated, these keys are for playing notes. By default, each key triggers a "note on" MIDI message when it is pressed down and a corresponding "note off" MIDI message when it is released. For patches that use note messages to trigger or affect audio output, these keys will be your primary performance vehicle. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
 
 ------------------------------------------------------------------------ 
 
@@ -279,7 +281,7 @@ To engage one of these options, follow the same procedure as loading a patch: se
 	-   `MIDI` will list any recognized MIDI controllers that are         connected. When no controllers are connected, nothing will be         shown.     
 	-   `USB drive` presents the ID number of the attached USB drive.         When no drive is connected, nothing will be shown.     
 	-   `CPU` reports the current usage that the microcomputer's CPU is         experiencing. This value is regularly updated. 
--   `Shutdown` safely prepares Organelle to be powered off. The display     will notify you when it is safe to unplug the power supply from the     unit. (Once the unit has been shut down, you must remove and     reconnect power to start using it again.)\ 
+-   `Shutdown` safely prepares Organelle to be powered off. The display     will notify you when it is safe to unplug the power supply from the     unit. (Once the unit has been shut down, you must remove and     reconnect power to start using it again.)
 -   `MIDI Channel` sets the default channel for outgoing MIDI messages     and the expected channel for incoming MIDI messages. (After     selecting this option and pressing down the Selector encoder,     another screen allows the setting of the `MIDI Channel` with the     Selector. Pressing the Selector again returns to the system menu.) 
 -   `Save` stores the current parameter settings with the open patch,     essentially printing the values that have been set with the knobs.     Whenever this patch is reloaded, all of your previous parameters     will be recalled regardless of the current knob positions. Once a     knob is moved, however, its physical position will regain control. 
 -   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
@@ -313,6 +315,7 @@ On this primary screen, each line tends to show particular information related t
  The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. 
 
 > **NOTE:** In this section, terms specific to the MIDI protocol will have quotation marks around them. As this jargon predates Organelle, we would suggest consulting a general resource on MIDI if the terms aren't clear to you.  
+
 > **NOTE:** These MIDI assignments are labeled "defaults" as you can override them in your own patches. For more on making patches, see chapter five. 
 
 #### Outgoing MIDI 
@@ -351,7 +354,7 @@ While all MIDI messages received by Organelle (via USB) will be passed on to the
 
 In general, the MIDI messages that are output by Organelle (as outlined in the immediately previous section) are identical to the incoming messages recognized by Organelle. This can be helpful, for example, if you want to record the movement of Organelle's controls into a sequencer as automation data. In other words, the mappings are a bit of a mirror. So let's take particular note of how incoming MIDI messages interact with and can sometimes override Organelle's on-board controls. 
 
-And similar to the outgoing messages, incoming messages should be sent to Organelle on the global MIDI channel , as set in the system menu. 
+And similar to the outgoing messages, incoming messages should be sent to Organelle on the global MIDI channel, as set in the system menu. 
 
 ##### Note On Messages 
 
@@ -493,7 +496,7 @@ Taken together, these basic functions make it easy for you to organize and sort 
 Here are a couple of other procedures and facts to bearing in mind while working with USB on Organelle. 
 
 -   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
--     **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
+-   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
 # 5. Editing and Creating Patches
 
@@ -568,7 +571,10 @@ Accordingly, `mother.pd` is necessary for the general operation of Organelle. Th
 
 To better understand the full relationship at hand, let's take a step back for a moment. Anytime a patch is loaded, Organelle goes through a sequence of steps. 
 
-1.  If a patch is currently loaded, it receives a quitting message. This     allows any "cleanup" processes to be executed. 2.  If a patch is currently loaded, it then prompts the Pure Data     application to quit. This effectively closes any and all open     patches, including the `mother.pd` helper patch. 3.  The Pure Data application is relaunched, and the patch we have     requested is then opened, specifically the file main.pd in the     patche's folder. 4.  The `mother.pd` helper patch is loaded. 
+1.  If a patch is currently loaded, it receives a quitting message. This     allows any "cleanup" processes to be executed. 
+2.  If a patch is currently loaded, it then prompts the Pure Data     application to quit. This effectively closes any and all open patches, including the `mother.pd` helper patch. 
+3.  The Pure Data application is relaunched, and the patch we have     requested is then opened, specifically the file main.pd in the patch's folder. 
+4.  The `mother.pd` helper patch is loaded. 
 
 Once this sequence completes, all assets needed for your patch to communicate with Organelle will be loaded and ready to go. So the general flurry of windows closing and opening that you see in Organelle's graphical operation mode is both expected and proper. 
 
@@ -578,7 +584,9 @@ By clicking on your loaded patch, it will move `mother.pd` to the background (wi
 
 Just a few parting notes on this mode of operation. 
 
--   **The Linux file browser can be used as you would *File Explorer*     (on Windows) or *Finder* (on Mac).** If you are running Organelle as     a computer, you can navigate to your USB drive in order to rename or     delete files in the same fashion described earlier (see chapter     three). -   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained     `main.pd` patch for editing. (You could also create your own "new     patch" template for this purpose.) -   **Explore the factory patches.** In addition to finding ideas and     platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution.     To use an external in a patch of your own, copy it to your patch's     folder. 
+-   **The Linux file browser can be used as you would *File Explorer*     (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or     delete files in the same fashion described earlier (see chapter     three). 
+-   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained     `main.pd` patch for editing. (You could also create your own "new     patch" template for this purpose.) 
+-   **Explore the factory patches.** In addition to finding ideas and     platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
 
 > **NOTE:** Externals that you encounter here are built for the Linux operating system that Organelle is running. If you are building patches on your own computer, these externals will only work if you are also running Linux (these compiled externals are platform-specific). 
 
