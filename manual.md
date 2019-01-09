@@ -347,21 +347,21 @@ Incoming note messages can happen concurrently with note messages created by pla
 
 ##### Control Change Messages 
 
-Incoming "control change" messages using controller numbers `21`, `22`, `23`, and `24` replace the current values set by Knobs 1, 2, 3, and 4, respectively. 
+Incoming "control change" messages using controller numbers `21`, `22`, `23`, and `24` replace the current values set by Knobs 1, 2, 3, and 4, respectively. 
 
-**To restore a knob's control:** simply turn the knob enough to register a new value. In the same way that "control change" messages are designed to work, the dominant message is always the last one received. 
+**To restore a knob's control:** simply turn the knob enough to register a new value. In the same way that "control change" messages are designed to work, the dominant message is always the last one received. 
 
-Incoming "control change" messages using controller number `25` affect the internal status of the Aux button. A controller value between `64` and `127` simulates the Aux button being pressed down, while a controller value between `0` (zero) and `63` simulates a release of the Aux button. 
+Incoming "control change" messages using controller number `25` affect the internal status of the Aux button. A controller value between `64` and `127` simulates the Aux button being pressed down, while a controller value between `0` (zero) and `63` simulates a release of the Aux button. 
 
-> **NOTE:** A momentary control source, such as a damper pedal or > button, would work well with this sort of threshold behavior. In > certain situations, controlling the Aux button from a external > "sustain" pedal could be quite effective. 
+> **NOTE:** A momentary control source, such as a damper pedal or > button, would work well with this sort of threshold behavior. In > certain situations, controlling the Aux button from a external > "sustain" pedal could be quite effective. 
 
-Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactive it as the current control source, updating both controllers `26` and `64`. 
+Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactive it as the current control source, updating both controllers `26` and `64`. 
 
 ##### Program Change Messages 
 
-Incoming "program change" messages are used to change Organelle's current patch. "Program numbers" are assigned based on each patch's position in alphabetical order. Let's unpack this a bit. 
+Incoming "program change" messages are used to change Organelle's current patch. "Program numbers" are assigned based on each patch's position in alphabetical order. Let's unpack this a bit. 
 
-Just as they are displayed in the patches menu, all currently available patches are taken in alphabetical order, and each patch is then dynamically assigned a "program number" based on its position. So if Organelle had three patches available called **A Patch**, **B Patch**, and **C Patch**, program number `1` would call up **A Patch**, program number `2` would call up **B Patch**, and program number `3` would call up **C Patch**. (If these were the only three patches available, program change messages for programs `4` and above would do nothing.) 
+Just as they are displayed in the patches menu, all currently available patches are taken in alphabetical order, and each patch is then dynamically assigned a "program number" based on its position. So if Organelle had three patches available called **A Patch**, **B Patch**, and **C Patch**, program number `1` would call up **A Patch**, program number `2` would call up **B Patch**, and program number `3` would call up **C Patch**. (If these were the only three patches available, program change messages for programs `4` and above would do nothing.) 
 
 ##### Other MIDI Messages 
 
@@ -371,7 +371,7 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
 
 ### Using a USB MIDI Device 
 
- Using a MIDI device with Organelle is rather painless but not "hot swappable." 
+ Using a MIDI device with Organelle is rather painless but not "hot swappable." 
 
 1.  **Connect your USB MIDI device.** As long as a USB MIDI device     requires no special, proprietary driver, you need only to connect it     to Organelle. This can be done via an open USB port either on     Organelle itself or on a USB hub that is connected to Organelle. 2.  **Load the patch you want to use. If it was already loaded, please     reload it.** A newly connected USB MIDI device will not be     recognized by the currently loaded patch. Reloading a patch will     recognize all currently connected USB MIDI devices. 
 
@@ -418,7 +418,7 @@ From here, we need to connect the USB drive you are using with Organelle to your
 
 -   **If the USB drive is currently connected to Organelle, properly     `Eject` the disk before removing it.** This option can be found by     accessing the system information screen from the system menu. (See     the end of this chapter for specific instructions.) -   **When using the included USB drive, be sure it is flipped the right     way before connecting to your computer.** The drive that comes with     Organelle has an extremely low profile, consisting of the bottom     half of most standard USB connectors/cables. As such, it is possible     to plug the drive in upside down. This is generally harmless but     better to be avoided. 
 
-    Be sure that the exposed pins "” I think of them as teeth "”Â are     facing "up," toward wherever the top of a connected USB cable would     go. (On Mac laptops, for example, the pins should face upward,     toward the sky.) 
+    Be sure that the exposed pins "” I think of them as teeth "”Â are     facing "up," toward wherever the top of a connected USB cable would     go. (On Mac laptops, for example, the pins should face upward,     toward the sky.) 
 
 Once the drive is connected and seen by your computer, we can proceed. 
 
@@ -464,7 +464,7 @@ Well, you have made it to the final chapter. Mazel tov! We hope you have enjoyed
 
 This chapter covers the basics of running the Organelle with a monitor, keyboard and mouse attached for the purpose of editing or creating patches. The actual process of creating and editing patches is covered in a series of tutorial videos. 
 
-While we have continually mentioned the microcomputer within Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse "”Â some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
+While we have continually mentioned the microcomputer within Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse "”Â some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
 
 This chapter will walk us through the general use of Organelle along with HDMI, which presumes the use of a keyboard and mouse as well. We will do this by going through a general narrative of using Organelle as a computer. 
 
@@ -500,7 +500,7 @@ The options on this screen are fairly sparse. This matches the character of the 
 
 -   The disk icon labeled `USB Drive` at the top left of the screen     represents the USB drive containing your `Patches` folder. -   The `Read me First!` file contains some helpful notes from our     technical team. You should probably do as they say. -   The dark icon at the bottom left of the screen represents a     command-line interface (CLI). If you click on this icon, a terminal     emulator instance is started. -   The red octagonal icon at the bottom right of the screen represents     a stop sign. When you are done working in this graphical operation     mode, you should click this icon. 
 
-**To exit Organelle's graphical operation mode:** click the red octagonal icon at the bottom right of the screen. This will close out all open windows and unload the current Organelle patch, interrupting any ongoing audio output (the same as when we entered this graphical mode). This red "exit" button is the primary interface option that you will need. 
+**To exit Organelle's graphical operation mode:** click the red octagonal icon at the bottom right of the screen. This will close out all open windows and unload the current Organelle patch, interrupting any ongoing audio output (the same as when we entered this graphical mode). This red "exit" button is the primary interface option that you will need. 
 
 While you can navigate the file system with the keyboard and mouse, the best way to load a patch is to do it from Organelle's hardware. By using the Selector encoder to choose and load a patch, you will then see the patch visually loaded by Organelle along with a crucial helper patch. 
 
@@ -524,7 +524,7 @@ Accordingly, `mother.pd` is necessary for the general operation of Organelle. Th
 
 To better understand the full relationship at hand, let's take a step back for a moment. Anytime a patch is loaded, Organelle goes through a sequence of steps. 
 
-1.  If a patch is currently loaded, it receives a quitting message. This     allows any "cleanup" processes to be executed. 2.  If a patch is currently loaded, it then prompts the Pure Data     application to quit. This effectively closes any and all open     patches, including the `mother.pd` helper patch. 3.  The Pure Data application is relaunched, and the patch we have     requested is then opened, specifically the file main.pd in the     patche's folder. 4.  The `mother.pd` helper patch is loaded. 
+1.  If a patch is currently loaded, it receives a quitting message. This     allows any "cleanup" processes to be executed. 2.  If a patch is currently loaded, it then prompts the Pure Data     application to quit. This effectively closes any and all open     patches, including the `mother.pd` helper patch. 3.  The Pure Data application is relaunched, and the patch we have     requested is then opened, specifically the file main.pd in the     patche's folder. 4.  The `mother.pd` helper patch is loaded. 
 
 Once this sequence completes, all assets needed for your patch to communicate with Organelle will be loaded and ready to go. So the general flurry of windows closing and opening that you see in Organelle's graphical operation mode is both expected and proper. 
 
@@ -534,9 +534,9 @@ By clicking on your loaded patch, it will move `mother.pd` to the background (wi
 
 Just a few parting notes on this mode of operation. 
 
--   **The Linux file browser can be used as you would *File Explorer*     (on Windows) or *Finder* (on Mac).** If you are running Organelle as     a computer, you can navigate to your USB drive in order to rename or     delete files in the same fashion described earlier (see chapter     three). -   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained     `main.pd` patch for editing. (You could also create your own "new     patch" template for this purpose.) -   **Explore the factory patches.** In addition to finding ideas and     platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution.     To use an external in a patch of your own, copy it to your patch's     folder. 
+-   **The Linux file browser can be used as you would *File Explorer*     (on Windows) or *Finder* (on Mac).** If you are running Organelle as     a computer, you can navigate to your USB drive in order to rename or     delete files in the same fashion described earlier (see chapter     three). -   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained     `main.pd` patch for editing. (You could also create your own "new     patch" template for this purpose.) -   **Explore the factory patches.** In addition to finding ideas and     platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution.     To use an external in a patch of your own, copy it to your patch's     folder. 
 
 > **NOTE:** Externals that you encounter here are built for the Linux > operating system that Organelle is running. If you are building > patches on your own computer, these externals will only work if you > are also running Linux (these compiled externals are > platform-specific). 
 
--   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI     monitor and resume working with Organelle as usual, this will leave     some processing resources allocated for graphics that you are no     longer using. It is better to revert Organelle to its normal CLI     mode and keep the processor focused on audio tasks. 
+-   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI     monitor and resume working with Organelle as usual, this will leave     some processing resources allocated for graphics that you are no     longer using. It is better to revert Organelle to its normal CLI     mode and keep the processor focused on audio tasks. 
 
