@@ -301,13 +301,14 @@ On this primary screen, each line tends to show particular information related t
 
  The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. 
 
-> **NOTE:** In this section, terms specific to the MIDI protocol will > have quotation marks around them. As this jargon predates Organelle, > we would suggest consulting a general resource on MIDI if the terms > aren't clear to you. > > **NOTE:** These MIDI assignments are labeled "defaults" as you can > override them in your own patches. For more on making patches, see > chapter five. 
+> **NOTE:** In this section, terms specific to the MIDI protocol will have quotation marks around them. As this jargon predates Organelle, we would suggest consulting a general resource on MIDI if the terms aren't clear to you.  
+> **NOTE:** These MIDI assignments are labeled "defaults" as you can override them in your own patches. For more on making patches, see chapter five. 
 
 #### Outgoing MIDI 
 
 With the exception of the Selector knob and the Volume knob, all of Organelle's other interface elements send out MIDI messages when they are used. All MIDI messages are sent on the global MIDI channel, as set in the system menu. 
 
-> **NOTE:** All outgoing MIDI messages are sent over USB. They will be > received by any connected USB MIDI device or interface that is > actively listening for them. 
+> **NOTE:** All outgoing MIDI messages are sent over USB. They will be received by any connected USB MIDI device or interface that is actively listening for them. 
 
 ##### The Keys 
 
@@ -353,7 +354,7 @@ Incoming "control change" messages using controller numbers `21`, `22`, `23`, an
 
 Incoming "control change" messages using controller number `25` affect the internal status of the Aux button. A controller value between `64` and `127` simulates the Aux button being pressed down, while a controller value between `0` (zero) and `63` simulates a release of the Aux button. 
 
-> **NOTE:** A momentary control source, such as a damper pedal or > button, would work well with this sort of threshold behavior. In > certain situations, controlling the Aux button from a external > "sustain" pedal could be quite effective. 
+> **NOTE:** A momentary control source, such as a damper pedal or button, would work well with this sort of threshold behavior. In certain situations, controlling the Aux button from a external "sustain" pedal could be quite effective. 
 
 Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactive it as the current control source, updating both controllers `26` and `64`. 
 
@@ -373,17 +374,18 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
 
  Using a MIDI device with Organelle is rather painless but not "hot swappable." 
 
-1.  **Connect your USB MIDI device.** As long as a USB MIDI device     requires no special, proprietary driver, you need only to connect it     to Organelle. This can be done via an open USB port either on     Organelle itself or on a USB hub that is connected to Organelle. 2.  **Load the patch you want to use. If it was already loaded, please     reload it.** A newly connected USB MIDI device will not be     recognized by the currently loaded patch. Reloading a patch will     recognize all currently connected USB MIDI devices. 
+1.  **Connect your USB MIDI device.** As long as a USB MIDI device     requires no special, proprietary driver, you need only to connect it     to Organelle. This can be done via an open USB port either on     Organelle itself or on a USB hub that is connected to Organelle. 
+2.  **Load the patch you want to use. If it was already loaded, please     reload it.** A newly connected USB MIDI device will not be     recognized by the currently loaded patch. Reloading a patch will     recognize all currently connected USB MIDI devices. 
 
 That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
 
 # 4. Managing Patches 
 
- ### Bringing additional patches from your computer to Organelle. 
+### Bringing additional patches from your computer to Organelle. 
 
 One of the strengths of Organelle is its depth. The included factory patches represent a good sample of what is possible with Organelle, but these are by no means the only patches you can use. 
 
-As was mentioned in an earlier chapter, [organelle.io](http://organelle.io) is the official repository of Organelle patches and a great place to start when looking for new sounds, options, and performance approaches. (And as it tends to do, the Internet will probably have some suggestions of its own"¦) 
+As was mentioned in an earlier chapter, [organelle.io](http://organelle.io) is the official repository of Organelle patches and a great place to start when looking for new sounds, options, and performance approaches. (And as it tends to do, the Internet will probably have some suggestions of its own...) 
 
 Finding and downloading Organelle-ready patches is easy enough. To actually use these patches, however, requires getting them from a computer to our properly formatted USB drive, which can then be connected to Organelle for running our newfound patches. (And yes, that computer could be running Windows, Macintosh, Linux, or some other operating system. No additional software is required; the computer is just being used to download files, possibly decompress them, and then copy their folders to the USB drive.) 
 
@@ -400,7 +402,9 @@ As has probably become clear by now, Organelle will only work properly while a U
 
 Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. 
 
--   This USB disk should be formatted with a FAT file system, often     associated with MS-DOS. -   This USB drive must contain a folder called `Patches` at its     top-level. (This name is case-sensitive.) -   For each patch to be used by Organelle, the `Patches` folder must     contain a folder named as you would like the patch name to appear.     Each patch's folder must contain a file named `main.pd` that     contains the top-level patch itself. If any other files are required     by the patch, they must also be included in the patch's folder. 
+-   This USB disk should be formatted with a FAT file system, often     associated with MS-DOS. 
+-   This USB drive must contain a folder called `Patches` at its     top-level. (This name is case-sensitive.) 
+-   For each patch to be used by Organelle, the `Patches` folder must     contain a folder named as you would like the patch name to appear.     Each patch's folder must contain a file named `main.pd` that     contains the top-level patch itself. If any other files are required     by the patch, they must also be included in the patch's folder. 
 
 ### Folder Structure 
 
@@ -412,13 +416,13 @@ An example directory listing of an Organelle-friendly USB drive would start like
 
 Rather than guide you through web browsing, we will assume that you have already downloaded some new patches either from [organelle.io](http://organelle.io) or another source. 
 
-> **NOTE:** If the patches you downloaded are ZIP files, be sure to > "˜decompress' those files into folders before continuing. On most > modern operating systems, this can be achieve by simply opening the > ZIP file from the system's file browser. 
+> **NOTE:** If the patches you downloaded are ZIP files, be sure to 'decompress' those files into folders before continuing. On most modern operating systems, this can be achieve by simply opening the ZIP file from the system's file browser. 
 
 From here, we need to connect the USB drive you are using with Organelle to your computer. A couple important notes. 
 
 -   **If the USB drive is currently connected to Organelle, properly     `Eject` the disk before removing it.** This option can be found by     accessing the system information screen from the system menu. (See     the end of this chapter for specific instructions.) -   **When using the included USB drive, be sure it is flipped the right     way before connecting to your computer.** The drive that comes with     Organelle has an extremely low profile, consisting of the bottom     half of most standard USB connectors/cables. As such, it is possible     to plug the drive in upside down. This is generally harmless but     better to be avoided. 
 
-    Be sure that the exposed pins "” I think of them as teeth "”Â are     facing "up," toward wherever the top of a connected USB cable would     go. (On Mac laptops, for example, the pins should face upward,     toward the sky.) 
+    Be sure that the exposed pins — I think of them as teeth — are facing "up," toward wherever the top of a connected USB cable would     go. (On Mac laptops, for example, the pins should face upward,     toward the sky.) 
 
 Once the drive is connected and seen by your computer, we can proceed. 
 
@@ -452,7 +456,8 @@ Taken together, these basic functions make it easy for you to organize and sort 
 
 Here are a couple of other procedures and facts to bearing in mind while working with USB on Organelle. 
 
--   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your     USB drive. -   **USB devices are not immediately hot-swappable.** While Organelle     does not need to be power cycled when a USB device is removed, any     device removal will trigger Organelle to quit the running instance     of Pure Data and close out the current patch. The display will     notify you when this has happened (including after you disconnect a     safely ejected USB drive). You can then use the Selector to load or     reload your patch from the menu screen's patches section. 
+-   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your     USB drive. 
+-     **USB devices are not immediately hot-swappable.** While Organelle     does not need to be power cycled when a USB device is removed, any     device removal will trigger Organelle to quit the running instance     of Pure Data and close out the current patch. The display will     notify you when this has happened (including after you disconnect a     safely ejected USB drive). You can then use the Selector to load or     reload your patch from the menu screen's patches section. 
 
 # 5. Editing and Creating Patches
 
@@ -464,7 +469,7 @@ Well, you have made it to the final chapter. Mazel tov! We hope you have enjoyed
 
 This chapter covers the basics of running the Organelle with a monitor, keyboard and mouse attached for the purpose of editing or creating patches. The actual process of creating and editing patches is covered in a series of tutorial videos. 
 
-While we have continually mentioned the microcomputer within Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse "”Â some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
+While we have continually mentioned the microcomputer within Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse — some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
 
 This chapter will walk us through the general use of Organelle along with HDMI, which presumes the use of a keyboard and mouse as well. We will do this by going through a general narrative of using Organelle as a computer. 
 
@@ -472,19 +477,19 @@ Let's get visual. And peripheral.
 
 ------------------------------------------------------------------------ 
 
-Keyboards and Mice ------------------ 
+### Keyboards and Mice
 
 Connecting an HDMI monitor to Organelle is simple enough. But the function of the HDMI device is to provide the visual output of Organelle's functioning microcomputer. (As we will see very shortly, connecting only a monitor will show you, well, not much.) As with any computer, you need a keyboard and mouse actually interface with Organelle. 
 
 Just about any USB mouse should work with Organelle, and most PC-style USB keyboards should also be fine. Additionally, mice and keyboards that have their own USB wireless dongles should also work with Organelle. So long as the data is coming across a USB port, your peripherals will probably work. 
 
-> **NOTE:** While we have aimed to support regular USB keyboards, not > all manufacturers implement the general USB standards in the same way. > Accordingly, some keyboards may not work with Organelle. Please report > any finding of incompatibility on [our > forum](http://forum.critterandguitari.com). 
+> **NOTE:** While we have aimed to support regular USB keyboards, not all manufacturers implement the general USB standards in the same way. Accordingly, some keyboards may not work with Organelle. Please report any finding of incompatibility on [our forum](http://forum.critterandguitari.com). 
 
 Finally, we are talking about more and more USB devices being used with Organelle. (And don't forget the USB drive housing your `Patches` folder!) Before you worry about running out of ports, remember that a USB hub can be connected to Organelle. 
 
 ------------------------------------------------------------------------ 
 
-Operating Organelle as a Computer --------------------------------- 
+### Operating Organelle as a Computer  
 
 After you have connected an HDMI monitor and powered it on, you will immediately see a semi-cryptic terminal window for text entry. To optimize performance, Organelle runs in this fashion (with no graphical user interface, or GUI) by default. 
 
@@ -492,13 +497,16 @@ This window helpfully suggests that you run the command `startx` to start up the
 
 **To start Organelle's graphical operation mode:** type `startx`, and then press the \[ENTER\]/\[RETURN\] key to execute the function. 
 
-> **NOTE:** Booting Organelle's graphical operation mode causes the > system itself to be reloaded. This means that any currently loaded > patch will be unloaded, and any audio output being produced will > cease. 
+> **NOTE:** Booting Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
 
 ![](Ch6%20-%201%20screen.png) 
 
 The options on this screen are fairly sparse. This matches the character of the running operating system, which has been stripped down in favor of achieving the most stable audio performance. There are four elements here. 
 
--   The disk icon labeled `USB Drive` at the top left of the screen     represents the USB drive containing your `Patches` folder. -   The `Read me First!` file contains some helpful notes from our     technical team. You should probably do as they say. -   The dark icon at the bottom left of the screen represents a     command-line interface (CLI). If you click on this icon, a terminal     emulator instance is started. -   The red octagonal icon at the bottom right of the screen represents     a stop sign. When you are done working in this graphical operation     mode, you should click this icon. 
+-   The disk icon labeled `USB Drive` at the top left of the screen     represents the USB drive containing your `Patches` folder. 
+-   The `Read me First!` file contains some helpful notes from our     technical team. You should probably do as they say.    
+-   The dark icon at the bottom left of the screen represents a     command-line interface (CLI). If you click on this icon, a terminal     emulator instance is started. 
+-   The red octagonal icon at the bottom right of the screen represents     a stop sign. When you are done working in this graphical operation     mode, you should click this icon. 
 
 **To exit Organelle's graphical operation mode:** click the red octagonal icon at the bottom right of the screen. This will close out all open windows and unload the current Organelle patch, interrupting any ongoing audio output (the same as when we entered this graphical mode). This red "exit" button is the primary interface option that you will need. 
 
@@ -510,7 +518,7 @@ The Organelle unit itself is now functioning as we would normally expect it to: 
 
 Within the computer interface, we are now seeing the behind-the-scenes implications of loading a patch. Our patch (in this case, **Basic Poly**) has been loaded, and its main.pd file is taking up most of the screen. But sitting atop the patch we expected is one we did not. 
 
-The `mother.pd` Helper Patch ---------------------------- 
+#### The `mother.pd` Helper Patch
 
 `mother.pd` exists at the root (or top) directory of Organelle, which is located on the microSD that comes preloaded within the Organelle hardware. This helper patch is the other half of the data handshake between the Pure Data patches we run and Organelle's hardware. 
 
