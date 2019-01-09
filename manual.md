@@ -79,7 +79,7 @@ Some patches require various support files (audio media, other support patches t
 
 ![](Ch1%20-%201%20Test%20Tone%20patch%20cropped.png) 
 
-And no, you do not need to learn Pure Data to use Organelle. Aside from the factory patches, you can also find a repository of additional patches at [organelle.io](http://organelle.io) for your perusal. You *can* customize or create your own patches, Pure Data is **free** and available for all computer platforms, but "to code or not to code" is completely up to you. 
+And no, you do not need to learn Pure Data to use Organelle. Aside from the factory patches, you can also find a repository of additional patches at [organelle.io](http://organelle.io) for your perusal. You *can* customize or create your own patches, Pure Data is **free** and available for all computer platforms, but "to code or not to code" is completely up to you. 
 
 ### What other concepts may be useful to understand? 
 
@@ -109,7 +109,7 @@ As we begin to explore the universe that Organelle makes available to us, we sho
 
 ## 2.1 Acquainting yourself with the box. 
 
-In this age of software and "virtual" devices, please do not neglect the hardware side of things! While its microcomputer does indeed run everything that Organelle does, we endeavored to make Organelle an "un-computer." Configuring and then interacting with the physical interface is just as critical as anything you do on the software side. In fact, this is how the pretty box can become an instrument"¦ 
+In this age of software and "virtual" devices, please do not neglect the hardware side of things! While its microcomputer does indeed run everything that Organelle does, we endeavored to make Organelle an "un-computer." Configuring and then interacting with the physical interface is just as critical as anything you do on the software side. In fact, this is how the pretty box can become an instrument"¦ 
 
 ------------------------------------------------------------------------ 
 
@@ -135,7 +135,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 -   The foot `Pedal` port is a 1/4" jack. It is intended to be connected     to a keyboard sustain-/damper-style pedal, which will deliver on/off messages to your patch. 
 
-> **NOTE:** Organelle presumes that any sustain/damper pedal used has a "normally closed position" (negative polarity). 
+> **NOTE:** Organelle presumes that any sustain/damper pedal used has a "normally closed position" (negative polarity). 
 
 > **NOTE:** If an expression pedal is connected, your patch should > receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
 
@@ -169,7 +169,7 @@ The main face is both Organelle's primary interface with you and the place that 
 
 -   The maple key at the far left and its accompanying LED comprise one     special unit: the *Aux button*. By default, the Aux button does     nothing, but each patch can be configured to use the input from the     key for any type of mode switch or anything else. The LED has eight     static states (off plus seven color options) and is generally used     to provide the user with visual feedback of the Aux button's status.     As with so much about patches, the function of this control will be     anything the patch designer deems appropriate. 
 
--   After the Aux button, the 24 other maple keys work together as a     group. As their piano-style layout may have indicated, these keys     are for playing notes. By default, each key triggers a "note on"     MIDI message when it is pressed down and a corresponding "note off"     MIDI message when it is released. For patches that use note messages     to trigger or affect audio output, these keys will be your primary     performance vehicle. \[For information on the default MIDI operation     of Organelle, see chapter three.\] 
+-   After the Aux button, the 24 other maple keys work together as a     group. As their piano-style layout may have indicated, these keys     are for playing notes. By default, each key triggers a "note on" MIDI message when it is pressed down and a corresponding "note off" MIDI message when it is released. For patches that use note messages     to trigger or affect audio output, these keys will be your primary     performance vehicle. \[For information on the default MIDI operation     of Organelle, see chapter three.\] 
 
 ------------------------------------------------------------------------ 
 
@@ -281,7 +281,7 @@ Once a patch is loaded, you will be taken to the *patch information screen*, whi
 
 ![](Ch3%20-%206%20patch%20information%20screen.png) 
 
-Once a patch is loaded, Organelle treats this page as your "home screen." You can return to the menu screen by turning the Selector knob, but after a few seconds of inactivity, Organelle will automatically return to the patch information screen. 
+Once a patch is loaded, Organelle treats this page as your "home screen." You can return to the menu screen by turning the Selector knob, but after a few seconds of inactivity, Organelle will automatically return to the patch information screen. 
 
 On this primary screen, each line tends to show particular information related to the current patch. (Individual patches can vary this pattern when deemed appropriate.) 
 
@@ -289,7 +289,7 @@ On this primary screen, each line tends to show particular information related t
 
     In the example pictured above, the audio output seems to be of     similar strength on both the left and right channels. And no audio     input is being received at this moment in time. 
 
-> **NOTE:** The on-screen output meter is operating in a "post fader" > mode, where the displayed signal is scaled based on the unit's current > volume setting. 
+> **NOTE:** The on-screen output meter is operating in a "post fader" > mode, where the displayed signal is scaled based on the unit's current > volume setting. 
 
 -   The middle four lines are prefaced with `1`, `2`, `3`, and `4`, each     representing that respective knob. Following the knob number is     usually a short name for the parameter being altered and then a     numeric representation of that parameter's current value. So in the     example shown above, Knob 2 is controlling a parameter named     `Vibrato Rate` that is current set to `8 Hz`. -   The bottom line is prefaced with `Aux` as it tends to provide more     information about the assignment and/or current state of the Aux     button. In the example above, this patch seems to toggle the     waveform being used an oscillator, with a `Sine Wave` currently in     use. 
 
@@ -301,7 +301,7 @@ On this primary screen, each line tends to show particular information related t
 
  The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. 
 
-> **NOTE:** In this section, terms specific to the MIDI protocol will > have quotation marks around them. As this jargon predates Organelle, > we would suggest consulting a general resource on MIDI if the terms > aren't clear to you. > > **NOTE:** These MIDI assignments are labeled "defaults" as you can > override them in your own patches. For more on making patches, see > chapter five. 
+> **NOTE:** In this section, terms specific to the MIDI protocol will > have quotation marks around them. As this jargon predates Organelle, > we would suggest consulting a general resource on MIDI if the terms > aren't clear to you. > > **NOTE:** These MIDI assignments are labeled "defaults" as you can > override them in your own patches. For more on making patches, see > chapter five. 
 
 #### Outgoing MIDI 
 
@@ -311,21 +311,21 @@ With the exception of the Selector knob and the Volume knob, all of Organelle's 
 
 ##### The Keys 
 
-The 24 keys (not including the Aux button on the far left) transmit "note on" messages. The leftmost key uses note number `60` ("middle C," or "C3" in most MIDI systems), and the rightmost key uses note number `83` ("B4"), with all keys in between following this scheme. 
+The 24 keys (not including the Aux button on the far left) transmit "note on" messages. The leftmost key uses note number `60` ("middle C," or "C3" in most MIDI systems), and the rightmost key uses note number `83` ("B4"), with all keys in between following this scheme. 
 
-When a key is pressed down, a "velocity" of `100` is transmitted. When a key is released, a "velocity" of `0` (zero) is sent. 
+When a key is pressed down, a "velocity" of `100` is transmitted. When a key is released, a "velocity" of `0` (zero) is sent. 
 
 ##### The Knobs 
 
-Knobs 1, 2, 3, and 4 transmit "control change" messages using controller numbers `21`, `22`, `23`, and `24`, respectively. The full range of controller values (from `0` to `127`) is utilized. 
+Knobs 1, 2, 3, and 4 transmit "control change" messages using controller numbers `21`, `22`, `23`, and `24`, respectively. The full range of controller values (from `0` to `127`) is utilized. 
 
 ##### The Aux Button 
 
-The Aux button transmits momentary "control change" messages using controller number `25`. When the button is pressed down, a controller value of `100` is transmitted. When the button is released, a controller value of `0` (zero) is sent. 
+The Aux button transmits momentary "control change" messages using controller number `25`. When the button is pressed down, a controller value of `100` is transmitted. When the button is released, a controller value of `0` (zero) is sent. 
 
 ##### The Pedal Port 
 
-A pedal connected to Organelle's `Pedal` port transmits two sets of "control change" messages. 
+A pedal connected to Organelle's `Pedal` port transmits two sets of "control change" messages. 
 
 Controller number `64` transmits a controller value of `0` (zero) for any received signal below `64`, and a controller value of `127` is sent for any received signal of `64` or above. This discrete, threshold behavior is particularly good for sustain-/damper-style pedals. 
 
