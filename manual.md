@@ -1,4 +1,4 @@
-# Quick-start Guide !! Hi dudes
+# Quick-start Guide
 
 ### Let's get sound. Now! 
 
@@ -20,7 +20,8 @@ If your hardware unit is running a version earlier than v2.1, you should update 
 
  Along with this card, there are two main items in the box you just opened. 
 
--   **Your Organelle.** Also note that a tiny white USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life. -   **Its power adapter.** While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your     wall socket. 
+-   **Your Organelle.** Also note that a tiny white USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life. 
+-   **Its power adapter.** While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your     wall socket. 
 
 ------------------------------------------------------------------------ 
 
