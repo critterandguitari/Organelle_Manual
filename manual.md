@@ -607,7 +607,7 @@ Do these things with:
 > **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset.
 
 
-###Synching Instruments
+### Synching Instruments
 #### Access Point
 Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
 
@@ -634,7 +634,7 @@ Open a tempo-based patch and hear how your devices play in sync. The tempo indic
 ### File Management with the Organelle's Web Server
 Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. 
 
-####Add a Patch
+#### Add a Patch
 1.	Join Organelle to the same network as your computer.
 2. Once connected, start the web server by opening a browser and entering http://organelle.local
 3. Compress a patch folder on your computer to a .zip file.
@@ -644,12 +644,12 @@ Using another computer's browser, we can add or remove patches and/or samples. T
 7. There will be a corresponding install file. Open that to unzip the compressed file. The remaining .zip file will be automatically deleted. 
 8. Run the patch!
 
-####Swapping WAV Files
+#### Swapping WAV Files
 A patch's WAV files can be viewed and previewed in the web browser by accessing that patch's `Sounds` folder. When swapping multiple samples in a patch, it is easiest to have the new samples follow the same format as exisiting samples (1.wav, 2.wav, etc...). 
 
 1. Remove the exisiting .wav files in a patch by selecting all the necessary check boxes and selecting the `Delete` button at the top of the browser.
 2. Click `Upload` and select all desired samples to add to the patch. 
 3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
 
-####More Info
+#### More Info
 It is possible to connect multiple Organelles to the same network. Organelle-2.local
