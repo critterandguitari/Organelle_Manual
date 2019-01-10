@@ -313,6 +313,26 @@ On this primary screen, each line tends to show particular information related t
 ## 3.2 Organelle's Default MIDI Setup 
 
  The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. 
+ 
+ -------new stuff starting here--------
+ 
+The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). Either MIDI input or output can even be disabled. 
+
+When using a MIDI controller, it may be desirable to specify the device number. This can be set in the `MIDI Setup` menu as well.
+
+TO ADD:
+
+-	allow additional midi connections
+
+-	Better MIDI support for multiple devices and devices that didn’t play well with the Organelle previously.
+
+-	midi setups specific to patches vs global
+
+-	use alsa by defaut
+
+> **NOTE:** MIDI-Config.txt is no longer used for configuration.
+
+----new stuff over---- 
 
 > **NOTE:** In this section, terms specific to the MIDI protocol will have quotation marks around them. As this jargon predates Organelle, we would suggest consulting a general resource on MIDI if the terms aren't clear to you.  
 
@@ -415,6 +435,12 @@ As has probably become clear by now, Organelle will only work properly while a U
 ### General Information 
 
 Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. 
+
+----new stuff here------
+
+Previous Organelles shipped with white 4GB USB drives. These have since been replaced by Sandisk 16GB USB drives.
+
+	---end new stuff-----
 
 -   This USB disk should be formatted with a FAT file system, often     associated with MS-DOS. 
 -   This USB drive must contain a folder called `Patches` at its     top-level. (This name is case-sensitive.) 
@@ -592,7 +618,32 @@ Just a few parting notes on this mode of operation.
 
 -   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
-# WiFi
+--------------------------\/---new
+## 6. Organelle and feet
+
+
+### Using the Footswitch to Switch Patches
+
+With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). With a favorites folder enabled, a press and release of the footswitch will jump to the next patch in the patch list. To enable this function:
+
+1. Create a favorites folder.
+2. Arrange your patches in your favorite order.
+3. In Organelle, go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to Favorites.
+4. Scroll down and click `Save`.
+
+### Customizing Expression Pedal Range
+
+If you want to define the beginning and ending of your expression pedal's range, return to the `Pedal Setup` menu and:
+
+1. Select `Expr Min:`
+2. Turn the encoder to declare the minimum output value of the expression pedal as it is interpreted by Organelle. Click the encoder to confirm the value.
+3. Do the same for `Expr Max:` if desired. 
+4. Scroll down and click `Save`.
+
+
+--------------------------^---new
+
+# 7. Features Accessable with WiFi
 
 Use WiFi to:
 
@@ -613,7 +664,7 @@ Organelle's Access Point (AP) creates its own WiFi network that can be discovere
 
 The default network name will be 'Organelle' and the default password will be 'coolmusic.'
 	
-1. Open `Settings` > `WiFi Setup`
+1. Open `Settings` > `WiFi Setup`.
 2. Select `Start AP`. Once Organelle's network is created the screen will read 'Connected Organelle' at the top.
 3. Connect other devices to your new 'Organelle' network.
 
@@ -632,7 +683,7 @@ We'll connect the Organelle to our WiFi network to sync with another instrument.
 Open a tempo-based patch and hear how your devices play in sync. The tempo indication on Organelle screen should read something like `120 BPM LINK`.
 
 ### File Management with the Organelle's Web Server
-Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. 
+Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. With OS v3.1 comes a new software installer, an upgrade from the last Organelle OS.
 
 #### Add a Patch
 1.	Join Organelle to the same network as your computer.
