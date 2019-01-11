@@ -440,7 +440,7 @@ Patches are run directly from an attached USB drive. This could be the flash dri
 
 Previous Organelles shipped with white 4GB USB drives. These have since been replaced by Sandisk 16GB USB drives.
 
-	---end new stuff-----
+---end new stuff-----
 
 -   This USB disk should be formatted with a FAT file system, often     associated with MS-DOS. 
 -   This USB drive must contain a folder called `Patches` at its     top-level. (This name is case-sensitive.) 
@@ -619,17 +619,18 @@ Just a few parting notes on this mode of operation.
 -   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
 --------------------------\/---new
+
+-	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
+
 ## 6. Organelle and feet
 
 
 ### Using the Footswitch to Switch Patches
 
-With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). With a favorites folder enabled, a press and release of the footswitch will jump to the next patch in the patch list. To enable this function:
+With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
 
-1. Create a favorites folder.
-2. Arrange your patches in your favorite order.
-3. In Organelle, go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to Favorites.
-4. Scroll down and click `Save`.
+1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
+2. Scroll down and click `Save`.
 
 ### Customizing Expression Pedal Range
 
