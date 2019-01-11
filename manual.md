@@ -328,7 +328,7 @@ TO ADD:
 
 -	midi setups specific to patches vs global
 
--	use alsa by defaut
+OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from the previously used OSS. This allows for MIDI setups to be specific to patches.
 
 > **NOTE:** MIDI-Config.txt is no longer used for configuration.
 
