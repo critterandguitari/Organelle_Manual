@@ -10,7 +10,7 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
  Before we get started, please note that this version of the Organelle manual is for hardware units running version 2.1 (v2.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see chapter three). 
 
-If your hardware unit is running a version earlier than v2.1, you should update your Organelle OS. You can download the update patch here. 
+If your hardware unit is running a version earlier than v2.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
 > **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v2.1. 
 
@@ -20,7 +20,7 @@ If your hardware unit is running a version earlier than v2.1, you should update 
 
  Along with this card, there are two main items in the box you just opened. 
 
--   **Your Organelle.** Also note that a tiny white USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life. 
+-   **Your Organelle.** Also note that a tiny USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life. 
 -   **Its power adapter.** While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your     wall socket. 
 
 ------------------------------------------------------------------------ 
@@ -97,7 +97,7 @@ A basic understanding of audio can only help. And MIDI (musical instrument digit
 
 -   If you are looking to load additional patches into Organelle, then chapter four will also be useful to you. (And again, visiting [organelle.io](http://organelle.io) would be a good place to start your patch search.) 
 
--   If you want to edit patches or even create some patches of your own,     chapter five will be essential. 
+-   If you want to edit patches or even create some patches of your own, chapter five will be essential. 
 
 -   Finally, the various appendices can be useful to everyone. 
 
@@ -123,9 +123,9 @@ If you have turned on Organelle, then you already have some familiarity with its
 
 ![](Ch2%20-%201%20backpanel.png) 
 
-Again, our orientation would be upside down if you walked around to the back of the unit and directly faced the back panel. We are assuming that you standing in front of Organelle, just as you will be when operating it. From that position, you would access the back panel either by leaning your head forward or by tilting Organelle upward. 
+Again, our orientation would be upside down if you walked around to the back of the unit and directly faced the back panel. We are assuming that you are standing in front of Organelle, just as you will be when operating it. From that position, you would access the back panel either by leaning your head forward or by tilting Organelle upward. 
 
--   The headphone port is an 1/8" TRS (stereo) jack. It delivers the     stereo audio output of your current patch, as scaled by the     `Vol`(ume) knob. 
+-   The headphone port is an 1/8" TRS (stereo) jack. It delivers the stereo audio output of your current patch, as scaled by the     `Vol`(ume) knob. 
 
 -   The `L`(eft) and `R`(ight) `Out`(put) ports are both 1/4" TS (mono) jacks. They deliver the left and right audio outputs of your current patch, as scaled by the `Vol`(ume) knob. 
 
@@ -159,7 +159,7 @@ Compared to the back panel, the right-side panel is downright simple, housing tw
 
 The main face is both Organelle's primary interface with you and the place that you will spend the most time. While the other panels are critical when Organelle is being setup or when you are altering its configuration, the main face is the operations center for when you are actively running the show. 
 
--   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assign to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
+-   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
 
 -   Organelle's display provides a window into its microcomputer brain,     serving as the on-board method of monitoring and adjusting both the     system itself and your patches. 
 
