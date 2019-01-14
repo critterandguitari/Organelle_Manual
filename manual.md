@@ -660,7 +660,7 @@ This window helpfully suggests that you run the command `startx` to start up the
 
 > **NOTE:** Booting Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
 
-![](Ch6%20-%201%20screen.png) 
+![](Ch7%20-%201%20screen.png) 
 
 The options on this screen are fairly sparse. This matches the character of the running operating system, which has been stripped down in favor of achieving the most stable audio performance. There are four elements here. 
 
@@ -673,7 +673,7 @@ The options on this screen are fairly sparse. This matches the character of the 
 
 While you can navigate the file system with the keyboard and mouse, the best way to load a patch is to do it from Organelle's hardware. By using the Selector encoder to choose and load a patch, you will then see the patch visually loaded by Organelle along with a crucial helper patch. 
 
-![](Ch6%20-%202%20mother.png) 
+![](Ch7%20-%202%20mother.png) 
 
 The Organelle unit itself is now functioning as we would normally expect it to: the patch has been loaded, Organelle's hardware display has shifted to the patch information screen, and audio can now be produced. 
 
@@ -717,8 +717,9 @@ Just a few parting notes on this mode of operation.
 -	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
 		-[showfavs.png goes here]
+![](Ch7%20-%203%20showfavs.png)
 		-[favourites.png goes here]
-![favourites.png](https://drive.google.com/file/d/1Jv9zlAqfy-zk808b0BVVIPwdZZGvTxG6/view?usp=sharing "Logo Title Text 1") 
+![](Ch7%20-%204%20favourites.png) 
 
 
 
