@@ -141,7 +141,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 -   The HDMI port delivers the video output of Organelle's internal     microcomputer. \[For additional information on using the HDMI port, see chapter five.\] 
 
--   The microSD card slot contains a card that acts as the internal     microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. 
+-   The microSD card slot contains a card that acts as the internal     microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
 
 -   The power port (labeled `9VDC`) is for connection to Organelle's own power supply. 
 
@@ -322,13 +322,15 @@ When using a MIDI controller, it may be desirable to specify the device number. 
 
 TO ADD:
 
--	allow additional midi connections
+-	allow additional midi connections, set up mutliple controllers, link to forum thread
 
 -	Better MIDI support for multiple devices and devices that didn’t play well with the Organelle previously.
 
 -	midi setups specific to patches vs global
 
-OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from the previously used OSS. This allows for MIDI setups to be specific to patches.
+OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from the previously used OS. This allows for MIDI setups to be specific to patches.
+
+For more information on custom MIDI setups for Organelle see [this forum post](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
 
 > **NOTE:** MIDI-Config.txt is no longer used for configuration.
 
@@ -336,7 +338,7 @@ OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. T
 
 > **NOTE:** In this section, terms specific to the MIDI protocol will have quotation marks around them. As this jargon predates Organelle, we would suggest consulting a general resource on MIDI if the terms aren't clear to you.  
 
-> **NOTE:** These MIDI assignments are labeled "defaults" as you can override them in your own patches. For more on making patches, see chapter five. 
+> **NOTE:** These MIDI assignments are labeled "defaults" as you can override them in your own patches. For more on making patches, see [chapter five](#5). 
 
 #### Outgoing MIDI 
 
@@ -524,7 +526,10 @@ Here are a couple of other procedures and facts to bearing in mind while working
 -   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
-# 5. Editing and Creating Patches
+## 4.4 A Secotion <a name="4.4"></a>
+
+
+# 5. Editing and Creating Patches <a name="5"></a>
 
 ## Using Organelle as a computer. 
 
@@ -622,7 +627,7 @@ Just a few parting notes on this mode of operation.
 
 -	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
-## 6. Organelle and feet
+# 6. Organelle and feet
 
 
 ### Using the Footswitch to Switch Patches
