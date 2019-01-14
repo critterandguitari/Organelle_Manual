@@ -8,11 +8,11 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 ## WAIT AM I IN THE RIGHT PLACE? 
 
- Before we get started, please note that this version of the Organelle manual is for hardware units running version 2.1 (v2.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see chapter three). 
+ Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see chapter three). 
 
-If your hardware unit is running a version earlier than v2.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
+If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
-> **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v2.1. 
+> **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v3.1. 
 
 ------------------------------------------------------------------------ 
 
@@ -284,7 +284,7 @@ To engage one of these options, follow the same procedure as loading a patch: se
 -   `Shutdown` safely prepares Organelle to be powered off. The display will notify you when it is safe to unplug the power supply from the unit. (Once the unit has been shut down, you must remove and reconnect power to start using it again.)
 -   `MIDI Channel` sets the default channel for outgoing MIDI messages and the expected channel for incoming MIDI messages. (After selecting this option and pressing down the Selector encoder, another screen allows the setting of the `MIDI Channel` with the Selector. Pressing the Selector again returns to the system menu.) 
 -   `Save` stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
--   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
+-   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. When recording sound to a sampler/recorder patch, `Save New` will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
 -   *Custom scripts* can also appear at the end of this menu. 
 
 #### Patch Information Screen 
@@ -318,7 +318,14 @@ On this primary screen, each line tends to show particular information related t
  
 The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). Either MIDI input or output can even be disabled. 
 
+	[midisetuphighlighted.png goes here]
+	[midi setup1.png goes here]
+
 When using a MIDI controller, it may be desirable to specify the device number. This can be set in the `MIDI Setup` menu as well.
+	
+	[midi setup2.png goes here]
+
+To see all availble MIDI related options on Organelle, scroll up to  the system menu and browse the submenus for your desired function.
 
 TO ADD:
 
@@ -404,7 +411,7 @@ Just as they are displayed in the patches menu, all currently available patches 
 
 Any other MIDI message is passed directly to the current patch. If the patch is configured to handle that particular message, it will respond as configured. If the patch is not listening for that message, then nothing will happen. 
 
------------------------------------------------------------------------- 
+------------------------------------------------------------------------
 
 ### Using a USB MIDI Device 
 
@@ -426,6 +433,8 @@ As was mentioned in an earlier chapter, [organelle.io](http://organelle.io) is t
 Finding and downloading Organelle-ready patches is easy enough. To actually use these patches, however, requires getting them from a computer to our properly formatted USB drive, which can then be connected to Organelle for running our newfound patches. (And yes, that computer could be running Windows, Macintosh, Linux, or some other operating system. No additional software is required; the computer is just being used to download files, possibly decompress them, and then copy their folders to the USB drive.) 
 
 In this chapter, we'll look at how to work with Organelle's USB drive on a computer. But to get there, we must begin with how that drive needs to be configured, and we'll end with a few extra notes on USB usage with Organelle. 
+
+Since OS v3.0, patches and WAVs can be added and removed over WiFi. For more info, see [Chapter 5]("5").
 
 With this information in hand, we'll be able to expand our patch library. Here's to growing our set of options. 
 
@@ -526,10 +535,92 @@ Here are a couple of other procedures and facts to bearing in mind while working
 -   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
-## 4.4 A Secotion <a name="4.4"></a>
+## 4.4 A Section <a name="4.4"></a>
 
+# 5. Features Accessable with WiFi <a name="5"></a>
 
-# 5. Editing and Creating Patches <a name="5"></a>
+Use WiFi to:
+
+-	Sync tempo between Organelle and external instruments using Link, and
+-	Manage files over Organelle's web server.
+
+Do these things with:
+
+-	Organelle's wireless Access Point, or
+-	Over an existing WiFi network.
+
+> **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset.
+
+There is also a [video version](https://youtu.be/o2oqqbMc40g) of this chapter demonstrating various WiFi functions.
+
+## 5.1 Synching Instruments
+### Access Point
+Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
+
+The default network name will be 'Organelle' and the default password will be 'coolmusic.'
+	
+1. Open `Settings` > `WiFi Setup`.
+2. Select `Start AP`. Once Organelle's network is created the screen will read 'Connected Organelle' at the top.
+3. Connect other devices to your new 'Organelle' network.
+
+### Sync with an Exisiting WiFi Network
+We'll connect the Organelle to our WiFi network to sync with another instrument. This is essentially the same method as our Access Point but we'll need to edit one file on the USB drive.
+
+1. Eject the USB drive from your Organelle.
+2. Insert the drive into a computer and find `wifi.txt` in the drive's root directory.
+3. There are two lines of text in the document. The first line is the network name Organelle will be looking for. The second line is the corresponding password.
+4. Save the file and close it.
+5. Eject the drive and re-insert it into Organelle.
+6. Go to `Storage` > `Reload`.
+7. Open `Settings` > `WiFi Setup`.
+8. Select your network and allow a moment to connect.
+
+Open a tempo-based patch and hear how your devices play in sync. The tempo indication on Organelle screen should read something like `120 BPM LINK`.
+
+## 5.2 File Management with the Organelle's Web Server
+Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. With OS v3.1 comes a new software installer, an upgrade from the last Organelle OS.
+
+### Add a Patch
+1.	Join Organelle to the same network as your computer.
+2. Once connected, start the web server by opening a browser and entering http://organelle.local
+3. Compress a patch folder on your computer to a .zip file.
+4. Enter the `Patches` folder on Organelle's web server. 
+5. Upload your zipped patch.
+6. On Organelle, scroll to `Storage` > `Reload` to view the new file in Organelle's patch list.
+7. There will be a corresponding install file. Open that to unzip the compressed file. The remaining .zip file will be automatically deleted. 
+8. Run the patch!
+
+### Swapping WAV Files
+A patch's WAV files can be viewed and previewed in the web browser by accessing that patch's `Sounds` folder. When swapping multiple samples in a patch, it is easiest to have the new samples follow the same format as exisiting samples (1.wav, 2.wav, etc...). 
+
+1. Remove the exisiting .wav files in a patch by selecting all the necessary check boxes and selecting the `Delete` button at the top of the browser.
+2. Click `Upload` and select all desired samples to add to the patch. 
+3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
+
+### More Info
+It is possible to connect multiple Organelles to the same network. Organelle-2.local
+
+# 6. Using a Footswitch/Expression Pedal
+
+### Using the Footswitch to Switch Patches
+
+With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
+
+	[pedal setup.png goes here]
+
+1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
+2. Scroll down and click `Save`.
+
+### Customizing Expression Pedal Range
+
+If you want to define the beginning and ending of your expression pedal's range, return to the `Pedal Setup` menu and:
+
+1. Select `Expr Min:`
+2. Turn the encoder to declare the minimum output value of the expression pedal as it is interpreted by Organelle. Click the encoder to confirm the value.
+3. Do the same for `Expr Max:` if desired. 
+4. Scroll down and click `Save`.
+
+# 7. Editing and Creating Patches <a name="7"></a>
 
 ## Using Organelle as a computer. 
 
@@ -623,90 +714,11 @@ Just a few parting notes on this mode of operation.
 
 -   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
---------------------------\/---new
-
 -	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
-# 6. Organelle and feet
+		-[showfavs.png goes here]
+		-[favourites.png goes here]
+![favourites.png](https://drive.google.com/file/d/1Jv9zlAqfy-zk808b0BVVIPwdZZGvTxG6/view?usp=sharing "Logo Title Text 1") 
 
 
-### Using the Footswitch to Switch Patches
 
-With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
-
-1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
-2. Scroll down and click `Save`.
-
-### Customizing Expression Pedal Range
-
-If you want to define the beginning and ending of your expression pedal's range, return to the `Pedal Setup` menu and:
-
-1. Select `Expr Min:`
-2. Turn the encoder to declare the minimum output value of the expression pedal as it is interpreted by Organelle. Click the encoder to confirm the value.
-3. Do the same for `Expr Max:` if desired. 
-4. Scroll down and click `Save`.
-
-
---------------------------^---new
-
-# 7. Features Accessable with WiFi
-
-Use WiFi to:
-
--	Sync tempo between Organelle and external instruments using Link, and
--	Manage files over Organelle's web server.
-
-Do these things with:
-
--	Organelle's wireless Access Point, or
--	Over an existing WiFi network.
-
-> **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset.
-
-
-### Synching Instruments
-#### Access Point
-Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
-
-The default network name will be 'Organelle' and the default password will be 'coolmusic.'
-	
-1. Open `Settings` > `WiFi Setup`.
-2. Select `Start AP`. Once Organelle's network is created the screen will read 'Connected Organelle' at the top.
-3. Connect other devices to your new 'Organelle' network.
-
-#### Sync with an Exisiting WiFi Network
-We'll connect the Organelle to our WiFi network to sync with another instrument. This is essentially the same method as our Access Point but we'll need to edit one file on the USB drive.
-
-1. Eject the USB drive from your Organelle.
-2. Insert the drive into a computer and find `wifi.txt` in the drive's root directory.
-3. There are two lines of text in the document. The first line is the network name Organelle will be looking for. The second line is the corresponding password.
-4. Save the file and close it.
-5. Eject the drive and re-insert it into Organelle.
-6. Go to `Storage` > `Reload`.
-7. Open `Settings` > `WiFi Setup`.
-8. Select your network and allow a moment to connect.
-
-Open a tempo-based patch and hear how your devices play in sync. The tempo indication on Organelle screen should read something like `120 BPM LINK`.
-
-### File Management with the Organelle's Web Server
-Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. With OS v3.1 comes a new software installer, an upgrade from the last Organelle OS.
-
-#### Add a Patch
-1.	Join Organelle to the same network as your computer.
-2. Once connected, start the web server by opening a browser and entering http://organelle.local
-3. Compress a patch folder on your computer to a .zip file.
-4. Enter the `Patches` folder on Organelle's web server. 
-5. Upload your zipped patch.
-6. On Organelle, scroll to `Storage` > `Reload` to view the new file in Organelle's patch list.
-7. There will be a corresponding install file. Open that to unzip the compressed file. The remaining .zip file will be automatically deleted. 
-8. Run the patch!
-
-#### Swapping WAV Files
-A patch's WAV files can be viewed and previewed in the web browser by accessing that patch's `Sounds` folder. When swapping multiple samples in a patch, it is easiest to have the new samples follow the same format as exisiting samples (1.wav, 2.wav, etc...). 
-
-1. Remove the exisiting .wav files in a patch by selecting all the necessary check boxes and selecting the `Delete` button at the top of the browser.
-2. Click `Upload` and select all desired samples to add to the patch. 
-3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
-
-#### More Info
-It is possible to connect multiple Organelles to the same network. Organelle-2.local
