@@ -29,15 +29,15 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
  For the simplest configuration, follow these steps. 
 
-1.  **First connect the power adapter to a power outlet, and then     connect its plug to the leftmost port on the back of the     Organelle.**     ![](Ch0%20-%201%20powerplug.png)    Once the Organelle is receiving power, it will begin booting up. The     screen will indicate when this process is done. 
+1.  **First connect the power adapter to a power outlet, and then connect its plug to the leftmost port on the back of the Organelle.** ![](Ch0%20-%201%20powerplug.png) Once the Organelle is receiving power, it will begin booting up. The screen will indicate when this process is done. 
 
-2.  **With the volume all the way down, connect your headphones or audio output.**    ![](Ch0%20-%202%20audioOutputs.png)     The knob furthest on the right of Organelle controls its output     `Vol`(ume). Start with this knob all the way to the left (no sound). From the front of the Organelle, peer over the back of the unit (don't worry; the port labels will be upright from this vantage). The leftmost 1/8" jack is for headphones, and the following two 1/4" jacks are for left and right audio output, respectively. 
+2.  **With the volume all the way down, connect your headphones or audio output.** ![](Ch0%20-%202%20audioOutputs.png) The knob furthest on the right of Organelle controls its output `Vol`(ume). Start with this knob all the way to the left (no sound). From the front of the Organelle, peer over the back of the unit (don't worry; the port labels will be upright from this vantage). The leftmost 1/8" jack is for headphones, and the following two 1/4" jacks are for left and right audio output, respectively. 
 
-3.  **Load a patch.**     ![](Ch0%20-%203%20Encoder-NOarrow.png)     Immediately to the left of the volume knob is the *Selector*     encoder. Turn this encoder to select one of the listed patches, and     then press down the top of the encoder to load the patch.      
+3.  **Load a patch.** ![](Ch0%20-%203%20Encoder-NOarrow.png) Immediately to the left of the volume knob is the *Selector* encoder. Turn this encoder to select one of the listed patches, and then press down the top of the encoder to load the patch.      
 
-4.  **Play!** The wooden keys that are arranged in a piano-layout     represent two octaves of notes. Play them, adjust some parameters     (via the four knobs on the left), and enjoy! And if you want to try     a different patch, simply turn the Selector encoder and select     another patch.      
+4.  **Play!** The wooden keys that are arranged in a piano-layout represent two octaves of notes. Play them, adjust some parameters (via the four knobs on the left), and enjoy! And if you want to try a different patch, simply turn the Selector encoder and select another patch.      
 
-5.  **When you have had enough fun for now, properly shut down     Organelle.** This is achieved by turning the Selector encoder so that the menu screen appears again. From here, scroll upward (by     turning the encoder to the left) until you go past the `PATCHES` and reach the `SYSTEM` options. Select the first option, `Shutdown`, and then press down the encoder to engage this function. Finally, Organelle's display will notify you when it is safe to unplug the power supply from the unit. 
+5.  **When you have had enough fun for now, properly shut down Organelle.** This is achieved by turning the Selector encoder so that the menu screen appears again. From here, scroll upward (by turning the encoder to the left) until you go past the `PATCHES` and reach the `SYSTEM` options. Select the first option, `Shutdown`, and then press down the encoder to engage this function. Finally, Organelle's display will notify you when it is safe to unplug the power supply from the unit. 
 
 # 1. Organelle Concepts 
 
@@ -93,7 +93,7 @@ A basic understanding of audio can only help. And MIDI (musical instrument digit
 
 -   Regardless of your intentions, the quick-start (chapter zero) and concepts information (chapter one) will benefit you. 
 
--   If you are satisfied with the included patches alone, the     information on general hardware configuration (chapter two), system     operation (chapter three), and the factory patch listing     (appendix A) will all be relevant to you. 
+-   If you are satisfied with the included patches alone, the information on general hardware configuration (chapter two), system operation (chapter three), and the factory patch listing     (appendix A) will all be relevant to you. 
 
 -   If you are looking to load additional patches into Organelle, then chapter four will also be useful to you. (And again, visiting [organelle.io](http://organelle.io) would be a good place to start your patch search.) 
 
@@ -125,11 +125,11 @@ If you have turned on Organelle, then you already have some familiarity with its
 
 Again, our orientation would be upside down if you walked around to the back of the unit and directly faced the back panel. We are assuming that you are standing in front of Organelle, just as you will be when operating it. From that position, you would access the back panel either by leaning your head forward or by tilting Organelle upward. 
 
--   The headphone port is an 1/8" TRS (stereo) jack. It delivers the stereo audio output of your current patch, as scaled by the     `Vol`(ume) knob. 
+-   The headphone port is an 1/8" TRS (stereo) jack. It delivers the stereo audio output of your current patch, as scaled by the `Vol`(ume) knob. 
 
 -   The `L`(eft) and `R`(ight) `Out`(put) ports are both 1/4" TS (mono) jacks. They deliver the left and right audio outputs of your current patch, as scaled by the `Vol`(ume) knob. 
 
--   The single `In`(put) `LR` port is a 1/4" TRS (stereo) jack. It     receives any stereo audio input that you would like fed into your     current patch. 
+-   The single `In`(put) `LR` port is a 1/4" TRS (stereo) jack. It receives any stereo audio input that you would like fed into your current patch. 
 
 > **NOTE:** If a 1/4" TS cable is connected, any incoming signal will only be received by the left input. 
 
@@ -139,9 +139,9 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 > **NOTE:** If an expression pedal is connected, your patch should > receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
 
--   The HDMI port delivers the video output of Organelle's internal     microcomputer. \[For additional information on using the HDMI port, see chapter five.\] 
+-   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see chapter five.\] 
 
--   The microSD card slot contains a card that acts as the internal     microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
+-   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
 
 -   The power port (labeled `9VDC`) is for connection to Organelle's own power supply. 
 
@@ -161,13 +161,13 @@ The main face is both Organelle's primary interface with you and the place that 
 
 -   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
 
--   Organelle's display provides a window into its microcomputer brain,     serving as the on-board method of monitoring and adjusting both the     system itself and your patches. 
+-   Organelle's display provides a window into its microcomputer brain, serving as the on-board method of monitoring and adjusting both the system itself and your patches. 
 
 -   The *Selector* encoder accompanies Organelle's display because they are dependent upon one another. While a patch is loaded, turning the Selector causes the display to show the menu screen. By leaving the Selector alone for a few seconds, the display will revert to the patch information screen. 
 
 > **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches. 
 
--   The `Vol`(ume) knob governs the potential audio output level of     Organelle. The knob ranges from silence (in audio terms, -∞) at the     far left to no attenuation (unity gain) at the far right. Any     adjustments to the Volume knob take effect immediately. 
+-   The `Vol`(ume) knob governs the potential audio output level of Organelle. The knob ranges from silence (in audio terms, -∞) at the far left to no attenuation (unity gain) at the far right. Any adjustments to the Volume knob take effect immediately. 
 
 -   The maple key at the far left and its accompanying LED comprise one special unit: the *Aux button*. By default, the Aux button does nothing, but each patch can be configured to use the input from the key for any type of mode switch or anything else. The LED has eight static states (off plus seven color options) and is generally used to provide the user with visual feedback of the Aux button's status. As with so much about patches, the function of this control will be anything the patch designer deems appropriate. 
 
@@ -271,14 +271,14 @@ At the top of the menu screen is the *system menu*. The top of this section is l
 
 To engage one of these options, follow the same procedure as loading a patch: select the desired option by turning the Selector and then press down on the top of the Selector. 
 
--   `Eject` safely unmounts an attached USB drive. The display will     notify you when it is safe to unplug the USB drive. 
+-   `Eject` safely unmounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
 -   `Reload` rescans the `Patches` folder of the attached USB drive and then refreshes Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
 -   `Info` displays the *system information screen*, which presents four pieces of information. (To exit this screen, turn the Selector left or right.) 
 
 ![](Ch3%20-%205%20system%20info%20screen.png) 
 
 -   `Version` represents the version number of Organelle's operating system.     
-	-   `MIDI` will list any recognized MIDI controllers that are         connected. When no controllers are connected, nothing will be         shown.     
+	-   `MIDI` will list any recognized MIDI controllers that are connected. When no controllers are connected, nothing will be shown.     
 	-   `USB drive` presents the ID number of the attached USB drive. When no drive is connected, nothing will be shown.     
 	-   `CPU` reports the current usage that the microcomputer's CPU is experiencing. This value is regularly updated. 
 -   `Shutdown` safely prepares Organelle to be powered off. The display will notify you when it is safe to unplug the power supply from the unit. (Once the unit has been shut down, you must remove and reconnect power to start using it again.)
@@ -299,12 +299,12 @@ On this primary screen, each line tends to show particular information related t
 
 -   The top line provides level meters. These are representations of the audio levels that are reaching the device's `I`(nputs) and those that are ending up at its `O`(utputs). Each meter is actually a stereo representation, with the top rows showing left levels and the bottom rows showing those for the right channels. 
 
-    In the example pictured above, the audio output seems to be of     similar strength on both the left and right channels. And no audio     input is being received at this moment in time. 
+    In the example pictured above, the audio output seems to be of similar strength on both the left and right channels. And no audio input is being received at this moment in time. 
 
 > **NOTE:** The on-screen output meter is operating in a "post fader" mode, where the displayed signal is scaled based on the unit's current volume setting. 
 
 -   The middle four lines are prefaced with `1`, `2`, `3`, and `4`, each representing that respective knob. Following the knob number is usually a short name for the parameter being altered and then a numeric representation of that parameter's current value. So in the example shown above, Knob 2 is controlling a parameter named `Vibrato Rate` that is current set to `8 Hz`. 
--   The bottom line is prefaced with `Aux` as it tends to provide more information about the assignment and/or current state of the Aux button. In the example above, this patch seems to toggle the     waveform being used an oscillator, with a `Sine Wave` currently in     use. 
+-   The bottom line is prefaced with `Aux` as it tends to provide more information about the assignment and/or current state of the Aux button. In the example above, this patch seems to toggle the waveform being used an oscillator, with a `Sine Wave` currently in use. 
 
 > **NOTE:** As was mentioned in the previous chapter, some factory > patches use the Selector encoder to switch the knobs through pages of parameter assignments. In this case, the middle lines of the on-board display (starting with `1`, `2`, `3`, and `4`) will be updated as the Selector encoder is turned and the knob assignments shift. The bottom line of the on-board display may also suggest that the Aux button returns you to the *HOME* menu. 
 
@@ -318,12 +318,13 @@ On this primary screen, each line tends to show particular information related t
  
 The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). Either MIDI input or output can even be disabled. 
 
-	[midisetuphighlighted.png goes here]
-	[midi setup1.png goes here]
+![](Ch3%20-%207%20midisetuphighlighted.png)
+
+![](Ch3%20-%208%20midisetup1.png)
 
 When using a MIDI controller, it may be desirable to specify the device number. This can be set in the `MIDI Setup` menu as well.
 	
-	[midi setup2.png goes here]
+![](Ch3%20-%209%20midisetup2.png)
 
 To see all availble MIDI related options on Organelle, scroll up to  the system menu and browse the submenus for your desired function.
 
@@ -417,7 +418,7 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
 
  Using a MIDI device with Organelle is rather painless but not "hot swappable." 
 
-1.  **Connect your USB MIDI device.** As long as a USB MIDI device     requires no special, proprietary driver, you need only to connect it to Organelle. This can be done via an open USB port either on     Organelle itself or on a USB hub that is connected to Organelle. 
+1.  **Connect your USB MIDI device.** As long as a USB MIDI device requires no special, proprietary driver, you need only to connect it to Organelle. This can be done via an open USB port either on Organelle itself or on a USB hub that is connected to Organelle. 
 2.  **Load the patch you want to use. If it was already loaded, please reload it.** A newly connected USB MIDI device will not be recognized by the currently loaded patch. Reloading a patch will recognize all currently connected USB MIDI devices. 
 
 That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
@@ -605,8 +606,8 @@ It is possible to connect multiple Organelles to the same network. Organelle-2.l
 ### Using the Footswitch to Switch Patches
 
 With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
-
-	[pedal setup.png goes here]
+	
+![](Ch6%20-%201%20pedalsetup.png)
 
 1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
 2. Scroll down and click `Save`.
@@ -707,20 +708,17 @@ By clicking on your loaded patch, it will move `mother.pd` to the background (wi
 Just a few parting notes on this mode of operation. 
 
 -   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see chapter three). 
--   **To create a new patch:** duplicate a simple patch in your     `Patches` folder, rename the new folder, and then open the contained `main.pd` patch for editing. (You could also create your own "new patch" template for this purpose.) 
--   **Explore the factory patches.** In addition to finding ideas and platforms that you can build upon, you will also encounter some     external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
+-   **To create a new patch:** duplicate a simple patch in your `Patches` folder, rename the new folder, and then open the contained `main.pd` patch for editing. (You could also create your own "new patch" template for this purpose.) 
+-   **Explore the factory patches.** In addition to finding ideas and platforms that you can build upon, you will also encounter some external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
 
 > **NOTE:** Externals that you encounter here are built for the Linux operating system that Organelle is running. If you are building patches on your own computer, these externals will only work if you are also running Linux (these compiled externals are platform-specific). 
 
--   **Do click the red "exit" button when you are done working in this     graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
+-   **Do click the red "exit" button when you are done working in this graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
 -	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
-		-[showfavs.png goes here]
 		
 ![](Ch7%20-%203%20showfavs.png)
-
-		-[favourites.png goes here]
 		
 ![](Ch7%20-%204%20favourites.png) 
 
