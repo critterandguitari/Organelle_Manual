@@ -717,8 +717,11 @@ Just a few parting notes on this mode of operation.
 -	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
 		-[showfavs.png goes here]
+		
 ![](Ch7%20-%203%20showfavs.png)
+
 		-[favourites.png goes here]
+		
 ![](Ch7%20-%204%20favourites.png) 
 
 
