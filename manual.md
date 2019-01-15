@@ -702,7 +702,7 @@ This window helpfully suggests that you run the command `startx` to start up the
 
 > **NOTE:** Booting Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
 > 
-> **NOTE:** It is also possible to edit patches from another computer in realtime, using VNC. For more informaiton on that, check out [this blog post] (https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
+> **NOTE:** It is also possible to edit patches from another computer in realtime, using VNC. For more informaiton on that, check out [this blog post](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
 ![](Ch7%20-%201%20screen.png) 
 
