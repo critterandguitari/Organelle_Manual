@@ -8,15 +8,27 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 ## WAIT AM I IN THE RIGHT PLACE? 
 
- Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see chapter three). 
+ Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see [Chapter Three] (3)). 
 
 If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
 > **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v3.1. 
 
 ------------------------------------------------------------------------ 
+## Contents
 
-### Package Manifest 
+-	[Package Manifest] (PM)
+-	[Getting Started] (0)
+-	[1. Organelle Concepts] (1)
+- 	[2. The Hardwar Unit] (2)
+- 	[3. Operating Organelle by Itself] (3)
+-  	[4. Managing Patches] (4)
+-	[5. Features Accessable with WiFi] (5)
+-	[6. Other Stuff in the Settings Menu] (6)
+-	[7. Editing and Creating Patches] (7)
+
+------------------------------------------------------------------------
+### <a name="PM"></a> Package Manifest 
 
  Along with this card, there are two main items in the box you just opened. 
 
@@ -25,7 +37,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 ------------------------------------------------------------------------ 
 
-### Getting Started 
+# <a name="0"></a> Getting Started 
 
  For the simplest configuration, follow these steps. 
 
@@ -39,7 +51,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 5.  **When you have had enough fun for now, properly shut down Organelle.** This is achieved by turning the Selector encoder so that the menu screen appears again. From here, scroll upward (by turning the encoder to the left) until you go past the `PATCHES` and reach the `SYSTEM` options. Select the first option, `Shutdown`, and then press down the encoder to engage this function. Finally, Organelle's display will notify you when it is safe to unplug the power supply from the unit. 
 
-# 1. Organelle Concepts 
+# 1. <a name="1"></a> Organelle Concepts 
 
 Again, welcome to the world of Organelle! As this instrument can work for people in many different ways and at multiple depths of operation, let us begin by getting a few ideas straight, starting with the most obvious question... 
 
@@ -103,7 +115,7 @@ A basic understanding of audio can only help. And MIDI (musical instrument digit
 
 And do realize that your uses of Organelle are likely to change over time. If a chapter is not important to you today, don't feel bad about that: the chapters are happy to wait for you. 
 
-# 2. The Hardware Unit 
+# <a name="2"></a> 2. The Hardware Unit 
 
 As we begin to explore the universe that Organelle makes available to us, we should start with Organelle's place in the physical universe: its hardware. 
 
@@ -139,7 +151,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 > **NOTE:** If an expression pedal is connected, your patch should > receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
 
--   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see chapter five.\] 
+-   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five] (5).\] 
 
 -   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
 
@@ -159,7 +171,7 @@ Compared to the back panel, the right-side panel is downright simple, housing tw
 
 The main face is both Organelle's primary interface with you and the place that you will spend the most time. While the other panels are critical when Organelle is being setup or when you are altering its configuration, the main face is the operations center for when you are actively running the show. 
 
--   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
+-   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see [Chapter Three] (3).\] 
 
 -   Organelle's display provides a window into its microcomputer brain, serving as the on-board method of monitoring and adjusting both the system itself and your patches. 
 
@@ -171,7 +183,7 @@ The main face is both Organelle's primary interface with you and the place that 
 
 -   The maple key at the far left and its accompanying LED comprise one special unit: the *Aux button*. By default, the Aux button does nothing, but each patch can be configured to use the input from the key for any type of mode switch or anything else. The LED has eight static states (off plus seven color options) and is generally used to provide the user with visual feedback of the Aux button's status. As with so much about patches, the function of this control will be anything the patch designer deems appropriate. 
 
--   After the Aux button, the 24 other maple keys work together as a group. As their piano-style layout may have indicated, these keys are for playing notes. By default, each key triggers a "note on" MIDI message when it is pressed down and a corresponding "note off" MIDI message when it is released. For patches that use note messages to trigger or affect audio output, these keys will be your primary performance vehicle. \[For information on the default MIDI operation of Organelle, see chapter three.\] 
+-   After the Aux button, the 24 other maple keys work together as a group. As their piano-style layout may have indicated, these keys are for playing notes. By default, each key triggers a "note on" MIDI message when it is pressed down and a corresponding "note off" MIDI message when it is released. For patches that use note messages to trigger or affect audio output, these keys will be your primary performance vehicle. \[For information on the default MIDI operation of Organelle, see [Chapter Three] (3).\] 
 
 ------------------------------------------------------------------------ 
 
@@ -219,11 +231,11 @@ This example uses headphones for audio output, a USB hub for connecting more tha
 
 ![](Ch2%20-%207%20ExternalDisplay+USBHub+ComputerPeripherals.png) 
 
-Connecting an HDMI monitor to Organelle shows the internal microcomputer's command-line interface and graphical user interface. \[For additional information on using the HDMI port, see chapter five.\] 
+Connecting an HDMI monitor to Organelle shows the internal microcomputer's command-line interface and graphical user interface. 
 
 Our USB drive is still connected, but it is now running through a class compliant USB hub. By adding a hub to our configuration, the number of USB devices we can connect grows to the capacity of the hub. Connecting an HDMI monitor assumes that you want to operate Organelle's microcomputer in a typical way, and this implies the use of peripherals, such as a mouse and keyboard. This necessitates the use of a USB hub. And even without using an HDMI monitor, a USB hub would be needed if you wanted to connect multiple MIDI controllers at once, etc. 
 
-# 3. Operating Organelle by Itself 
+# <a name="3"></a> 3. Operating Organelle by Itself 
 
  As we stated early on and as the configuration ideas have shown, Organelle is a fully capable stand-alone instrument. To use Organelle in this fashion requires understanding the workings of its internal operating system. By learning the options provided by Organelle's software along with the uses of the Selector encoder and the on-board display, you will be ready to travel and perform with Organelle alone. 
 
@@ -423,7 +435,7 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
 
 That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
 
-# 4. Managing Patches 
+# <a name="4"></a> 4. Managing Patches 
 
 ### Bringing additional patches from your computer to Organelle. 
 
@@ -536,9 +548,7 @@ Here are a couple of other procedures and facts to bearing in mind while working
 -   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
-## 4.4 A Section <a name="4.4"></a>
-
-# 5. Features Accessable with WiFi <a name="5"></a>
+# <a name="5"></a> 5. Features Accessable with WiFi
 
 Use WiFi to:
 
@@ -599,11 +609,36 @@ A patch's WAV files can be viewed and previewed in the web browser by accessing 
 3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
 
 ### More Info
-It is possible to connect multiple Organelles to the same network. Organelle-2.local
+It is possible to connect multiple Organelles to the same network. ___Organelle-2.local___
 
-# 6. Using a Footswitch/Expression Pedal
+# <a name="6"></a> 6. Other Stuff in the Settings Menu
 
-### Using the Footswitch to Switch Patches
+## 6.1 Inside Information
+Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
+
+|Label|Function|
+|---|---|
+|`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance.|
+|`USB Drive`| ___it says `sdal`. dont worry about it.___ |
+|`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
+|`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5] (5) for using WiFi on Organelle).|
+|`WiFi Network`| Which network, if any, is currently connectable.|
+|`Host Name`| The address for accessing the patch manager from a browser.|
+|`Patch`| The name of the patch currently running.|
+|`Patch Folder`| The folder the patches are stored in (most likely 'Patches').|
+|`User Root`| Where Organelle is looking for patches (most likely /usbdrive).|
+| `Version` | The currently installed operating system. |
+
+## 6.2 Choosing Favourites
+Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. 
+		
+![](Ch7%20-%203%20showfavs.png)
+
+Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
+
+![](Ch7%20-%204%20favourites.png) 
+
+## 6.3 Using the Footswitch to Switch Patches
 
 With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
 	
@@ -612,7 +647,7 @@ With OS v3.1, configuration for the foot pedal input has been expanded. By defau
 1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
 2. Scroll down and click `Save`.
 
-### Customizing Expression Pedal Range
+## 6.4 Customizing Expression Pedal Range
 
 If you want to define the beginning and ending of your expression pedal's range, return to the `Pedal Setup` menu and:
 
@@ -621,9 +656,15 @@ If you want to define the beginning and ending of your expression pedal's range,
 3. Do the same for `Expr Max:` if desired. 
 4. Scroll down and click `Save`.
 
-# 7. Editing and Creating Patches <a name="7"></a>
+## 6.5 Extras
 
-## Using Organelle as a computer. 
+___Extras are a thing (research underway)___
+
+___should probably mention the VNC remote patching again___
+
+# <a name="7"></a> 7. Editing and Creating Patches
+
+### Using Organelle as a computer. 
 
 ------------------------------------------------------------------------ 
 
@@ -639,7 +680,7 @@ Let's get visual. And peripheral.
 
 ------------------------------------------------------------------------ 
 
-### Keyboards and Mice
+## 7.1 Keyboards and Mice
 
 Connecting an HDMI monitor to Organelle is simple enough. But the function of the HDMI device is to provide the visual output of Organelle's functioning microcomputer. (As we will see very shortly, connecting only a monitor will show you, well, not much.) As with any computer, you need a keyboard and mouse actually interface with Organelle. 
 
@@ -651,7 +692,7 @@ Finally, we are talking about more and more USB devices being used with Organell
 
 ------------------------------------------------------------------------ 
 
-### Operating Organelle as a Computer  
+## 7.2 Operating Organelle as a Computer  
 
 After you have connected an HDMI monitor and powered it on, you will immediately see a semi-cryptic terminal window for text entry. To optimize performance, Organelle runs in this fashion (with no graphical user interface, or GUI) by default. 
 
@@ -660,6 +701,8 @@ This window helpfully suggests that you run the command `startx` to start up the
 **To start Organelle's graphical operation mode:** type `startx`, and then press the \[ENTER\]/\[RETURN\] key to execute the function. 
 
 > **NOTE:** Booting Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
+> 
+> **NOTE:** It is also possible to edit patches from another computer in realtime, using VNC. For more informaiton on that, check out [this blog post] (https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
 ![](Ch7%20-%201%20screen.png) 
 
@@ -707,7 +750,7 @@ By clicking on your loaded patch, it will move `mother.pd` to the background (wi
 
 Just a few parting notes on this mode of operation. 
 
--   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see chapter three). 
+-   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see [Chapter Three] (3)). 
 -   **To create a new patch:** duplicate a simple patch in your `Patches` folder, rename the new folder, and then open the contained `main.pd` patch for editing. (You could also create your own "new patch" template for this purpose.) 
 -   **Explore the factory patches.** In addition to finding ideas and platforms that you can build upon, you will also encounter some external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
 
@@ -715,12 +758,7 @@ Just a few parting notes on this mode of operation.
 
 -   **Do click the red "exit" button when you are done working in this graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
--	**Add patches as Favourites.** Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
 
-		
-![](Ch7%20-%203%20showfavs.png)
-		
-![](Ch7%20-%204%20favourites.png) 
 
 
 
