@@ -617,7 +617,7 @@ It is possible to connect multiple Organelles to the same network. ___Organelle-
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 
 |Label|Function|
-|---|---|
+|-------|-------|
 |`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance.|
 |`USB Drive`| ___it says `sdal`. dont worry about it.___ |
 |`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
