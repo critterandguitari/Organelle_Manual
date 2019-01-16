@@ -8,7 +8,7 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 ## WAIT AM I IN THE RIGHT PLACE? 
 
- Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see [Chapter Three] (#3)). 
+ Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see [Chapter Three](#3)). 
 
 If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
@@ -17,14 +17,14 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 ------------------------------------------------------------------------ 
 ## Contents
 
-[Package Manifest] (#PM)  
-[Getting Started] (#0)  
-1. [Organelle Concepts] (#1)  
-2. [The Hardware Unit] (#2)  
-3. [Operating Organelle by Itself] (#3)  
-4. [Managing Patches] (#4)  
-5. [Features Accessable with WiFi] (#5)  
-6. [Other Stuff in the Settings Menu] (#6)  
+[Package Manifest](#PM)  
+[Getting Started](#0)  
+1. [Organelle Concepts](#1)  
+2. [The Hardware Unit](#2)  
+3. [Operating Organelle by Itself](#3)  
+4. [Managing Patches](#4)  
+5. [Features Accessable with WiFi](#5)  
+6. [Other Stuff in the Settings Menu](#6)  
 7. [Editing and Creating Patches](#7)  
 
 ------------------------------------------------------------------------
@@ -151,7 +151,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 > **NOTE:** If an expression pedal is connected, your patch should > receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
 
--   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five] (#5).\] 
+-   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five](#5).\] 
 
 -   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
 
@@ -171,7 +171,7 @@ Compared to the back panel, the right-side panel is downright simple, housing tw
 
 The main face is both Organelle's primary interface with you and the place that you will spend the most time. While the other panels are critical when Organelle is being setup or when you are altering its configuration, the main face is the operations center for when you are actively running the show. 
 
--   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see [Chapter Three] (#3).\] 
+-   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see [Chapter Three](#3).\] 
 
 -   Organelle's display provides a window into its microcomputer brain, serving as the on-board method of monitoring and adjusting both the system itself and your patches. 
 
@@ -617,11 +617,11 @@ It is possible to connect multiple Organelles to the same network. ___Organelle-
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 
 |Label|Function|
-|:-------|:-------|
+|:---------------|:--------------|
 |`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance.|
 |`USB Drive`| It'll say `sda1` if one USB drive is connected. It'll say `sda2` if two USB drives are connected. |
 |`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
-|`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5] (#5) for using WiFi on Organelle).|
+|`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
 |`WiFi Network`| Which network, if any, is currently connectable.|
 |`Host Name`| The address for accessing the patch manager from a browser.|
 |`Patch`| The name of the patch currently running.|
@@ -750,7 +750,7 @@ By clicking on your loaded patch, it will move `mother.pd` to the background (wi
 
 Just a few parting notes on this mode of operation. 
 
--   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see [Chapter Three] (#3)). 
+-   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see [Chapter Three](#3)). 
 -   **To create a new patch:** duplicate a simple patch in your `Patches` folder, rename the new folder, and then open the contained `main.pd` patch for editing. (You could also create your own "new patch" template for this purpose.) 
 -   **Explore the factory patches.** In addition to finding ideas and platforms that you can build upon, you will also encounter some external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
 
