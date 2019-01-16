@@ -19,7 +19,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     padding-top: 12px;
     padding-bottom: 12px;
 }
-
+ul{
+ list-style-type: none;
+}
 :target:before {
 content:"";
 display:block;
@@ -53,7 +55,7 @@ img {
     <i class="fa fa-remove"></i>
   </a>
   <h4><b>Contents</b></h4>
-<ul data-toc="div.w3-main" data-toc-headings="h1,h2"></ul>
+<ul id="toc"></ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </nav>
@@ -79,7 +81,7 @@ img {
 
         <hr />
 
-
+        <div id="md"></div>
 
     </div>
   </div>
@@ -128,7 +130,7 @@ $( document ).ready(function() {
           $( "#md" ).html( marked(data) );
           $("#toc").toc({content: "#md", headings: "h1,h2"});
           // update all img tags
-          $("img").addClass("img-fluid");
+          //$("img").addClass("img-fluid");
     });
 });
 
