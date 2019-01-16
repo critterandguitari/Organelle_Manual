@@ -17,15 +17,15 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 ------------------------------------------------------------------------ 
 ## Contents
 
--	[Package Manifest] (#PM)
--	[Getting Started] (#0)
--	[1. Organelle Concepts] (#1)
-- 	[2. The Hardwar Unit] (#2)
-- 	[3. Operating Organelle by Itself] (#3)
--  	[4. Managing Patches] (#4)
--	[5. Features Accessable with WiFi] (#5)
--	[6. Other Stuff in the Settings Menu] (#6)
--	[7. Editing and Creating Patches] (#7)
+[Package Manifest] (#PM)  
+[Getting Started] (#0)  
+1. [Organelle Concepts] (#1)  
+2. [The Hardware Unit] (#2)  
+3. [Operating Organelle by Itself] (#3)  
+4. [Managing Patches] (#4)  
+5. [Features Accessable with WiFi] (#5)  
+6. [Other Stuff in the Settings Menu] (#6)  
+7. [Editing and Creating Patches](#7)  
 
 ------------------------------------------------------------------------
 ### <a name="PM"></a> Package Manifest 
@@ -619,7 +619,7 @@ Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The
 |Label|Function|
 |:-------|:-------|
 |`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance.|
-|`USB Drive`| ___it says `sdal`. dont worry about it.___ |
+|`USB Drive`| It'll say `sda1` if one USB drive is connected. It'll say `sda2` if two USB drives are connected. |
 |`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
 |`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5] (#5) for using WiFi on Organelle).|
 |`WiFi Network`| Which network, if any, is currently connectable.|
