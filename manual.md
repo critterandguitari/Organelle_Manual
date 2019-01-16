@@ -14,21 +14,8 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 > **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v3.1. 
 
------------------------------------------------------------------------- 
-## Contents
-
-[Package Manifest](#PM)  
-[Getting Started](#0)  
-1. [Organelle Concepts](#1)  
-2. [The Hardware Unit](#2)  
-3. [Operating Organelle by Itself](#3)  
-4. [Managing Patches](#4)  
-5. [Features Accessable with WiFi](#5)  
-6. [Other Stuff in the Settings Menu](#6)  
-7. [Editing and Creating Patches](#7)  
-
 ------------------------------------------------------------------------
-### <a name="PM"></a> Package Manifest 
+### Package Manifest 
 
  Along with this card, there are two main items in the box you just opened. 
 
@@ -37,7 +24,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 ------------------------------------------------------------------------ 
 
-# <a name="0"></a> Getting Started 
+# Getting Started 
 
  For the simplest configuration, follow these steps. 
 
@@ -450,7 +437,7 @@ As has probably become clear by now, Organelle will only work properly while a U
 
 ### General Information 
 
-Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. Previous Organelles shipped with white 4GB USB drives. These have since been replaced by Sandisk 16GB USB drives.
+Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. Organelles produced in 2016 shipped with white 4GB USB drives. Since then they now ship with Sandisk 16GB USB drives.
 
 -   This USB disk should be formatted with a FAT file system, often associated with MS-DOS. 
 -   This USB drive must contain a folder called `Patches` at its top-level. (This name is case-sensitive.) 
@@ -604,11 +591,11 @@ Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The
 
 |Label &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Function|
 |:----------------------|:-----------------------------|
-|`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is regularly updated.|
+|`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
 |`USB Drive`| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
 |`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
 |`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
-|`WiFi Network`| Which network, if any, is currently connectable.|
+|`WiFi Network`| Which network is currently connected to.|
 |`Host Name`| The address for accessing the patch manager from a browser.|
 |`Patch`| The name of the patch currently running.|
 |`Patch Folder`| The folder the patches are stored in (most likely 'Patches').|
