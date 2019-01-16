@@ -602,7 +602,7 @@ When an Organelle is connected to a network, or spawning its own network, the fi
 ## 6.1 Inside Information
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 
-|Label &nbsp; &nbsp; &nbsp; &nbsp; |Function|
+|Label &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Function|
 |:----------------------|:-----------------------------|
 |`CPU`| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is regularly updated.|
 |`USB Drive`| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
@@ -645,11 +645,11 @@ If you want to define the beginning and ending of your expression pedal's range,
 ## 6.5 Extras
 Some extended techniques for Organelle programming can be configured and accessed via the `Extras` section of the `System` menu. By defaul this section will be empty. 
 
-### VNC
+#### VNC
 
 VNC (Virtual Network Computing) allows for remote patching between Organelle and another computer, ie., using another computer to access patches on Organelle for editing. For more information on configuring VNC, see [this forum post](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
-### SerialOSC
+#### SerialOSC
 
 Connect an external instrument. This idea has been explored in [this thread](https://forum.critterandguitari.com/t/serialosc-monome-with-organelle/233).
 
