@@ -1,3 +1,14 @@
+#Organelle User Manual  
+
+![](organelle.png)
+
+First edition written by Dave Linnenbank - October 2015    
+  
+Updated for OS 3.1 - January 2019
+
+
+------------------------------------------------------------------------ 
+
 # Quick-start Guide
 
 ### Let's get sound. Now! 
