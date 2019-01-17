@@ -283,7 +283,7 @@ To engage one of these options, follow the same procedure as loading a patch: se
 
 -   `Eject` safely unmounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
 -   `Reload` rescans the `Patches` folder of the attached USB drive and then refreshes Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
--   `Info` displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information below the `IP` address. (For more information about `Info` see [6.1: Inside Information](#6)) 
+-   `Info` displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information below the `IP` address. For an explanation of the information displayed on this screen see [6.1: Inside Information](#6)) 
 
 ![](Ch3%20-%205%20system%20info%20screen.png) 
 
