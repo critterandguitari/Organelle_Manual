@@ -33,6 +33,9 @@ Restart the Organelle
 
 #####User-defined Scripts (what is inside 'Extras' in menu)  
 
-####VNC?  
+#####Partioning the SD Card (running patches from SD, not USB)
 
-#####?
+#####Using Remote Viewing   
+first, follow steps to Partion the SD card since TigerVNC does not like to be run from USB drive.  
+
+#####Compiling Externals
