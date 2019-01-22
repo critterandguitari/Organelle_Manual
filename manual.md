@@ -350,6 +350,7 @@ Use the MIDI menu to specify a controller. Press `Save` when the desired setup h
 > **NOTE:** Not every controller will be labeled by its given name. Some will be represented with a number.
 
 3. To enable both connections and specify MIDI input or output for each device, `patch_loaded.sh` must be edited. Open this file in a text editor on a computer or directly on Organelle with a keyboard and mouse. This document will look something like this:
+
 ```
 # MIDI PARAMETERS:START  
 # midiIn,0  
@@ -375,7 +376,7 @@ aconnect "LPD8:0" "Pure Data:0"
 aconnect "Pure Data:1" "LPD8:0"    
 ```
 
-5.	Save the document, `Reload`, and return to a patch. Now we have a keyboard controller and pad controller sending MIDI to Organelle.  
+5.	Save the document, `Reload`, and return to a patch. Now we have a keyboard controller and pad controller sending MIDI to Organelle. The first of each pair of lines signify that controller sending MIDI to Organelle. The second of each pair of lines signify that controller receiving MIDI from Organelle. To disable a given connection, delete the corresponding line.
 
 For more information on this, plus an explanation video, see the [forum post on advanced MIDI setups](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
 
