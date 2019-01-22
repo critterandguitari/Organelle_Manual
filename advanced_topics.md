@@ -34,6 +34,16 @@ Restart the Organelle
 #####User-defined Scripts (what is inside 'Extras' in menu)  
 
 #####Partioning the SD Card (running patches from SD, not USB)
+Some users may want store patches on the SD Card rather than the USB drive since it frees up up a USB port. This is possible with a little work.  
+
+There are a few things to consider before doing away with your USB drive:  
+1. You will be locking yourself into using WiFi for updating your Organelle with new patches. The SD card partition is a format that other operating systems (mac OS, windows) cannot read - so you just can't pop your SD card into your computer as you would a USB drive.  
+2. Early production models shipped with 4GB SD cards as this size was adequate for storing the Organelle's OS. If your Organelle has this size SD card, you will have to swap it out for a larger one (8GB or more). You will need to follow the steps above for setting up a new SD card. 
+
+If you are cool with those caveats, here are the steps:  
+(*list steps here: 1. make sure your SD card is 8GB or bigger - if not, see caveat #2 2. Download the patch for resizing.....*)  
+  
+At this point, the Storage menu commands like Reload will affect your SD card. 
 
 #####Using Remote Viewing   
 first, follow steps to Partion the SD card since TigerVNC does not like to be run from USB drive.  
