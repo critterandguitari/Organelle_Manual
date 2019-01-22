@@ -684,7 +684,27 @@ Some extended techniques for Organelle programming can be configured and accesse
 
 #### VNC
 
-VNC (Virtual Network Computing) allows for remote patching between Organelle and another computer, ie., using another computer to access patches on Organelle for editing. For more information on configuring VNC, see [this forum post](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
+VNC (Virtual Network Computing) allows for remote patching between Organelle and another computer, ie., using another computer to access patches on Organelle for editing. To configure VNC on your Organlle:
+
+1.	Download TigerVNC for Organelle [here](https://patchstorage.com/tigervnc/).
+2. Put the .zop file in the USB drive in `Patches`.
+3. Reload, and scroll to `Install TigerVNC` in the patch list (it will fall under the T's, not the I's). This will run the install. Once completed, Mother will restart.
+4. Go to `Settings`, `WiFi Setup`, make sure WiFi is tunred on, and join your WiFi network, or select `Start AP`.
+5. If you selected `Start AP`, join that network on your computer.
+6. Return to the `System` menu and navigate to `Extras` > `TigerVNC`. 
+7. If you are using a Mac:
+	-	Open the Screen Sharing app.
+	- 	In 'Connect To' enter `organelle.local:5901` and press Return.
+	-  When prompted for a password, enter __coolmusic__.
+	-  After a moment, a display will pop up that visualizes Organelle's OS, which means you're in!
+
+8.	If you are using a PC:
+	-	Install RealVNC or TightVNC
+	-	Connect to `organelle.local:5901`.
+	-	When prompted for a password, enter __coolmusic__.
+	-  After a moment, a display will pop up that visualizes Organelle's OS, which means you're in!
+
+For more information on configuring VNC with Organelle, see [this forum post](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
 #### SerialOSC
 
