@@ -53,7 +53,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 Again, welcome to the world of Organelle! As this instrument can work for people in many different ways and at multiple depths of operation, let us begin by getting a few ideas straight, starting with the most obvious question... 
 
-## 1.1 What is this pretty thing? 
+## 1.1 What is this thing? 
 
 We can (and will) talk about what the literal Organelle device *is*, but we'd do better to start with what it *can be*. 
 
@@ -103,13 +103,11 @@ A basic understanding of audio can only help. And MIDI (musical instrument digit
 
 -   Regardless of your intentions, the quick-start (chapter zero) and concepts information (chapter one) will benefit you. 
 
--   If you are satisfied with the included patches alone, the information on general hardware configuration (chapter two), system operation (chapter three), and the factory patch listing     (appendix A) will all be relevant to you. 
+-   If you are satisfied with the included patches alone, the information on general hardware configuration (chapter two), system operation (chapter three), and the factory patch listing at [organelle.io](http://organelle.io) will all be relevant to you. 
 
 -   If you are looking to load additional patches into Organelle, then chapter four will also be useful to you. (And again, visiting [organelle.io](http://organelle.io) would be a good place to start your patch search.) 
 
 -   If you want to edit patches or even create some patches of your own, chapter five will be essential. 
-
--   Finally, the various appendices can be useful to everyone. 
 
 And do realize that your uses of Organelle are likely to change over time. If a chapter is not important to you today, don't feel bad about that: the chapters are happy to wait for you. 
 
@@ -151,7 +149,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 -   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five](#5).\] 
 
--   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
+-   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We recommend limiting ejecting or otherwise manipulating this card if you don't have to. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
 
 -   The power port (labeled `9VDC`) is for connection to Organelle's own power supply. 
 
@@ -161,8 +159,9 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 ![](Ch2%20-%202%20rightpanel.png)
 
-Compared to the back panel, the right-side panel is downright simple, housing two USB 2.0, Type A ports. One of these identical ports must be used for connecting a USB drive that houses your Pure Data patches (such as the one included with Organelle). They can also connect class compliant devices that utilize MIDI over USB or other computer peripherals. 
+Compared to the back panel, the right-side panel is downright simple, housing two USB 2.0, Type A ports. Out of the box, one of these identical ports must be used for connecting a USB drive that houses your Pure Data patches (such as the one included with Organelle). They can also connect class compliant devices that utilize MIDI over USB or other computer peripherals. 
 
+Please remember that the Type A port is indicative of a USB *host*. That is to say, the Organelle is a *host* to USB *devices* like USB-MIDI cables and WiFi adapters. Your computer is also a USB host. You cannot connect two hosts directly together! Do not purchase a special *USB A-to-A* cable to connnect the Organelle to your DAW. It won't work and you may damage your Organelle, computer, or both!
 #### Main Face 
 
 ![](Ch2%20-%203%20mainface.png) 
@@ -175,7 +174,9 @@ The main face is both Organelle's primary interface with you and the place that 
 
 -   The *Selector* encoder accompanies Organelle's display because they are dependent upon one another. While a patch is loaded, turning the Selector causes the display to show the menu screen. By leaving the Selector alone for a few seconds, the display will revert to the patch information screen. 
 
-> **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches. 
+> **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches.  
+
+> **NOTE:**  Pressing the Seletor encoder down for four (4) seconds is a shortcut to shutting down the Organelle. 
 
 -   The `Vol`(ume) knob governs the potential audio output level of Organelle. The knob ranges from silence (in audio terms, -∞) at the far left to no attenuation (unity gain) at the far right. Any adjustments to the Volume knob take effect immediately. 
 
@@ -195,9 +196,11 @@ Here we start with a variation on the setup proposed in the quick-start guide (c
 
 ![](Ch2%20-%204%20minimalPerformanceSetup.png) 
 
-Note that the power is connected to the wall and that the first USB port has a flash drive inserted with our `Patches` folder. Without both the power adapter and USB drive attached, Organelle cannot operate and run patches, meaning that you cannot do anything of use. Accordingly, every possible configuration will contain these two items. 
+Note that the power is connected to the wall and that the first USB port has a USB drive inserted with our `Patches` folder. Without both the power adapter and USB drive attached, Organelle cannot operate and run patches, meaning that you cannot do anything of use. Accordingly, every possible configuration will contain these two items.  
 
-The `L`(eft) and `R`(ight) audio `Out`(put) ports are connected as a stereo pair to a mixer, which assumably runs to the venue's PA system, etc. (Instead of going straight to a mixer, these ports could just as appropriately be connected to direct boxes \[DIs\].) If there is a sound person controlling levels, you may want to leave the Volume knob all the way up, providing maximum signal for them to work with. 
+> **NOTE:** If you have chosen to store your patches on the SD card, you will not need the USB drive.  
+
+The `L`(eft) and `R`(ight) audio `Out`(put) ports are connected as a stereo pair to a mixer, which assumably runs to the venue's PA system, etc. (Instead of going straight to a mixer, these ports could just as appropriately be connected to direct boxes (DIs). If there is a sound person controlling levels, you may want to leave the Volume knob all the way up, providing maximum signal for them to work with. 
 
 ### Audio Input from a Microphone 
 
@@ -486,13 +489,8 @@ Patches/
 
 Rather than guide you through web browsing, we will assume that you have already downloaded some new patches either from [organelle.io](http://organelle.io) or another source. 
 
-> **NOTE:** If the patches you downloaded are ZIP files, be sure to 'decompress' those files into folders before continuing. On most modern operating systems, this can be achieve by simply opening the ZIP file from the system's file browser. 
-
-From here, we need to connect the USB drive you are using with Organelle to your computer. A couple important notes. 
-
--   **If the USB drive is currently connected to Organelle, properly `Eject` the disk before removing it.** This option can be found by accessing the system information screen from the system menu. (See the end of this chapter for specific instructions.) -   **When using the included USB drive, be sure it is flipped the right way before connecting to your computer.** The drive that comes with Organelle has an extremely low profile, consisting of the bottom half of most standard USB connectors/cables. As such, it is possible to plug the drive in upside down. This is generally harmless but better to be avoided. 
-
-    Be sure that the exposed pins — I think of them as teeth — are facing "up," toward wherever the top of a connected USB cable would     go. (On Mac laptops, for example, the pins should face upward,     toward the sky.) 
+From here, we need to connect the USB drive you are using with Organelle to your computer. **If the USB drive is currently connected to Organelle, properly `Eject` the disk before removing it.** This option can be found by accessing the system information screen from the system menu. (See the end of this chapter for specific instructions.) 
+     
 
 Once the drive is connected and seen by your computer, we can proceed. 
 
@@ -510,7 +508,7 @@ Again, the requirement here is that each folder contains a `main.pd` file that s
 
 Assuming your USB drive is formatted correctly and the Patches folder is appropriately named and located, making changes to your available patches is as simple as working with files on your computer. 
 
-**To add a patch to your Organelle's USB drive:** copy the properly formatted patch folder into the USB drive's Patches folder. 
+**To add a patch to your Organelle's USB drive:** Patches you downloaded are likely to be ZIP files or ZOP files. Copy these compressed files directly into your `Patches` folder. After reinserting drive in Organelle and selecting Reload from `Storage` menu, the Patches menu will display an option like `Install Your New Patch`. Once selected, the Organelle will uncompress the patch into the `Patches` folder and then delete the ZIP/ZOP. This method will avoid any file corruption that may occur while transfering files across devices. 
 
 **To backup a patch:** copy the patch's folder to a location on your computer. 
 
@@ -548,7 +546,7 @@ Do these things with:
 
 There is also a [video version](https://youtu.be/o2oqqbMc40g) of this chapter demonstrating various WiFi functions.
 
-## 5.1 Synching Instruments
+## 5.1 Syncing Instruments
 ### Access Point
 Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
 
