@@ -23,7 +23,7 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
-> **NOTE:** Even if your hardware unit is running an earlier operating system, this current website contains contains the patch repository for you as well. Just take notice of any notes about a patch's friendliness with software previous to v3.1. 
+> **NOTE:** If your hardware unit is running an operating system earlier than v2.1, you will need to update to v2.1 first. The update patch is available from the [Organelle patch page](http://https://www.critterandguitari.com/organelle-patches), along with all the other Critter & Guitari patches. If you don't update to v3.1, be sure to mind any notes about a patch's friendliness with software previous to v3.1.
 
 ------------------------------------------------------------------------
 ### Package Manifest 
