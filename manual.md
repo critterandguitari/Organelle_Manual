@@ -371,7 +371,7 @@ Use the MIDI menu to specify a controller. Press `Save` when the desired setup h
 	aconnect "Q49:0" "Pure Data:0"  
 	aconnect "Pure Data:1" "Q49:0"  
 	```
-4. We can add another controller to this list. The `aconnect` lines speicify controller connections (it is not necessary to edit any other part of this document). `Q49:0` is our MIDI keyboard. Our pad controller, `LPD8:0`, can be added by duplicating the existing `aconnect` lines and writing over `Q49:0`. This would give us:
+4. We can add another controller to this list. The `aconnect` lines specify controller connections (it is not necessary to edit any other part of this document). `Q49:0` is our MIDI keyboard. Our pad controller, `LPD8:0`, can be added by duplicating the existing `aconnect` lines and writing over `Q49:0`. This would give us:
 
 	```
 	aconnect "Q49:0" "Pure Data:0"    
@@ -383,15 +383,11 @@ Use the MIDI menu to specify a controller. Press `Save` when the desired setup h
 
 5.	Save the document, `Reload`, and return to a patch. Now we have a keyboard controller and pad controller sending MIDI to Organelle. The first of each pair of lines signify that controller sending MIDI to Organelle. The second of each pair of lines signify that controller receiving MIDI from Organelle. To disable a given connection, delete the corresponding line.
 
-For more information on this, plus an explanation video, see the [forum post on advanced MIDI setups](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
+For more information on this, custom MIDI setups for Organelle, plus an explanation video, see the [forum post on advanced MIDI setups](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
 
--	Better MIDI support for multiple devices and devices that didn’t play well with the Organelle previously.
+-	OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from versions of the OS.
 
--	midi setups specific to patches vs global
-
-OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from the previously used OS. This allows for MIDI setups to be specific to patches.
-
-For more information on custom MIDI setups for Organelle see [this forum post](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
+-	This allows for MIDI setups to be specific to patches.
 
 > **NOTE:** MIDI-Config.txt is no longer used for configuration.
 
