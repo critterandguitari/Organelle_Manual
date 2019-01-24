@@ -31,6 +31,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
  Along with this card, there are two main items in the box you just opened. 
 
 -   **Your Organelle.** Also note that a tiny USB drive is also plugged in on the right side of the unit. This drive houses the patches that will bring Organelle to musical life. 
+
 -   **Its power adapter.** While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your wall socket. 
 
 ------------------------------------------------------------------------ 
@@ -285,15 +286,21 @@ At the top of the menu screen is the *system menu*. The top of this section is l
 To engage one of these options, follow the same procedure as loading a patch: select the desired option by turning the Selector and then press down on the top of the Selector. 
 
 -   `Eject` safely unmounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
+
 -   `Reload` rescans the `Patches` folder of the attached USB drive and then refreshes Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
+
 -   `Info` displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information below the `IP` address. For an explanation of the information displayed on this screen see [6.1: Inside Information](#6).
 
 ![](Ch3%20-%205%20system%20info%20screen.png) 
 
 -   `Shutdown` safely prepares Organelle to be powered off. The display will notify you when it is safe to unplug the power supply from the unit. (Once the unit has been shut down, you must remove and reconnect power to start using it again.)
+
 -   `MIDI Channel` sets the default channel for outgoing MIDI messages and the expected channel for incoming MIDI messages. (After selecting this option and pressing down the Selector encoder, another screen allows the setting of the `MIDI Channel` with the Selector. Pressing the Selector again returns to the system menu.) 
+
 -   `Save` stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
+
 -   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. When recording sound to a sampler/recorder patch, `Save New` will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
+
 -   *Custom scripts* can also appear at the end of this menu. 
 
 ### Patch Information Screen 
@@ -340,7 +347,7 @@ To see all availble MIDI related options on Organelle, scroll up to the system m
 ##### Using Multiple MIDI Connections/Controllers
 By default, every MIDI connection that sends MIDI will be received on Organelle. The input and output of each controller can be enabled or disabled, and set to a specific MIDI channel. 
 
-Use the MIDI menu to specify a controller. Press `Save` when the desired setup has been made. This writes data to a file called `patch_loaded.sh` in the root directory of Organelle's USB drive. Setting and saving MIDI preferences in the MIDI menu will edit this document. Conversely, `patch_loaded.sh` can be modified in a text editor. To connecting multiple controllers and specify in/out functionality:
+Use the MIDI menu to specify a controller. Press `Save` when the desired setup has been made. This writes data to a file called `patch_loaded.sh` in the root directory of Organelle's USB drive. Setting and saving MIDI preferences in the MIDI menu will edit this document. Conversely, `patch_loaded.sh` can be modified in a text editor. To connect multiple controllers and specify in/out functionality:
 
 1.	Connect MIDI devices to Organelle.
 2.	Go to `Settings` > `MIDI Setup` > `Midi Device: ...` and scroll through the options to see the available connections. For example, if we have two devices, `Q49:0` and `LPD8:0`, we can scroll to either one and click the encoder to select that controller to communicate with Organelle (which would ignore the other connection). Confirm this by pressing `Save`.
