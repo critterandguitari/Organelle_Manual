@@ -23,7 +23,7 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
 
-> **NOTE:** If your hardware unit is running an operating system earlier than v2.1, you will need to update to v2.1 first. The update patch is available from the [Organelle patch repository (Organelle.io)](http://organelle.io/), along with all the other Critter & Guitari patches. If you don't update to v3.1, be sure to mind any notes about a patch's friendliness with software earlier than v3.1.
+> **NOTE:** If your hardware unit is running an operating system earlier than v2.1, you will need to update to v2.1 first. The update patch is available from the [Organelle patch repository (organelle.io)](http://organelle.io/), along with all the other Critter & Guitari patches. If you don't update to v3.1, be sure to mind any notes about a patch's friendliness with software earlier than v3.1.
 
 ------------------------------------------------------------------------
 ### Package Manifest 
@@ -490,14 +490,16 @@ With this information in hand, we'll be able to expand our patch library. Here's
 
 ## 4.1 The USB Drive
 
-As has probably become clear by now, Organelle will only work properly while a USB drive is attached to it. In light of this fundamental fact, a few words on the setup of that USB drive are in order. 
+As has probably become clear by now, out of the box Organelle will only work properly while a USB drive is attached to it. In light of this fundamental fact, a few words on the setup of that USB drive are in order. 
 
 ### General Information 
 
 Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. Organelles produced in 2016 shipped with white 4GB USB drives. Since then they now ship with Sandisk 16GB USB drives.
 
 -   This USB disk should be formatted with a FAT file system, often associated with MS-DOS. 
+
 -   This USB drive must contain a folder called `Patches` at its top-level. (This name is case-sensitive.) 
+
 -   For each patch to be used by Organelle, the `Patches` folder must contain a folder named as you would like the patch name to appear. Each patch's folder must contain a file named `main.pd` that contains the top-level patch itself. If any other files are required by the patch, they must also be included in the patch's folder. 
 
 ### Folder Structure 
@@ -562,27 +564,33 @@ Assuming your USB drive is formatted correctly and the Patches folder is appropr
 Taken together, these basic functions make it easy for you to organize and sort your patches. Another useful idea is to prepare a set of patches for a live performance by doing something like this. 
 
 1. Back up all of your patches from the USB drive onto your computer (a good general starting point). 
+
 2. Copy any new patches you will need from your computer to the USB drive. 
+
 3. Delete any patches off of the USB drive that you will not need for this set. 
+
 4. Sort the remaining patches by adding a number to the front of each patch name (e.g., if Basic Poly was the first patch needed, I would rename it something like 1-Basic Poly.) This allows you to order the patches you will need while preserving their names. 
 
 ## 4.3 Additional USB Information
 
-Here are a couple of other procedures and facts to bearing in mind while working with USB on Organelle. 
+Here are a couple of other procedures and facts to bear in mind while working with USB on Organelle. 
 
 -   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
+
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
 # <a name="5"></a> 5. Features Accessible with WiFi
 
-Use WiFi to:
+Use WiFi with Organelle to:
 
 -	Sync tempo between Organelle and external instruments using Link, and
+
 -	Manage files over Organelle's web server.
 
 Do these things with:
 
 -	Organelle's wireless Access Point, or
+
 -	Over an existing WiFi network.
 
 > **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset.
