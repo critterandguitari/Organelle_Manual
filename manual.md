@@ -149,7 +149,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 -   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five](#5).\] 
 
--   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We recommend limiting ejecting or otherwise manipulating this card if you don't have to. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or jump down to [Ch. 4.4](#4.4) for more info.  
+-   The microSD card slot contains a card that acts as the internal microcomputer's root disk. We recommend limiting ejecting or otherwise manipulating this card if you don't have to. But if you want to use the microSD card to store patches and free up a USB port, [check out this forum post](https://forum.critterandguitari.com/t/using-an-sd-card-for-patches/1427/4) or see our Advanced Topics page.  
 
 -   The power port (labeled `9VDC`) is for connection to Organelle's own power supply. 
 
@@ -168,7 +168,7 @@ Please remember that the Type A port is indicative of a USB *host*. That is to s
 
 The main face is both Organelle's primary interface with you and the place that you will spend the most time. While the other panels are critical when Organelle is being setup or when you are altering its configuration, the main face is the operations center for when you are actively running the show. 
 
--   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned` to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see [Chapter Three](#3).\] 
+-   Knobs `1`, `2`, `3`, and `4` are available for parameter control within your patch. Each knob is typically assigned to a parameter that is then continuously altered across a preset range of values by movement of that knob. Movement of each knob can also send a corresponding continuous controller (CC) MIDI message. \[For information on the default MIDI operation of Organelle, see [Chapter Three](#3).\] 
 
 -   Organelle's display provides a window into its microcomputer brain, serving as the on-board method of monitoring and adjusting both the system itself and your patches. 
 
@@ -176,7 +176,7 @@ The main face is both Organelle's primary interface with you and the place that 
 
 > **NOTE:** In some of the factory patches, the Selector encoder is used to advance through additional pages of parameter assignments. This allows you to shift the the four knobs' mappings to additional (read: more than four) parameters. Patches with this behavior are often indicated by a message like *&lt;-- HOME* in the bottom line of Organelle's on-board display. This functionality can also be built into your own patches.  
 
-> **NOTE:**  Pressing the Seletor encoder down for four (4) seconds is a shortcut to shutting down the Organelle. 
+> **NOTE:**  Pressing the Selector encoder down for four (4) seconds is a shortcut to shutting down the Organelle. 
 
 -   The `Vol`(ume) knob governs the potential audio output level of Organelle. The knob ranges from silence (in audio terms, -∞) at the far left to no attenuation (unity gain) at the far right. Any adjustments to the Volume knob take effect immediately. 
 
