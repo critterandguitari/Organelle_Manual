@@ -145,7 +145,7 @@ Again, our orientation would be upside down if you walked around to the back of 
 
 > **NOTE:** Organelle presumes that any sustain/damper pedal used has a "normally closed position" (negative polarity). 
 
-> **NOTE:** If an expression pedal is connected, your patch should > receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
+> **NOTE:** If an expression pedal is connected, your patch should  receive a continuous range of values. In our experience, various expression pedal models and settings tend to deliver different ranges of values. This can be addressed at the patch level. 
 
 -   The HDMI port delivers the video output of Organelle's internal microcomputer. \[For additional information on using the HDMI port, see [Chapter Five](#5).\] 
 
