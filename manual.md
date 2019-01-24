@@ -335,9 +335,7 @@ When using a MIDI controller, it may be desirable to specify the device number. 
 
 To see all availble MIDI related options on Organelle, scroll up to the system menu and browse the submenus for your desired function.
 
-TO ADD:
 
--	allow additional midi connections, set up mutliple controllers, link to forum thread
 
 ##### Using Multiple MIDI Connections/Controllers
 By default, every MIDI connection that sends MIDI will be received on Organelle. The input and output of each controller can be enabled or disabled, and set to a specific MIDI channel. 
@@ -347,34 +345,34 @@ Use the MIDI menu to specify a controller. Press `Save` when the desired setup h
 1.	Connect MIDI devices to Organelle.
 2.	Go to `Settings` > `MIDI Setup` > `Midi Device: ...` and scroll through the options to see the available connections. For example, if we have two devices, `Q49:0` and `LPD8:0`, we can scroll to either one and click the encoder to select that controller to communicate with Organelle (which would ignore the other connection). Confirm this by pressing `Save`.
 
-> **NOTE:** Not every controller will be labeled by its given name. Some will be represented with a number.
+	> **NOTE:** Not every controller will be labeled by its given name. Some will be represented with a number.
 
 3. To enable both connections and specify MIDI input or output for each device, `patch_loaded.sh` must be edited. Open this file in a text editor on a computer or directly on Organelle with a keyboard and mouse. This document will look something like this:
 
-```
-# MIDI PARAMETERS:START  
-# midiIn,0  
-# midiOut,1  
-# midiInGate,1  
-# midiOutGate,1  
-# midiDevice,Q49:0  
-# MIDI PARAMETERS:END  
-oscsend localhost 4000 /midiInCh i 0  
-oscsend localhost 4000 /midiOutCh i 1  
-oscsend localhost 4000 /midiInGate i 1  
-oscsend localhost 4000 /midiOutGate i 1  
-aconnect "Q49:0" "Pure Data:0"  
-aconnect "Pure Data:1" "Q49:0"  
-```
+	```
+	# MIDI PARAMETERS:START  
+	# midiIn,0  
+	# midiOut,1  
+	# midiInGate,1  
+	# midiOutGate,1  
+	# midiDevice,Q49:0  
+	# MIDI PARAMETERS:END  
+	oscsend localhost 4000 /midiInCh i 0  
+	oscsend localhost 4000 /midiOutCh i 1  
+	oscsend localhost 4000 /midiInGate i 1  
+	oscsend localhost 4000 /midiOutGate i 1  
+	aconnect "Q49:0" "Pure Data:0"  
+	aconnect "Pure Data:1" "Q49:0"  
+	```
 4. We can add another controller to this list. The `aconnect` lines speicify controller connections (it is not necessary to edit any other part of this document). `Q49:0` is our MIDI keyboard. Our pad controller, `LPD8:0`, can be added by duplicating the existing `aconnect` lines and writing over `Q49:0`. This would give us:
 
-```
-aconnect "Q49:0" "Pure Data:0"    
-aconnect "Pure Data:1" "Q49:0"    
+	```
+	aconnect "Q49:0" "Pure Data:0"    
+	aconnect "Pure Data:1" "Q49:0"    
   
-aconnect "LPD8:0" "Pure Data:0"    
-aconnect "Pure Data:1" "LPD8:0"    
-```
+	aconnect "LPD8:0" "Pure Data:0"    
+	aconnect "Pure Data:1" "LPD8:0"    
+	```
 
 5.	Save the document, `Reload`, and return to a patch. Now we have a keyboard controller and pad controller sending MIDI to Organelle. The first of each pair of lines signify that controller sending MIDI to Organelle. The second of each pair of lines signify that controller receiving MIDI from Organelle. To disable a given connection, delete the corresponding line.
 
