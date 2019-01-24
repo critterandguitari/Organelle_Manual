@@ -447,7 +447,7 @@ Incoming "control change" messages using controller number `25` affect the inter
 
 > **NOTE:** A momentary control source, such as a damper pedal or button, would work well with this sort of threshold behavior. In certain situations, controlling the Aux button from a external "sustain" pedal could be quite effective. 
 
-Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactive it as the current control source, updating both controllers `26` and `64`. 
+Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactivate it as the current control source, updating both controllers `26` and `64`. 
 
 ##### Program Change Messages 
 
@@ -466,6 +466,7 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
  Using a MIDI device with Organelle is rather painless but not "hot swappable." 
 
 1.  **Connect your USB MIDI device.** As long as a USB MIDI device requires no special, proprietary driver, you need only to connect it to Organelle. This can be done via an open USB port either on Organelle itself or on a USB hub that is connected to Organelle. 
+
 2.  **Load the patch you want to use. If it was already loaded, please reload it.** A newly connected USB MIDI device will not be recognized by the currently loaded patch. Reloading a patch will recognize all currently connected USB MIDI devices. 
 
 That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
