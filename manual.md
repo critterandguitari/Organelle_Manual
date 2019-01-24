@@ -598,50 +598,75 @@ Do these things with:
 There is also a [video version](https://youtu.be/o2oqqbMc40g) of this chapter demonstrating various WiFi functions.
 
 ## 5.1 Syncing Instruments
+
 ### Access Point
+
 Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
 
 The default network name will be 'Organelle' and the default password will be 'coolmusic.'
 	
 1. Open `Settings` > `WiFi Setup`.
+
 2. Select `Start AP`. Once Organelle's network is created the screen will read 'Connected Organelle' at the top.
+
 3. Connect other devices to your new 'Organelle' network.
 
 ### Sync with an Exisiting WiFi Network
+
 We'll connect the Organelle to our WiFi network to sync with another instrument. This is essentially the same method as our Access Point but we'll need to edit one file on the USB drive.
 
 1. Eject the USB drive from your Organelle.
+
 2. Insert the drive into a computer and find `wifi.txt` in the drive's root directory.
+
 3. There are two lines of text in the document. The first line is the network name Organelle will be looking for. The second line is the corresponding password.
+
 4. Save the file and close it.
+
 5. Eject the drive and re-insert it into Organelle.
+
 6. Go to `Storage` > `Reload`.
+
 7. Open `Settings` > `WiFi Setup`.
+
 8. Select your network and allow a moment to connect.
 
 Open a tempo-based patch and hear how your devices play in sync. The tempo indication on Organelle screen should read something like `120 BPM LINK`.
 
 ## 5.2 File Management with the Organelle's Web Server
+
 Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. With OS v3.1 comes a new software installer, an upgrade from the last Organelle OS.
 
 ### Add a Patch
+
 1.	Join Organelle to the same network as your computer.
+
 2. Once connected, start the web server by opening a browser and entering http://organelle.local
+
 3. Compress a patch folder on your computer to a .zip file.
+
 4. Enter the `Patches` folder on Organelle's web server. 
+
 5. Upload your zipped patch.
+
 6. On Organelle, scroll to `Storage` > `Reload` to view the new file in Organelle's patch list.
+
 7. There will be a corresponding install file. Open that to unzip the compressed file. The remaining .zip file will be automatically deleted. 
+
 8. Run the patch!
 
 ### Swapping WAV Files
+
 A patch's WAV files can be viewed and previewed in the web browser by accessing that patch's `Sounds` folder. When swapping multiple samples in a patch, it is easiest to have the new samples follow the same format as exisiting samples (1.wav, 2.wav, etc...). 
 
 1. Remove the exisiting .wav files in a patch by selecting all the necessary check boxes and selecting the `Delete` button at the top of the browser.
+
 2. Click `Upload` and select all desired samples to add to the patch. 
+
 3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
 
 ### More Info
+
 When an Organelle is connected to a network, or spawning its own network, the file managaer can be accessed in a browser via `organelle.local`. It is possible to connect multiple Organelles to the same network. With two on the same network, they will be discoverable as `organelle.local` and `organelle-2.local` automatically. 
 
 # <a name="6"></a> 6. Other Stuff in the Settings Menu
