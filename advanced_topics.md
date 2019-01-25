@@ -47,7 +47,6 @@ If you are cool with those caveats, here are the steps:
 At this point, the Storage menu commands like Reload will affect your SD card. 
 
 #####Using Remote Viewing   
-*this part is taken straight from manual.md*
 
 VNC (Virtual Network Computing) allows for remote patching between Organelle and another computer, ie., using another computer to access patches on Organelle for editing. To configure VNC on your Organlle:
 
@@ -72,3 +71,7 @@ VNC (Virtual Network Computing) allows for remote patching between Organelle and
 For more information on configuring VNC with Organelle, see [this forum post](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
 #####Compiling Externals
+
+#### SerialOSC
+
+Connect an external instrument. This idea has been explored in [this thread](https://forum.critterandguitari.com/t/serialosc-monome-with-organelle/233).
