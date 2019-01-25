@@ -675,18 +675,18 @@ When an Organelle is connected to a network, or spawning its own network, the fi
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
-|Label     |Function          | 
-|:-----------------------------|:--------------------------------|
-|`CPU`<img width=200/> | The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
-|`USB Drive`| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
-|`MIDI Dev`| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
-|`IP`| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
-|`WiFi Network`| Network your Organelle is currently connected to.|
-|`Host Name`| The address for accessing the patch manager from a browser.|
-|`Patch`| The name of the patch currently running.|
-|`Patch Folder`| The folder the patches are stored in (most likely 'Patches').|
-|`User Root`| Where Organelle is looking for patches (most likely /usbdrive).|
-| `Version` | The currently installed operating system. |
+|Label				|Function          | 
+|:---------------|:--------------------------------|
+|`CPU`				| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
+|`USB Drive`		| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
+|`MIDI Dev`		| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
+|`IP`				| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
+|`WiFi Network`	| Network your Organelle is currently connected to.|
+|`Host Name`		| The address for accessing the patch manager from a browser.|
+|`Patch`			| The name of the patch currently running.|
+|`Patch Folder`	| The folder the patches are stored in (most likely 'Patches').|
+|`User Root`		| Where Organelle is looking for patches (most likely /usbdrive).|
+| `Version` 		| The currently installed operating system. |
 
 ## 6.2 Choosing Favourites
 Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. 
