@@ -675,9 +675,9 @@ When an Organelle is connected to a network, or spawning its own network, the fi
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
-|Label				|Function          | 
-|:---------------|:--------------------------------|
-|`CPU`				| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
+|Label		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Function | 
+|:---------------------------|:--------------------------------|
+|`CPU`			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
 |`USB Drive`		| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
 |`MIDI Dev`		| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
 |`IP`				| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
