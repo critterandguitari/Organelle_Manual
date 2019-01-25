@@ -675,7 +675,7 @@ When an Organelle is connected to a network, or spawning its own network, the fi
 Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
-|Label![](spacer.png)	|Function| 
+|Label ![](spacer.png)	|Function ![](spacer.png) | 
 |:---------------------------|:--------------------------------|
 |`CPU`		| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
 |`USB Drive`		| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
