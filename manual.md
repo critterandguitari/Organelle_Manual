@@ -50,7 +50,7 @@ If your hardware unit is running a version earlier than v3.1, you should update 
 
 5.  **When you have had enough fun for now, properly shut down Organelle.** This is achieved by turning the Selector encoder so that the menu screen appears again. From here, scroll upward (by turning the encoder to the left) until you go past the `PATCHES` and reach the `SYSTEM` options. Select the first option, `Shutdown`, and then press down the encoder to engage this function. Finally, Organelle's display will notify you when it is safe to unplug the power supply from the unit. 
 
-# 1. <a name="1"></a> Organelle Concepts 
+# 1. Organelle Concepts 
 
 Again, welcome to the world of Organelle! As this instrument can work for people in many different ways and at multiple depths of operation, let us begin by getting a few ideas straight, starting with the most obvious question... 
 
@@ -112,7 +112,7 @@ A basic understanding of audio can only help. And MIDI (musical instrument digit
 
 And do realize that your uses of Organelle are likely to change over time. If a chapter is not important to you today, don't feel bad about that: the chapters are happy to wait for you. 
 
-# <a name="2"></a> 2. The Hardware Unit 
+# 2. The Hardware Unit 
 
 As we begin to explore the universe that Organelle makes available to us, we should start with Organelle's place in the physical universe: its hardware. 
 
@@ -237,7 +237,7 @@ Connecting an HDMI monitor to Organelle shows the internal microcomputer's comma
 
 Our USB drive is still connected, but it is now running through a class compliant USB hub. By adding a hub to our configuration, the number of USB devices we can connect grows to the capacity of the hub. Connecting an HDMI monitor assumes that you want to operate Organelle's microcomputer in a typical way, and this implies the use of peripherals, such as a mouse and keyboard. This necessitates the use of a USB hub. And even without using an HDMI monitor, a USB hub would be needed if you wanted to connect multiple MIDI controllers at once, etc. 
 
-# <a name="3"></a> 3. Operating Organelle by Itself 
+# 3. Operating Organelle by Itself 
 
  As we stated early on and as the configuration ideas have shown, Organelle is a fully capable stand-alone instrument. To use Organelle in this fashion requires understanding the workings of its internal operating system. By learning the options provided by Organelle's software along with the uses of the Selector encoder and the on-board display, you will be ready to travel and perform with Organelle alone. 
 
@@ -467,7 +467,7 @@ Any other MIDI message is passed directly to the current patch. If the patch is 
 
 That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
 
-# <a name="4"></a> 4. Managing Patches 
+# 4. Managing Patches 
 
 ### Bringing additional patches from your computer to Organelle. 
 
@@ -574,7 +574,7 @@ Here are a couple of other procedures and facts to bear in mind while working wi
 
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
-# <a name="5"></a> 5. Features Accessible with WiFi
+# 5. Features Accessible with WiFi
 
 Use WiFi with Organelle to:
 
@@ -668,7 +668,7 @@ A patch's WAV files can be viewed and previewed in the web browser by accessing 
 
 When an Organelle is connected to a network, or spawning its own network, the file managaer can be accessed in a browser via `organelle.local`. It is possible to connect multiple Organelles to the same network. With two on the same network, they will be discoverable as `organelle.local` and `organelle-2.local` automatically. 
 
-# <a name="6"></a> 6. Other Stuff in the Settings Menu
+# 6. Other Stuff in the Settings Menu
 
 ## 6.1 Inside Information
 
@@ -718,7 +718,7 @@ To define the beginning and end of your expression pedal's range, return to the 
 ## 6.5 Extras
 Some extended techniques for Organelle programming can be configured and accessed via the `Extras` section of the `System` menu. By defaul this section will be empty. Take a look at the [Advanced Topics](/advanced_topics.md) run down for further information.
 
-# <a name="7"></a> 7. Editing and Creating Patches
+# 7. Editing and Creating Patches
 
 ### Using Organelle as a computer. 
 
