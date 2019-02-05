@@ -283,21 +283,50 @@ At the top of the menu screen is the *system menu*. The top of this section is l
 
 To engage one of these options, follow the same procedure as loading a patch: select the desired option by turning the Selector and then press down on the top of the Selector. 
 
+#### Shutdown
+
+The safest way to power down Organelle is from the `System Menu`. The `Shutdown` option will always be at the top of this list. This runs a process that safely prepares Organelle to be powered off. After a few seconds, the process will complete and the display will notify you it is safe to unplug the power supply from the unit. To turn the unit back on, reconnect the power supply.
+
+> **Note:** The shutdown procedure can be activated from any part of the patch menu, as well as within any patch that does not use multiple pages. Press and hold the selector for three seconds. At that point, the screen will prompt you to either `HOLD to shutdown` or `release to abort`. This method is useful if you do not wish to navigate to the top of the `System Menu`.
+
+-	`Shutdown` safely prepares Organelle to be powered off. 
+
+-	`Storage` contains all options related to the USB drive, such as ejecting, reloading and saving.
+
+![](Ch3%20-%204p5%20storage%20menu.png)
+
+-	`Settings` accesses options for MIDI, WiFi, and Footswitch usage, as well as containing system information and Favourites.
+
+![](Ch3%20-%204p6%20settings%20menu.png)
+
+-	`Extra` is where to find additional functions for Organelle that are defined by the user. This could include VNC control or SerialOSC functions.
+
+
+#### Storage
+
 -   `Eject` safely unmounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
 
 -   `Reload` rescans the `Patches` folder of the attached USB drive and then refreshes Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
+
+-   `Save` stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
+
+-   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. When recording sound to a sampler/recorder patch, `Save New` will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
+
+#### Settings
+
+-	`MIDI Setup` See section [3.2: Organelle's Default MIDI Setup](#3point2) for more information on using MIDI.
+
+- 	`WiFi Setup` will list the network defined on the USB drive in the `wifi.txt` text file. Click on the name of your network to join. Other options include `Start Web server`, which allows access an external computer's browser to edit files on the Organelle. `Start AP` opens a portal for other instruments to join a synced network with Organelle (over Link). `Turn Wifi Off` severs Organelle's connections with other networks or WiFi-enabled devices. See [Section 5](#5) for more on using WiFi with Organelle.
 
 -   `Info` displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information below the `IP` address. For an explanation of the information displayed on this screen see [6.1: Inside Information](#6).
 
 ![](Ch3%20-%205%20system%20info%20screen.png) 
 
--   `Shutdown` safely prepares Organelle to be powered off. The display will notify you when it is safe to unplug the power supply from the unit. (Once the unit has been shut down, you must remove and reconnect power to start using it again.)
+-	`Pedal Setup` will help you configure your expression pedal or footswitch function.
 
--   `MIDI Channel` sets the default channel for outgoing MIDI messages and the expected channel for incoming MIDI messages. (After selecting this option and pressing down the Selector encoder, another screen allows the setting of the `MIDI Channel` with the Selector. Pressing the Selector again returns to the system menu.) 
+-	`Info` examines what is happening inside Organelle. See [6.1: Inside Information](#6) for more info.
 
--   `Save` stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
-
--   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. When recording sound to a sampler/recorder patch, `Save New` will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
+-	`Show Favourites` will present you with any patches you have saved as Favourites. See [6.2: Choosing Favourites](#6point2) for more info.
 
 -   *Custom scripts* can also appear at the end of this menu. 
 
@@ -570,7 +599,7 @@ Taken together, these basic functions make it easy for you to organize and sort 
 
 Here are a couple of other procedures and facts to bear in mind while working with USB on Organelle. 
 
--   **To safely unmount a connected USB disk:** from the patch     information screen, turn the Selector knob to call up the menu     screen. Turn the Selector to the left (upward) to move to the menu     screen's `SYSTEM` section, and select and engage the `Eject`     function. The display will notify you when it is safe to unplug your USB drive. 
+-   **To safely unmount a connected USB disk:** from the patch information screen, turn the Selector knob to call up the menu screen. Turn the Selector to the left (upward) to move to the menu screen's `SYSTEM` section, and select and engage the `Eject` function. The display will notify you when it is safe to unplug your USB drive. 
 
 -   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
 
