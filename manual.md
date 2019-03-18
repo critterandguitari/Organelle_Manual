@@ -115,7 +115,7 @@ And do realize that your uses of Organelle are likely to change over time. If a 
 # 2. The Hardware Unit 
 
 As we begin to explore the universe that Organelle makes available to us, we should start with Organelle's place in the physical universe: its hardware. 
-
+<a id="thing"></a>
 ## 2.1 Acquainting yourself with the box. 
 
 In this age of software and "virtual" devices, please do not neglect the hardware side of things! While its microcomputer does indeed run everything that Organelle does, we endeavored to make Organelle an "un-computer." Configuring and then interacting with the physical interface is just as critical as anything you do on the software side. In fact, this is how the pretty box can become an instrument. 
