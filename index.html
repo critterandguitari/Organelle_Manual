@@ -54,6 +54,7 @@ img {
   </div>
 </div>
 
+
 <!-- Sidenav -->
 <nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
@@ -126,11 +127,16 @@ $( document ).ready(function() {
         $('#content').html(marked('# hI'));
 
     $.get( "manual.md", function( data ) {
-          $( "#md" ).html( marked(data) );
-          $("#toc").toc({content: "#md", headings: "h1,h2"});
+        $( "#md" ).html( marked(data) );
+        $("#toc").toc({content: "#md", headings: "h1,h2"});
           // update all img tags
           //$("img").addClass("img-fluid");
-    });
+        
+        // jump to anchor if present
+        if (location.hash) {
+            $(document).scrollTop( $(location.hash).offset().top - 64);
+        }
+   });
 });
 
 </script>
