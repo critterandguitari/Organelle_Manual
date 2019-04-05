@@ -619,7 +619,9 @@ Do these things with:
 
 -	Over an existing WiFi network.
 
-> **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset.
+> **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset. This chipset operates on the 2.4GHz band (5GHz is _not_ supported).
+
+> **NOTE:** When joining an existing network, make sure it supports WPA2 encryption. 
 
 There is also a [video version](https://youtu.be/o2oqqbMc40g) of this chapter demonstrating various WiFi functions.
 
@@ -647,7 +649,7 @@ We'll connect the Organelle to our WiFi network to sync with another instrument.
 
 3. Insert the drive into a computer and find `wifi.txt` in the drive's root directory.
 
-4. There are two lines of text in the document. The first line is the network name Organelle will be looking for. The second line is the corresponding password.
+4. There are two lines of text in the document. The first line is the name of the network you want the Organelle to join. The second line is the corresponding password for that network.
 
 5. Save the file and close it.
 
