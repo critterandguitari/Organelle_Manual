@@ -357,11 +357,23 @@ On this primary screen, each line tends to show particular information related t
 
 ## 3.2 Organelle's Default MIDI Setup 
 
- The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. 
- 
-The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). Either MIDI input or output can even be disabled. 
+MIDI allows for the Organelle to control and to be controlled by external devices. The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. The Organelle has a `MIDI Setup` menu for configuring your devices so they can 'talk' to each other.
+
+Before getting into these MIDI Settings, please review these three important notes on using USB-MIDI hardware:  
+
+1.  **Choosing a USB-MIDI device.** The Organelle requires connected USB-MIDI devices to be _class compliant_. This is a way of saying "driverless" in that you don't need to install a driver (software) on the Organelle in order to use the USB-MIDI device. If you are unsure if your device is class compliant, please check with your device's manufacturer. 
+1. **Connecting your USB-MIDI device** As long as your USB-MIDI device is class compliant, simply connect it to the Organelle. This can be done via an open USB port either on Organelle itself or on a USB hub that is connected to Organelle. 
+1.  **Load the patch you want to use. If it was already loaded, please reload it.** A newly connected USB-MIDI hardware device will not be recognized by a patch that is already loaded. Reloading a patch will cause the patch to recognize all currently connected USB-MIDI devices. In effect, MIDI devices are not "hot swappable" once a patch is loaded.
+
+  
+  
+...OK, back to the `MIDI Setup` Menu:
 
 ![](Ch3%20-%207%20midisetuphighlighted.png)
+
+ 
+
+The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). If you don't want the Organelle to respond to MIDI input or send MIDI out, they can be disabled. 
 
 ![](Ch3%20-%208%20midisetup1.png)
 
@@ -485,18 +497,9 @@ Just as they are displayed in the patches menu, all currently available patches 
 ##### Other MIDI Messages 
 
 Any other MIDI message is passed directly to the current patch. If the patch is configured to handle that particular message, it will respond as configured. If the patch is not listening for that message, then nothing will happen. 
+________
 
-------------------------------------------------------------------------
-
-### Using a USB MIDI Device 
-
- Using a MIDI device with Organelle is rather painless but not "hot swappable." 
-
-1.  **Connect your USB MIDI device.** As long as a USB MIDI device requires no special, proprietary driver, you need only to connect it to Organelle. This can be done via an open USB port either on Organelle itself or on a USB hub that is connected to Organelle. 
-
-2.  **Load the patch you want to use. If it was already loaded, please reload it.** A newly connected USB MIDI device will not be recognized by the currently loaded patch. Reloading a patch will recognize all currently connected USB MIDI devices. 
-
-That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
+That's about it. By remembering to reload your patch everytime to change your MIDI hardware and knowing what MIDI messages are understood by Organelle and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
 
 # 4. Managing Patches 
 
