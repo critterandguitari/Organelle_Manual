@@ -789,17 +789,17 @@ Follow these steps to flash:
 
 1. Download the microSD card disk image to your computer: 
 
-    - Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip)
+    * Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip)
 
-    - Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
- 
+    * Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
+
 2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs: 
 
-    - Windows: [7-Zip](http://www.7-zip.org)
-    
-    - Mac: [The Unarchiver](http://unarchiver.c3.cx/unarchiver)
-    
-    - Linux: [Unzip](https://linux.die.net/man/1/unzip) 
+    * Windows: [7-Zip](http://www.7-zip.org)
+
+    * Mac: [The Unarchiver](http://unarchiver.c3.cx/unarchiver)
+
+    * Linux: [Unzip](https://linux.die.net/man/1/unzip) 
 
 3. Download the flasher program to your computer: https://www.balena.io/etcher/  (Note: even though Etcher says it can flash a zipped file, we have not found this to be true. Please follow step #2!)
 4. Power down the Organelle
