@@ -789,9 +789,9 @@ Follow these steps to flash:
 
 1. Download the microSD card disk image to your computer: 
 
-Current OS release: [OGM-4.0](http://thepeacetreaty.org/organellem/images/OGM-v4.0.img.zip)
+Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip)
 
-Previous OS release: [OGM-3.2](http://thepeacetreaty.org/organellem/images/20190619-ogm-v3.2.img.zip)
+Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
 
  
 2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs: 
