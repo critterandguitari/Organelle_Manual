@@ -1,0 +1,63 @@
+Ch0 - 1 powerplug.png
+Ch0 - 2 audioOutputs.png
+Ch0 - 3 Encoder-NOarrow.png
+Ch1 - 1 Test Tone patch cropped.png
+Ch2 - 1 backpanel.png
+Ch2 - 2 rightpanel.png
+Ch2 - 3 mainface.png
+Ch2 - 4 minimalPerformanceSetup.png
+Ch2 - 5 AudioInputFromAMicrophone.png
+Ch2 - 6 AudioInputFromMixer+USBMIDIController.png
+Ch2 - 7 ExternalDisplay+USBHub+ComputerPeripherals.png
+Ch2 - 8 MIDIeverything.png
+Ch2 - fun10.png
+Ch2 - fun11.png
+Ch2 - fun12.png
+Ch2 - fun13.png
+Ch2 - fun14.png
+Ch2 - fun15.png
+Ch2 - fun16.png
+Ch2 - fun17.png
+Ch2 - fun18.png
+Ch2 - fun9.png
+Ch3 - 1 patches menu.png
+Ch3 - 10 midisetup1.png
+Ch3 - 11 midisetup2.png
+Ch3 - 2 patches with other selected.png
+Ch3 - 3 patches menu again with active patch shown.png
+Ch3 - 4 system menu.png
+Ch3 - 5 storage menu.png
+Ch3 - 6 settings menu.png
+Ch3 - 7 system info screen.png
+Ch3 - 8 patch information screen.png
+Ch3 - 9 midisetuphighlighted.png
+Ch4 - 1 Top of patches.png
+Ch5 - 1 send example 1.png
+Ch5 - 2 send example 2.png
+Ch5 - 3 Receives from Organelle.png
+Ch5 - 4 Sends to Organelle.png
+Ch6 - 1 pedalsetup.png
+Ch7 - 1 screen.png
+Ch7 - 2 mother.png
+Ch7 - 3 showfavs.png
+Ch7 - 4 favourites.png
+favicon.png
+installpatch.png
+mainmenuscreen.png
+organelle_m.png
+patchesmenu1.png
+patchesmenu2.png
+patchscreen.png
+pd.png
+settingsmenu.png
+spacer.png
+storagemenu.png
+systemmenu.png
+webfiles.png
+webhomepage.png
+webwifi.png
+wificonnectedap.png
+wificonnectednet.png
+wificonnectingnet.png
+wifistartap.png
+wifistartweb.png

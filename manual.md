@@ -235,307 +235,259 @@ Connecting an HDMI monitor to Organelle shows the internal microcomputer's comma
 
 Our USB drive is still connected, but it is now running through a class compliant USB hub. By adding a hub to our configuration, the number of USB devices we can connect grows to the capacity of the hub. Connecting an HDMI monitor assumes that you want to operate Organelle's microcomputer in a typical way, and this implies the use of peripherals, such as a mouse and keyboard. This necessitates the use of a USB hub. And even without using an HDMI monitor, a USB hub would be needed if you wanted to connect multiple MIDI controllers at once, etc. 
 
-# 3. Operating Organelle by Itself 
+# 3. Operating the Organelle by Itself 
 
- As we stated early on and as the configuration ideas have shown, Organelle is a fully capable stand-alone instrument. To use Organelle in this fashion requires understanding the workings of its internal operating system. By learning the options provided by Organelle's software along with the uses of the Selector encoder and the on-board display, you will be ready to travel and perform with Organelle alone. 
+ As we stated early on and as the configuration ideas have shown, the Organelle is a fully capable stand-alone instrument. To use the Organelle in this fashion requires understanding the workings of its internal operating system. By learning the options provided by the Organelle's software along with the uses of the Selector encoder and the on-board display, you will be ready to travel and perform with the Organelle alone. 
 
-In this chapter, we'll explore where this combination of the Selector and on-board display can go, and we will also go through the default MIDI operation of Organelle and how connected USB MIDI devices interface with Organelle. 
+In this chapter, we'll explore where this combination of the Selector and on-board display can go, and we will also go through the default MIDI operation of the Organelle and how connected USB MIDI devices interface with the Organelle. 
 
-These topic areas will prepare you for general use of Organelle. So let's start using it now and get the pretty box singing. 
+These topic areas will prepare you for general use of the Organelle. So let's start using it now and get the pretty box singing. 
 
------------------------------------------------------------------------- 
+## 3.1 Main Menu Screen 
 
-## 3.1 The Selector and the On-board Display 
+To interface with the Organelle, we will primarily work with two of its components. The Selector encoder allows us to navigate system options and execute functions, and the on-board display shows us the choices we have and provides feedback on our current patch and system. 
 
- To interface with Organelle, we will primarily work with two of its components. The Selector encoder allows us to navigate system options and execute functions, and the on-board display shows us the choices we have and provides feedback on our current patch and system. 
+When the Organelle is powered up, it first runs through its boot sequence and then drops us into its *main menu screen*. 
 
-In order of appearance, we will cover the two primary screens that peek out at us from the on-board display. 
-
-### Menu Screen 
-
-When Organelle is powered up, it first runs through its boot sequence and then drops us into its *menu screen*. 
-
-![](images/Ch3%20-%201%20patches%20menu.png) 
+![](images/mainmenuscreen.png) 
 
 The menu screen itself comprises two sections: the system section (or system menu) at top and the patches section (or patches menu), which we see in the above image. 
 
+The first line of the screen displays some information.  If no patch is currently playing it will say 'Select Patch'.  On the far right is a power icon.  When running from batteries you will see a battery guage indicating how many bars of power remain.  When you plug the Organelle in this changes to a flat solid bar.  To the left of the power icon is a WiFi connection icon.  When the Organelle is connected to WiFi this icon will appear.
+
 ### Patches Menu 
 
-After Organelle first boots up, it places us directly in the *patches section*, which is helpfully labeled `PATCHES`. By turning the Selector to the left and right, we are able to move up and down respectively in the patch list. 
+After the Organelle first boots up, it places us directly in the *patches section*, which is helpfully labeled **PATCHES**. By turning the Selector to the left and right, we are able to move up and down respectively in the patch list. There may be both patches or folders of patches in the Patches Menu.  Folders are designated with a '&gt;' on the right. The Organelle comes with most of the patches organized into folders.  You can always put them in your own folders, see Chapter 4 for details.  Lets navigate to the Synthesizers folder:
 
-![](images/Ch3%20-%202%20patches%20with%20other%20selected.png) 
+![](images/patchesmenu1.png) 
 
-(If we scroll too far to the left, we will navigate past the patches menu and up into the system menu. In that case, simply move back down to the patches menu.) 
+(If we scroll too far to the left, we will navigate past the patches menu and up into the system menu. In that case, simply move back down to the patches menu.)  
 
-**To load the selected patch:** press down on the top of the Selector encoder. 
+Then we can choose a synthesizer patch.
 
-After the patch is successfully loaded, Organelle's display shifts to show us the patch information screen, which we will discuss in a moment. To return to the menu screen, turn the Selector. The only difference is that the active patch is now displayed in the top line of the menu screen. 
+After the patch is successfully loaded, the Organelle's display shifts to show us the patch information screen, which we will discuss in a moment. To return to the menu screen, turn the Selector. The only difference is that the active patch is now displayed in the top line of the menu screen. 
 
-![](images/Ch3%20-%203%20patches%20menu%20again%20with%20active%20patch%20shown.png) 
+![](images/patchesmenu2.png) 
 
 ### System Menu 
 
-At the top of the menu screen is the *system menu*. The top of this section is labeled `SYSTEM`, and it contains at least seven options, the first four of which are shown below. 
+At the top of the menu screen is the *system menu*. The top of this section is labeled **SYSTEM**, and it contains several sub menus shown below. 
 
-To engage one of these options, follow the same procedure as loading a patch: select the desired option by turning the Selector and then press down on the top of the Selector. 
+To enter one of these sub menus, follow the same procedure as loading a patch: select the desired option by turning the Selector and then pressing down on the top of the Selector. 
 
-![](images/Ch3%20-%204%20system%20menu.png) 
+![](images/systemmenu.png) 
 
--	`Shutdown` safely prepares Organelle to be powered off. 
+-	**Storage** contains all options related to the microSD card or USB drive, such as ejecting and reloading.
 
--	`Storage` contains all options related to the USB drive, such as ejecting, reloading and saving.
+-	**Settings** accesses options for MIDI, WiFi, and Footswitch settings. It also contains system information and Favourites.
 
--	`Settings` accesses options for MIDI, WiFi, and Footswitch usage, as well as containing system information and Favourites.
+-	**Extra** may contain additional user defined functions for the Organelle.
 
--	`Extra` is where to find additional functions for Organelle that are defined by the user. This could include VNC control or SerialOSC functions.
+We will discuss these menus in a moment.
 
-### Shutdown
-
-The safest way to power down Organelle is from the `SYSTEM` menu. The `Shutdown` option will always be at the top of this list. This runs a process that safely prepares Organelle to be powered off. After a few seconds, the process will complete and the display will notify you it is safe to unplug the power supply from the unit. To turn the unit back on, reconnect the power supply.
-
-In the main System menu and sub-menus, `Shutdown` will always be the first option on the list.
-
-> **Note:** The shutdown procedure can be activated from any part of the patches menu, as well as within any patch that does not use multiple pages. Press and hold the selector for three seconds. At that point, the screen will prompt you to either `HOLD to shutdown` or `release to abort`. This method is useful if you do not wish to navigate to the top of the `SYSTEM` menu.
-
-
-### Storage
-
-![](images/Ch3%20-%204p5%20storage%20menu.png)
-
--   `Eject` safely unmounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
-
--   `Reload` rescans the `Patches` folder of the attached USB drive and then refreshes Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
-
--   `Save` stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
-
--   `Save New` duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the `Save` function does. When recording sound to a sampler/recorder patch, `Save New` will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering `Save New` while a patch named `Basic Poly` is loaded would create (and load) `Basic Poly 2`. And selecting `Save New` again with either `Basic Poly` or `Basic Poly 2` loaded would spawn `Basic Poly 3`. 
-
-### Settings
-
-![](images/Ch3%20-%204p6%20settings%20menu.png)
-
--	`MIDI Setup` See section [3.2: Organelle's Default MIDI Setup](#3point2) for more information on using MIDI.
-
-- 	`WiFi Setup` will list the network defined on the USB drive in the `wifi.txt` text file. Click on the name of your network to join. Other options include `Start Web server`, which allows access an external computer's browser to edit files on the Organelle. `Start AP` opens a portal for other instruments to join a synced network with Organelle (over Link). `Turn Wifi Off` severs Organelle's connections with other networks or WiFi-enabled devices. See [Section 5](#5) for more on using WiFi with Organelle.
-
--   `Info` displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information below the `IP` address. For an explanation of the information displayed on this screen see [6.1: Inside Information](#6).
-
-![](images/Ch3%20-%205%20system%20info%20screen.png) 
-
--	`Pedal Setup` will help you configure your expression pedal or footswitch function.
-
--	`Info` examines what is happening inside Organelle. See [6.1: Inside Information](#6) for more info.
-
--	`Show Favourites` will present you with any patches you have saved as Favourites. See [6.2: Choosing Favourites](#6point2) for more info.
-
--   *Custom scripts* can also appear at the end of this menu. 
-
-### Patch Information Screen 
+## 3.2 Patch Screen 
 
 Once a patch is loaded, you will be taken to the *patch information screen*, which serves as your main performance interface. 
 
-![](images/Ch3%20-%206%20patch%20information%20screen.png) 
+The Organelle treats this as your "home screen." You can return to the menu screen by turning the Selector knob, but after a few seconds of inactivity, the Organelle will automatically return to the patch information screen. 
 
-Once a patch is loaded, Organelle treats this page as your "home screen." You can return to the menu screen by turning the Selector knob, but after a few seconds of inactivity, Organelle will automatically return to the patch information screen. 
+Below is an example image and description of a typical patch screen.  The exact information displayed on the patch screen varies widely depending on the patch, and since version 3 of the Organelle OS, patches may utilize graphical elements on the patch screen in addition to text. Please see patch documentation, such as instructions found at [the patches page](https://www.critterandguitari.com/organelle-patches), for more information.
 
-On this primary screen, each line tends to show particular information related to the current patch. (Individual patches can vary this pattern when deemed appropriate.) 
+![](images/patchscreen.png) 
 
--   The top line provides level meters. These are representations of the audio levels that are reaching the device's `I`(nputs) and those that are ending up at its `O`(utputs). Each meter is actually a stereo representation, with the top rows showing left levels and the bottom rows showing those for the right channels. 
+On this screen, each line tends to show particular information related to the current patch. Individual patches can vary this pattern when deemed appropriate.  
 
-    In the example pictured above, the audio output seems to be of similar strength on both the left and right channels. And no audio input is being received at this moment in time. 
+-   The top line provides level meters. These are representations of the audio levels that are reaching the device's **I**(nputs) and those that are ending up at its **O**(utputs). Each meter is actually a stereo representation, with the top rows showing left levels and the bottom rows showing those for the right channels. 
 
 > **NOTE:** The on-screen output meter is operating in a "post fader" mode, where the displayed signal is scaled based on the unit's current volume setting. 
 
--   The middle four lines are prefaced with `1`, `2`, `3`, and `4`, each representing that respective knob. Following the knob number is usually a short name for the parameter being altered and then a numeric representation of that parameter's current value. So in the example shown above, Knob 2 is controlling a parameter named `Vibrato Rate` that is current set to `8 Hz`. 
--   The bottom line is prefaced with `Aux` as it tends to provide more information about the assignment and/or current state of the Aux button. In the example above, this patch seems to toggle the waveform being used an oscillator, with a `Sine Wave` currently in use. 
+-   The middle four lines are prefaced with **1**, **2**, **3**, and **4**, each representing that respective knob. Following the knob number is usually a short name for the parameter being altered and then a numeric representation of that parameter's current value. So in the example shown above, Knob 2 is controlling a parameter named **Vibrato Rate** that is currently set to **8 Hz**. 
+-   The bottom line is prefaced with **Aux** as it tends to provide more information about the assignment and/or current state of the Aux button. In the example above, this patch seems to toggle the waveform being used an oscillator, with a **Sine Wave** currently in use. 
 
-> **NOTE:** As was mentioned in the previous chapter, some factory > patches use the Selector encoder to switch the knobs through pages of parameter assignments. In this case, the middle lines of the on-board display (starting with `1`, `2`, `3`, and `4`) will be updated as the Selector encoder is turned and the knob assignments shift. The bottom line of the on-board display may also suggest that the Aux button returns you to the *HOME* menu. 
+> **NOTE:** As was mentioned in the previous chapter, some factory patches use the Selector encoder to switch the knobs through pages of parameter assignments. In this case, the middle lines of the on-board display (starting with **1**, **2**, **3**, and **4**) will be updated as the Selector encoder is turned and the knob assignments shift. The bottom line of the on-board display may also suggest that the Aux button returns you to the *HOME* menu. 
 
------------------------------------------------------------------------- 
+## 3.3 System Menu Items
 
-## 3.2 Organelle's Default MIDI Setup 
+Lets take a closer look at the items in the System Menu.  This menu contains 3 sub menus: Storage, Settings, and Extra.  
 
-MIDI allows for the Organelle to control and to be controlled by external devices. The way Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in Organelle patches that you should know. The Organelle has a `MIDI Setup` menu for configuring your devices so they can 'talk' to each other.
+### Storage Menu
 
-Before getting into these MIDI Settings, please review these three important notes on using USB-MIDI hardware:  
+This menu contains all options related to the microSD card or USB drive, such as ejecting and reloading.
 
-1.  **Choosing a USB-MIDI device.** The Organelle requires connected USB-MIDI devices to be _class compliant_. This is a way of saying "driverless" in that you don't need to install a driver (software) on the Organelle in order to use the USB-MIDI device. If you are unsure if your device is class compliant, please check with your device's manufacturer. 
-1. **Connecting your USB-MIDI device** As long as your USB-MIDI device is class compliant, simply connect it to the Organelle. This can be done via an open USB port either on Organelle itself or on a USB hub that is connected to Organelle. 
-1.  **Load the patch you want to use. If it was already loaded, please reload it.** A newly connected USB-MIDI hardware device will not be recognized by a patch that is already loaded. Reloading a patch will cause the patch to recognize all currently connected USB-MIDI devices. In effect, MIDI devices are not "hot swappable" once a patch is loaded.
+![](images/storagemenu.png)
 
-  
-  
-...OK, back to the `MIDI Setup` Menu:
+-   **Eject** safely un-mounts an attached USB drive. The display will notify you when it is safe to unplug the USB drive. 
 
-![](images/Ch3%20-%207%20midisetuphighlighted.png)
+-   **Reload** rescans the **Patches** folder of the microSD card (or an attached USB drive) and then refreshes the Organelle's patches menu. (This also unloads the current patch so note that all sound will stop until you load another patch.) Any time that you connect a USB drive to the Organelle while the unit is already powered up, you should run this function. Once the reload process has completed, you will be left in the patches menu in order to load an available patch. 
 
- 
+-   **Save** stores the current parameter settings with the open patch, essentially printing the values that have been set with the knobs. Whenever this patch is reloaded, all of your previous parameters will be recalled regardless of the current knob positions. Once a knob is moved, however, its physical position will regain control. 
 
-The MIDI input and output channels can be set independently, from 1-16, or Omni (all channels). If you don't want the Organelle to respond to MIDI input or send MIDI out, they can be disabled. 
+-   **Save New** duplicates the current patch and all of its associated files into a new patch folder and then loads that patch. The new patch also stores the parameter values of the knobs, just as the **Save** function does. When recording sound to a sampler/recorder patch, **Save New** will save the new sound(s) to the new patch and preserve the default sound(s) in the original patch. The new patch takes the name of the original patch and adds an incremented number. So triggering **Save New** while a patch named **Basic Poly** is loaded would create (and load) **Basic Poly 2**. And selecting **Save New** again with either **Basic Poly** or **Basic Poly 2** loaded would spawn **Basic Poly 3**. 
 
-![](images/Ch3%20-%208%20midisetup1.png)
+> **NOTE:** Save and Save New depend highly on the patch.  In other words, a patch must be coded to take advantage of these functions. Many of the factory patches support them, but there are also many user patches that do not.  Additionally there are many user patches that have there own mechanisms for storing and recalling presets and sounds.  
 
-When using a MIDI controller, it may be desirable to specify the device number. This can be set in the `MIDI Setup` menu as well.
+### Settings Menu
+
+This menu accesses options for MIDI, WiFi, and Footswitch settings. It also contains system information and Favourites.
+
+![](images/settingsmenu.png)
+
+-	**MIDI Setup** See section 3.2: The Organelle's Default MIDI Setup for more information on using MIDI.
+
+- 	**WiFi Setup** will list the networks defined in the **wifi.txt** text file.  The Organelle looks for the **wifi.txt** file on the microSD card unless a USB drive is inserted.  Click on the name of your network to join. Other options include **Start Web server**, which allows access an external computer's browser to edit files on the Organelle. **Start AP** allows the Organelle to act as its own access point. **Turn Wifi Off** severs the Organelle's connections with other networks or WiFi-enabled devices. See Section 5 for more on using WiFi with the Organelle.  See Chapter 5 for more information on WiFi
+
+-   **Info** displays the *system information screen*, which presents information about the current hardware/software situation. Don't forget to use the *Selector* to scroll down to view more information.  The following information is displayed:
+
+    - **CPU** The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.
+
+    - **USB Drive**  The ID number of the attached USB drive. When no drive is connected, nothing will be shown. 
+
+    - **IP**				 IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see Chapter 5 for using WiFi on Organelle).
+
+    - **WiFi Network**	 Network your Organelle is currently connected to.
+
+    - **Host Name**		 The address for accessing the web interface from a browser.
+
+    - **Patch**			 The name of the patch currently running.
+
+    - **Patch Folder**	The folder the patches are stored in (most likely 'Patches').
+
+    - **User Root**		 Where Organelle is looking for patches (sdcard or usbdrive).
+
+    - **Version** The currently installed operating system. 
+
+-	**Pedal Setup** will help you configure your expression pedal or footswitch function. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch can jump to the next patch in that list. To enable this function, select the switch option in **Pedal Setup** and then save. The **Pedal Setup** can also be used to define the beginning and end of your expression pedal's range.  Select **Expr Min** and **Expr Max** and scroll to the desired value.  Select **Save** when finished.
+
+
+-	**Show Favourites** will present you with a list of any patches you have saved as a Favourite.  With **Show Favorites** selected, the full list of patches will be hidden until you select **Show Patches** in **Settings**. To add patches to the Favourites list: 
+
+	1. Launch a patch with Encoder.
+	2. Turn the encoder to **Settings** and click **Show Favourites**. 
+	3. Select **Add Current** to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main **Patches** folder).
+
+	To remove a patch from Favourites: 
 	
-![](images/Ch3%20-%209%20midisetup2.png)
+	1. Launch patch you want to remove.
+	2. Select **Remove Current** from the Favourites menu.
 
-To see all availble MIDI related options on Organelle, scroll up to the system menu and browse the submenus for your desired function.
+	Adding a patch to Favourites or removing it only modifies the list of Favourites - no patch files are created or deleted in this process.
+
+> **NOTE:** Favourites is a user-currated list from all patches loaded on the Organelle's currently selected patch storage location. By default this location is the microSD card. It can also be a properly formatted USB drive (not included). If you eject a USB drive containing patches and Favourites, your Favourites will be set to the microSD card's Favourites.
 
 
+### Extra Menu
 
-##### Using Multiple MIDI Connections/Controllers
-By default, every MIDI connection that sends MIDI will be received on Organelle. The input and output of each controller can be enabled or disabled, and set to a specific MIDI channel. 
+This menu may contain additional user defined functions for the Organelle. Some extended techniques for the Organelle programming can be configured and accessed via the **Extras** section of the **System** menu. By default this section will be empty.
 
-Use the MIDI menu to specify a controller. Press `Save` when the desired setup has been made. This writes data to a file called `patch_loaded.sh` in the root directory of Organelle's USB drive. Setting and saving MIDI preferences in the MIDI menu will edit this document. Conversely, `patch_loaded.sh` can be modified in a text editor. To connect multiple controllers and specify in/out functionality:
+## 3.4 Organelle's Default MIDI Setup 
 
-1.	Connect MIDI devices to Organelle.
-2.	Go to `Settings` > `MIDI Setup` > `Midi Device: ...` and scroll through the options to see the available connections. For example, if we have two devices, `Q49:0` and `LPD8:0`, we can scroll to either one and click the encoder to select that controller to communicate with Organelle (which would ignore the other connection). Confirm this by pressing `Save`.
+The way the Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in the Organelle patches that you should know. 
+ 
+The most simple MIDI configuration is to use the 1/8" MIDI jacks to send or receive notes or MIDI clock with another instrument. By default a patch running on the Organelle will send and receive MIDI on the 1/8" jacks.  It is also possible to use class compliant USB MIDI devices.
 
-	> **NOTE:** Not every controller will be labeled by its given name. Some will be represented with a number.
+> **NOTE:** As the Organelle is an open platform, it is possible for a patch to ignore these MIDI settings and send and receive MIDI directly as it pleases.  These are the settings by default, but if you are experiencing something different, please review any documentation about the patch you are running.
 
-3. To enable both connections and specify MIDI input or output for each device, `patch_loaded.sh` must be edited. Open this file in a text editor on a computer or directly on Organelle with a keyboard and mouse. This document will look something like this:
+To see all available MIDI related options on the Organelle, navigate to **Settings** > **MIDI Setup**. In the MIDI Setup menu you can configure global MIDI settings.
 
-	```
-	# MIDI PARAMETERS:START  
-	# midiIn,0  
-	# midiOut,1  
-	# midiInGate,1  
-	# midiOutGate,1  
-	# midiDevice,Q49:0  
-	# MIDI PARAMETERS:END  
-	oscsend localhost 4000 /midiInCh i 0  
-	oscsend localhost 4000 /midiOutCh i 1  
-	oscsend localhost 4000 /midiInGate i 1  
-	oscsend localhost 4000 /midiOutGate i 1  
-	aconnect "Q49:0" "Pure Data:0"  
-	aconnect "Pure Data:1" "Q49:0"  
-	```
-4. We can add another controller to this list. The `aconnect` lines specify controller connections (it is not necessary to edit any other part of this document). `Q49:0` is our MIDI keyboard. Our pad controller, `LPD8:0`, can be added by duplicating the existing `aconnect` lines and writing over `Q49:0`. This would give us:
+![](images/Ch3%20-%2010%20midisetup1.png)
 
-	```
-	aconnect "Q49:0" "Pure Data:0"    
-	aconnect "Pure Data:1" "Q49:0"    
-  
-	aconnect "LPD8:0" "Pure Data:0"    
-	aconnect "Pure Data:1" "LPD8:0"    
-	```
-
-5.	Save the document, `Reload`, and return to a patch. Now we have a keyboard controller and pad controller sending MIDI to Organelle. The first of each pair of lines signify that controller sending MIDI to Organelle. The second of each pair of lines signify that controller receiving MIDI from Organelle. To disable a given connection, delete the corresponding line.
-
-For more information on this, custom MIDI setups for Organelle, plus an explanation video, see the [forum post on advanced MIDI setups](https://forum.critterandguitari.com/t/how-to-advanced-midi-setup-3-1/2264).
-
--	OS v3.1 uses ALSA, allowing us to configure multiple input and output devices. This is an update from previous versions of the OS. This allows for MIDI setups to be specific to patches.
-
-> **NOTE:** MIDI-Config.txt is no longer used for configuration.
-
-> **NOTE:** In this section, terms specific to the MIDI protocol will have quotation marks around them. As this jargon predates Organelle, we would suggest consulting a general resource on MIDI if the terms aren't clear to you.  
-
-> **NOTE:** These MIDI assignments are labeled "defaults" as you can override them in your own patches. For more on making patches, see [chapter seven](#7). 
 
 #### Outgoing MIDI 
 
-With the exception of the Selector knob and the Volume knob, all of Organelle's other interface elements send out MIDI messages when they are used. All MIDI messages are sent on the global MIDI channel, as set in the system menu. 
-
-> **NOTE:** All outgoing MIDI messages are sent over USB. They will be received by any connected USB MIDI device or interface that is actively listening for them. 
+With the exception of the Selector knob and the Volume knob, all of the Organelle's other interface elements send out MIDI messages when they are used. All outgoing MIDI messages are sent on the MIDI channel specified in the MIDI Setup menu. 
 
 ##### The Keys 
 
-The 24 keys (not including the Aux button on the far left) transmit "note on" messages. The leftmost key uses note number `60` ("middle C," or "C3" in most MIDI systems), and the rightmost key uses note number `83` ("B4"), with all keys in between following this scheme. 
+The 24 keys (not including the Aux button on the far left) transmit "note on" messages. The leftmost key uses note number **60** ("middle C," or "C3" in most MIDI systems), and the rightmost key uses note number **83** ("B4"), with all keys in between following this scheme. 
 
-When a key is pressed down, a "velocity" of `100` is transmitted. When a key is released, a "velocity" of `0` (zero) is sent. 
+When a key is pressed down, a "velocity" of **100** is transmitted. When a key is released, a "velocity" of **0** (zero) is sent. 
 
 ##### The Knobs 
 
-Knobs 1, 2, 3, and 4 transmit "control change" messages using controller numbers `21`, `22`, `23`, and `24`, respectively. The full range of controller values (from `0` to `127`) is utilized. 
+Knobs 1, 2, 3, and 4 transmit "control change" messages using controller numbers **21**, **22**, **23**, and **24**, respectively. The full range of controller values (from **0** to **127**) is utilized. 
 
 ##### The Aux Button 
 
-The Aux button transmits momentary "control change" messages using controller number `25`. When the button is pressed down, a controller value of `100` is transmitted. When the button is released, a controller value of `0` (zero) is sent. 
+The Aux button transmits momentary "control change" messages using controller number **25**. When the button is pressed down, a controller value of **100** is transmitted. When the button is released, a controller value of **0** (zero) is sent. 
 
 ##### The Pedal Port 
 
-A pedal connected to Organelle's `Pedal` port transmits two sets of "control change" messages. 
+A pedal connected to the Organelle's **Pedal** port transmits two sets of "control change" messages. 
 
-Controller number `64` transmits a controller value of `0` (zero) for any received signal below `64`, and a controller value of `127` is sent for any received signal of `64` or above. This discrete, threshold behavior is particularly good for sustain-/damper-style pedals. 
+Controller number **64** transmits a controller value of **0** (zero) for any received signal below **64**, and a controller value of **127** is sent for any received signal of **64** or above. This discrete, threshold behavior is particularly good for sustain-/damper-style pedals. 
 
-Controller number `26` transmits continuous values. While the general range would be from `0` (zero) to `127`, the exact range of values may vary based on the pedal connected. This continuous behavior is ideal for an expression-type pedal. 
+Controller number **26** transmits continuous values. While the general range would be from **0** (zero) to **127**, the exact range of values may vary based on the pedal connected. This continuous behavior is ideal for an expression-type pedal. 
 
 No matter what type of pedal is connected, both of these control change messages will be transmitted, and there is nothing stopping you from using both sets of messages. 
 
 #### Incoming MIDI Messages 
 
-While all MIDI messages received by Organelle (via USB) will be passed on to the patch that is currently loaded, certain messages are handled uniformly across all patches. 
+In general, the MIDI messages that are output by the Organelle (as outlined in the immediately previous section) are identical to the incoming messages recognized by the Organelle. This can be helpful, for example, if you want to record the movement of the Organelle's controls into a sequencer as automation data. In other words, the mappings are a bit of a mirror. So let's take particular note of how incoming MIDI messages interact with and can sometimes override the Organelle's on-board controls. 
 
-In general, the MIDI messages that are output by Organelle (as outlined in the immediately previous section) are identical to the incoming messages recognized by Organelle. This can be helpful, for example, if you want to record the movement of Organelle's controls into a sequencer as automation data. In other words, the mappings are a bit of a mirror. So let's take particular note of how incoming MIDI messages interact with and can sometimes override Organelle's on-board controls. 
-
-And similar to the outgoing messages, incoming messages should be sent to Organelle on the global MIDI channel, as set in the system menu. 
+And similar to the outgoing messages, incoming messages should be sent to the Organelle on MIDI input channel specified in the MIDI Setup menu. 
 
 ##### Note On Messages 
 
-Incoming note messages can happen concurrently with note messages created by playing Organelle's keys. If incoming and internal notes are occurring at the same time, these two streams are essentially merged into one large set of notes. 
+Incoming note messages can happen concurrently with note messages created by playing the Organelle's keys. If incoming and internal notes are occurring at the same time, these two streams are essentially merged together. 
 
 ##### Control Change Messages 
 
-Incoming "control change" messages using controller numbers `21`, `22`, `23`, and `24` replace the current values set by Knobs 1, 2, 3, and 4, respectively. 
+Incoming "control change" messages using controller numbers **21**, **22**, **23**, and **24** replace the current values set by Knobs 1, 2, 3, and 4, respectively. 
 
 **To restore a knob's control:** simply turn the knob enough to register a new value. In the same way that "control change" messages are designed to work, the dominant message is always the last one received. 
 
-Incoming "control change" messages using controller number `25` affect the internal status of the Aux button. A controller value between `64` and `127` simulates the Aux button being pressed down, while a controller value between `0` (zero) and `63` simulates a release of the Aux button. 
+Incoming "control change" messages using controller number **25** affect the internal status of the Aux button. A controller value between **64** and **127** simulates the Aux button being pressed down, while a controller value between **0** (zero) and **63** simulates a release of the Aux button. 
 
 > **NOTE:** A momentary control source, such as a damper pedal or button, would work well with this sort of threshold behavior. In certain situations, controlling the Aux button from a external "sustain" pedal could be quite effective. 
 
-Incoming "control change" messages using controller number `26` replace the current value used by Organelle for an expression-style pedal. And incoming messages using controller number `64` replace the current value used by Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactivate it as the current control source, updating both controllers `26` and `64`. 
+Incoming "control change" messages using controller number **26** replace the current value used by the Organelle for an expression-style pedal. And incoming messages using controller number **64** replace the current value used by the Organelle for a sustain-/damper-style pedal. (This subtle distinction really only matters if you are making your own patches.) Similar to the knobs, using the pedal will reactivate it as the current control source, updating both controllers **26** and **64**. 
 
 ##### Program Change Messages 
 
-Incoming "program change" messages are used to change Organelle's current patch. "Program numbers" are assigned based on each patch's position in alphabetical order. Let's unpack this a bit. 
+Incoming "program change" messages are used to select the Organelle's current patch from the list of Favourites. 
 
-Just as they are displayed in the patches menu, all currently available patches are taken in alphabetical order, and each patch is then dynamically assigned a "program number" based on its position. So if Organelle had three patches available called **A Patch**, **B Patch**, and **C Patch**, program number `1` would call up **A Patch**, program number `2` would call up **B Patch**, and program number `3` would call up **C Patch**. (If these were the only three patches available, program change messages for programs `4` and above would do nothing.) 
+Patches are stored in the Favourites list in the order they are added. Each patch is then dynamically assigned a "program number" based on its position. Let's say the Organelle had three patches added to Favourites in this order: **Proton Patch**, **Water Patch**, and **Acid Patch**. Sending the Organelle program number **1** would call up **Proton Patch**, program number **2** would call up **Water Patch**, and program number **3** would call up **Acid Patch**. (Since these are the only three patches in Favourites, program change messages for numbers **4** and above would do nothing.) If you have only one patch in Favourites, program number **1** will not cause a change.
 
 ##### Other MIDI Messages 
 
 Any other MIDI message is passed directly to the current patch. If the patch is configured to handle that particular message, it will respond as configured. If the patch is not listening for that message, then nothing will happen. 
-________
 
-That's about it. By remembering to reload your patch everytime to change your MIDI hardware and knowing what MIDI messages are understood by Organelle and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with Organelle. 
+### Using a USB MIDI Device 
+
+ Using a USB MIDI device with the Organelle is rather painless but not "hot swappable." 
+
+1.  **Connect your USB MIDI device.** As long as a USB MIDI device requires no special, proprietary driver, you need only to connect it to the Organelle. This can be done via a USB port either on the Organelle itself or on a USB hub that is connected to the Organelle. 
+
+2.  **Select the MIDI device in MIDI Setup** In the MIDI menu select **Device**.  You can now scroll through a list of MIDI devices (if you have connected more than one, they will all be on the list).  The device name usually contains the manufacturer or model number. Press the encoder to make your selection, then select **Save**.
+ 
+3.  **Load the patch you want to use. If it was already loaded, please reload it.** Reload the patch for the settings to take effect. 
+
+That's about it. By remembering to reload your patch and knowing what MIDI messages are understood by the Organelle (see the immediately previous section) and/or those understood by the particular patch you have loaded, you should be all set to use MIDI with the Organelle. 
+
+------------------------------------------------------------------------ 
 
 # 4. Managing Patches 
 
 ### Bringing additional patches from your computer to Organelle. 
 
-One of the strengths of Organelle is its depth. The included factory patches represent a good sample of what is possible with Organelle, but these are by no means the only patches you can use. 
+One of the strengths of the Organelle is its depth. Included on your Organelle's microSD card are numerous patches that use the instrument in a plethora of fashions. These included factory patches represent what is possible with the Organelle, but are by no means the only patches you can use. 
 
-As was mentioned in an earlier chapter, [organelle.io](http://organelle.io) is the official repository of Organelle patches and a great place to start when looking for new sounds, options, and performance approaches. (And as it tends to do, the Internet will probably have some suggestions of its own...) 
+As was mentioned in an earlier chapter, [the patches page](https://www.critterandguitari.com/organelle-patches) is the official repository of the Organelle patches. It is a great place to start when looking for new sounds, options, and performance approaches. In addition [Patch Storage](http://www.patchstorage.com) is a website that hosts many user created patches for the Organelle and also other open platforms. 
 
-Finding and downloading Organelle-ready patches is easy enough. To actually use these patches, however, requires getting them from a computer to our properly formatted USB drive, which can then be connected to Organelle for running our newfound patches. (And yes, that computer could be running Windows, Macintosh, Linux, or some other operating system. No additional software is required; the computer is just being used to download files, possibly decompress them, and then copy their folders to the USB drive.) 
+The Organelle can load patches from the internal microSD or a USB drive inserted into one of the USB ports on the side.  When you power up the Organelle (or choose **Reload** from the Storage menu), the Organelle will first check if a USB drive is present and contains patches.  If there is no USB drive, the Organelle will check the internal microSD card and use the patches there.
 
-In this chapter, we'll look at how to work with Organelle's USB drive on a computer. But to get there, we must begin with how that drive needs to be configured, and we'll end with a few extra notes on USB usage with Organelle. 
+Finding and downloading Organelle-ready patches is easy enough. To use these patches, we need to get them from a computer to the Organelle's microSD card or USB drive. (And yes, that computer could be running Windows, Macintosh, Linux, or some other operating system. No additional software is required; the computer is just being used to download files, possibly decompress them, and then copy their folders to your Organelle.) 
 
-Since OS v3.0, patches and WAVs can be added and removed over WiFi. For more info, see [Chapter 5]("#5").
+Getting patches on a USB drive is simply a matter of inserting the drive in a computer and copying over the files.  To use the internal microSD card we need to connect to the Organelle over WiFi and transfer them using a web browser interface.  
 
-With this information in hand, we'll be able to expand our patch library. Here's to growing our set of options. 
+## 4.1 Folder Structure 
+
+Whether the Organelle is loading patches from the microSD card or USB drive, the patches have the same folder structure.  The patches live in a folder named **Patches** at the top level of either the microsD or USB drive.  Each patch is a folder itself and each patch's folder must contain a file named **main.pd**. A patch might require other files, such as sounds or sequences or sub patches, and these will all reside in the patch folder.
+
+An example folder listing would start like this. You can see here at least four patches, each with a required **main.pd** file. 
 
 
-## 4.1 The USB Drive
-
-As has probably become clear by now, out of the box Organelle will only work properly while a USB drive is attached to it. In light of this fundamental fact, a few words on the setup of that USB drive are in order. 
-
-### General Information 
-
-Patches are run directly from an attached USB drive. This could be the flash drive included with Organelle or another USB disk that is appropriately configured. Organelles produced in 2016 shipped with white 4GB USB drives. Since then they now ship with Sandisk 16GB USB drives.
-
--   This USB disk should be formatted with a FAT file system, often associated with MS-DOS. 
-
--   This USB drive must contain a folder called `Patches` at its top-level. (This name is case-sensitive.) 
-
--   For each patch to be used by Organelle, the `Patches` folder must contain a folder named as you would like the patch name to appear. Each patch's folder must contain a file named `main.pd` that contains the top-level patch itself. If any other files are required by the patch, they must also be included in the patch's folder. 
-
-### Folder Structure 
-
-An example directory listing of an Organelle-friendly USB drive would start like this. You can see here at least four patches, each with a required `main.pd` file. 
-
-```
-Patches/
+    Patches/
 		32 Oscillators/
 			main.pd
 		Analog Style/
@@ -556,15 +508,28 @@ Patches/
 			main.pd
 			voice.pd 
 			...
-```
 
-## 4.2 Working with the USB Drive on a Computer 
+It is also possible to place patches in sub folders.  Generally a sub folder is a folder that contains other patch folders.  A sub folder should not have any additional files.  This is useful for organizing your patches into categories, for example Synthesizers or Effects.
 
-Rather than guide you through web browsing, we will assume that you have already downloaded some new patches either from [organelle.io](http://organelle.io) or another source. 
+## 4.2 Using a USB Drive for Patches
 
-From here, we need to connect the USB drive you are using with Organelle to your computer. **If the USB drive is currently connected to Organelle, properly `Eject` the disk before removing it.** This option can be found by accessing the system information screen from the system menu. (See the end of this chapter for specific instructions.) 
+As has probably become clear by now the Organelle comes loaded with patches on the internal microSD card. A set of patches separate from that of the microSD card can also be loaded on a USB drive and used.
 
-Once the drive is connected and seen by your computer, we can proceed. 
+To have the Organelle load patches from the USB drive, the drive must either be connected to the Organelle before it powers up, or inserted while it is running.  If you insert a USB drive while running, you must select **Reload** in the Storage menu to refresh the list of patches.   
+
+### General Information 
+
+An attached USB drive must be appropriately configured. 
+
+-   This USB disk should be formatted with a FAT file system, often associated with MS-DOS. This is most often the default for small USB flash drives.
+
+-   This USB drive must contain a folder called **Patches** at its top-level. (This name is case-sensitive.)  
+  
+### Working with your USB Drive on a Computer 
+
+Rather than guide you through web browsing, we will assume that you have already downloaded some new patches either from [the patches page](https://www.critterandguitari.com/organelle-patches) or [Patch Storage](http://www.patchstorage.com) or another source. 
+
+From here, we need to connect the USB drive you are using with the Organelle to your computer. **If the USB drive is currently connected to the Organelle, properly **Eject** the disk before removing it.** Select **Eject** from the Storage menu. Once the drive is connected and seen by your computer, we can proceed. 
 
 ### Folder Structure Revisited 
 
@@ -572,15 +537,19 @@ Earlier in this chapter, we went over the required folder structure for a usable
 
 ![](images/Ch4%20-%201%20Top%20of%20patches.png) 
 
-The top-level of my USB drive, whose disk name is `ORGANELLE`, is shown above. Inside of the top-level `Patches` folder, the folders for the first four patches are selected (with blue coloration), and their contents are exposed. 
+The top-level of my USB drive, whose disk name is **ORGANELLE**, is shown above. Inside of the top-level **Patches** folder, the folders for the first four patches are selected (with blue coloration), and their contents are exposed. 
 
-Again, the requirement here is that each folder contains a `main.pd` file that serves as the primary file for that patch. As long as this file is in place, that patch will appear in Organelle's patches menu as the folder name. So in the example shown above, the first four patches shown on Organelle would be `32 Oscillators`, `Analog Style`, `Arpeggio - Double`, and `Basic Poly`. 
+Again, the requirement here is that each folder contains a **main.pd** file that serves as the primary file for that patch. As long as this file is in place, that patch will appear in the Organelle's patches menu as the folder name. So in the example shown above, the first four patches shown on the Organelle would be **32 Oscillators**, **Analog Style**, **Arpeggio - Double**, and **Basic Poly**. 
 
-### Making Changes to the USB Drive 
+### Making Changes to your USB Drive 
 
 Assuming your USB drive is formatted correctly and the Patches folder is appropriately named and located, making changes to your available patches is as simple as working with files on your computer. 
 
-**To add a patch to your Organelle's USB drive:** Patches you download are likely to be ZIP files or ZOP files. Copy these compressed files directly into your `Patches` folder. After reinserting drive in Organelle and selecting Reload from `Storage` menu, the Patches menu will display an option like `Install Your New Patch`. Once selected, the Organelle will uncompress the patch into the `Patches` folder and then delete the ZIP/ZOP. This method will avoid any file corruption that may occur while transfering files across devices. 
+**To add a patch to your Organelle's USB drive:** Patches you download are likely to be .zip files or .zop files. Copy these compressed files directly into your **Patches** folder. After reinserting drive in the Organelle and selecting Reload from **Storage** menu, the Patches menu will display an option like **Install [Patch name].zip** (or .zop). Once selected, the Organelle will uncompress the patch into the **Patches** folder and then delete the .zip/.zop. This method will avoid any file corruption that may occur while transferring files across devices. 
+
+![](images/installpatch.png)
+
+> **NOTE:** While a downloaded zipped patch may be uncompressed and then the resulting patch folder copied to the USB, the recommended method is to have the Organelle unzip the patch by selecting Install from the Patches menu.  Patches in .zop format (ending in .zop) should never be uncompressed because they often contain additional installation instructions that the Organelle will process during installation.  
 
 **To backup a patch:** copy the patch's folder to a location on your computer. 
 
@@ -588,267 +557,262 @@ Assuming your USB drive is formatted correctly and the Patches folder is appropr
 
 **To delete a patch:** delete the patch's folder, just as you would delete any folder on your computer. 
 
-Taken together, these basic functions make it easy for you to organize and sort your patches. Another useful idea is to prepare a set of patches for a live performance by doing something like this. 
+Taken together, these basic functions make it easy for you to organize and sort your patches. 
 
-1. Back up all of your patches from the USB drive onto your computer (a good general starting point). 
+## 4.3 Using internal microSD 
 
-2. Copy any new patches you will need from your computer to the USB drive. 
-
-3. Delete any patches off of the USB drive that you will not need for this set. 
-
-4. Sort the remaining patches by adding a number to the front of each patch name (e.g., if Basic Poly was the first patch needed, I would rename it something like 1-Basic Poly.) This allows you to order the patches you will need while preserving their names. 
-
-## 4.3 Additional USB Information
-
-Here are a couple of other procedures and facts to bear in mind while working with USB on Organelle. 
-
--   **To safely unmount a connected USB disk:** from the patch information screen, turn the Selector knob to call up the menu screen. Turn the Selector to the left (upward) to move to the menu screen's `SYSTEM` section, and select and engage the `Eject` function. The display will notify you when it is safe to unplug your USB drive. 
-
--   **USB devices are not immediately hot-swappable.** While Organelle does not need to be power cycled when a USB device is removed, any device removal will trigger Organelle to quit the running instance of Pure Data and close out the current patch. The display will notify you when this has happened (including after you disconnect a safely ejected USB drive). You can then use the Selector to load or reload your patch from the menu screen's patches section. 
-
-# 5. Features Accessible with WiFi
-
-Use WiFi with Organelle to:
-
--	Sync tempo between Organelle and external instruments using [Link](https://www.ableton.com/en/link/), and
-
--	Manage files over Organelle's web server.
-
-Do these things with:
-
--	Organelle's wireless Access Point, or
-
--	Over an existing WiFi network.
-
-> **NOTE:** You will need a USB WiFi dongle to connect. Please make sure your WiFi dongle uses the Ralink 5370 chipset. This chipset operates on the 2.4GHz band (5GHz is _not_ supported).
-
-> **NOTE:** When joining an existing network, make sure it supports WPA2 encryption. 
-
-There is also a [video version](https://youtu.be/o2oqqbMc40g) of this chapter demonstrating various WiFi functions.
-
-## 5.1 Syncing Instruments
-
-### Access Point
-
-Organelle's Access Point (AP) creates its own WiFi network that can be discovered on other devices. This method is useful because very little has to change on Organelle to make it happen. It is also helpful when you can't access an existing WiFi network.
-
-The default network name will be 'Organelle' and the default password will be 'coolmusic.'
-	
-1. Open `Settings` > `WiFi Setup`.
-
-2. Select `Start AP`. Once Organelle's network is created the screen will read 'Connected Organelle' at the top.
-
-3. Connect other devices to your new 'Organelle' network.
-
-### Sync with Instruments on an Exisiting WiFi Network
-
-We'll connect the Organelle to our WiFi network to sync with another instrument. This is essentially the same method as our Access Point but we'll need to edit one file on the USB drive.
-
-1. In the `SYSTEM` menu, navigate to `Settings` > `WiFi Setup`. This will create a text file on the USB drive called `wifi.txt.`. 
-
-2. Eject the USB drive from your Organelle.
-
-3. Insert the drive into a computer and find `wifi.txt` in the drive's root directory.
-
-4. There are two lines of text in the document. The first line is the name of the network you want the Organelle to join. The second line is the corresponding password for that network.
-
-5. Save the file and close it.
-
-6. Eject the drive and re-insert it into Organelle, along with a USB WiFi dongle.
- 
-7. Go to `Storage` > `Reload`.
-
-8. Open `Settings` > `WiFi Setup`.
-
-9. Select your network and allow a moment to connect.
-
-Open a tempo-based patch and hear how your devices play in sync. The tempo indication on Organelle screen should read something like `120 BPM LINK`.
-
-## 5.2 File Management with the Organelle's Web Server
-
-Using another computer's browser, we can add or remove patches and/or samples. This method is similar to ejecting the USB drive and editing the drive's contents on a computer, but without having to physically disconnect/reconnect anything. With OS v3.1 comes a new software installer, an upgrade from the last Organelle OS.
-
-### Add a Patch
-
-1.	Join Organelle to the same network as your computer.
-
-2. Once connected, select `Start Web server`.
-
-3. On your computer, compress a patch folder to a .zip file (unless already in that format).
-
-4. Open a browser and navigate to http://organelle.local
-
-5. Enter the `Patches` folder on Organelle's web server. 
-
-6. Upload your zipped patch.
-
-7. On Organelle, scroll to `Storage` > `Reload` to refresh Organelle's patch list and view the new file.
-
-8. There will be a corresponding install file. Open that to unzip the compressed file. The remaining .zip file will be automatically deleted. 
-
-9. Run the patch!
-
-### Swapping WAV Files
-
-A patch's WAV files can be viewed and previewed in the web browser by accessing that patch's `Sounds` folder. When swapping multiple samples in a patch, it is easiest to have the new samples follow the same format as exisiting samples (1.wav, 2.wav, etc...). 
-
-1. Remove the exisiting .wav files in a patch by selecting all the necessary check boxes and selecting the `Delete` button at the top of the browser.
-
-2. Click `Upload` and select all desired samples to add to the patch. 
-
-3. Once uploading has completed, reload Organelle's USB drive by scrolling to `Storage` and selecting `Reload`.
-
-### More Info
-
-When an Organelle is connected to a network, or spawning its own network, the file managaer can be accessed in a browser via `organelle.local`. It is possible to connect multiple Organelles to the same network. With two on the same network, they will be discoverable as `organelle.local` and `organelle-2.local` automatically. 
-
-# 6. Other Stuff in the Settings Menu
-
-## 6.1 Inside Information
-
-Your Organelle will tell you a little bit about itself in `Settings`>`Info`. The list of information contains the following:
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-
-|Label ![](images/spacer.png)	|Function ![](images/spacer.png) | 
-|:---------------------------|:--------------------------------|
-|`CPU`		| The amount of processing power currently being used. We try to keep this below 75% for optimal performance. This value is updated in near-real time.|
-|`USB Drive`		| The ID number of the attached USB drive. When no drive is connected, nothing will be shown. |
-|`MIDI Dev`		| Current MIDI device in use. With no device connected, it will read `None`. With a MIDI interface connected, it will show the name of the device.|
-|`IP`				| IP Address of your Organelle to remotely add, remove or edit patches or WAV files (see [Chapter 5](#5) for using WiFi on Organelle).|
-|`WiFi Network`	| Network your Organelle is currently connected to.|
-|`Host Name`		| The address for accessing the patch manager from a browser.|
-|`Patch`			| The name of the patch currently running.|
-|`Patch Folder`	| The folder the patches are stored in (most likely 'Patches').|
-|`User Root`		| Where Organelle is looking for patches (most likely /usbdrive).|
-| `Version` 		| The currently installed operating system. |
-
-## 6.2 Choosing Favourites
-Create a custom list of patches all within the Organelle. Open a patch, turn the encoder to `Settings` and click `Show Favourites`. 
-		
-![](images/Ch7%20-%203%20showfavs.png)
-
-Select `Add Current` to enter a patch to the list. Patches are saved in the order they were added (not alphabetically like in the main `Patches` folder). 
-
-![](images/Ch7%20-%204%20favourites.png) 
-
-## 6.3 Using the Footswitch to Switch Patches
-
-With OS v3.1, configuration for the foot pedal input has been expanded. By default, a footswitch will control whatever the current patch dictates (it may not have a programmed function). If patches have been added as Favourites, a press and release of the footswitch will jump to the next patch in that list. To enable this function:
-	
-1. Go to `Settings` > `Pedal Setup`and select `Switch`. The current setting will be shown here. Click this option to change to `Favourites`.
-2. Scroll down and click `Save`.	
-	
-![](images/Ch6%20-%201%20pedalsetup.png)
-
-## 6.4 Customizing Expression Pedal Range
-
-To define the beginning and end of your expression pedal's range, return to the `Pedal Setup` menu and:
-
-1. Select `Expr Min:`
-2. Turn the encoder to declare the minimum output value of the expression pedal as it is interpreted by Organelle. Click the encoder to confirm the value.
-3. Do the same for `Expr Max:` if desired. 
-4. Scroll down and click `Save`.
-
-## 6.5 Extras
-Some extended techniques for Organelle programming can be configured and accessed via the `Extras` section of the `System` menu. By defaul this section will be empty. Take a look at the [Advanced Topics](/advanced_topics.md) run down for further information.
-
-# 7. Editing and Creating Patches
-
-### Using Organelle as a computer. 
+Patches are stored on the internal microSD in the same manner as the USB drive.  There is a Patches folder at the top level that contains patches or sub folders of patches.  In order to access the microSD card and manage the patches we need to use the web browser based file manager.  This process is detailed in the next chapter.
 
 ------------------------------------------------------------------------ 
+
+# 5. Using WiFi with the Organelle
+
+The Organelle has always been able to connect to WiFi networks and we have been building out its WiFi capabilities over time.  At this point the WiFi capabilites have grown to allow many powerful and convenient features, and the Organelle now ships with a USB WiFi adapter standard.
+
+The two major features are a web based interface and the support for Ableton [LINK](https://www.ableton.com/en/link/), for wireless tempo synchronization.  The web based interface allows you to access and manage the Organelle's patches and configure WiFi settings.  You can access this interface from any web browser.  
+
+In order to get the Organelle connected we use a USB WiFi adapter.  To get started, insert the included WiFi adapter into one of the Organelle's USB ports.
+
+> **NOTE:**  The included WiFi usb adapter uses the Ralink 5370 chipset.  This will only connect to 2.4 GHz WiFi networks.  We have experimented with other WiFi adapters but we don't have a conclusive list of what works and what doesn't.  Please consult the [forum](https://forum.critterandguitari.com) to discuss other possible adapters.  When in doubt, stick with the included adapter which has been proven to work very well.
+
+The Organelle has 2 modes of WiFi operation: normal and AP mode.  In normal mode the Organelle connects to an existing WiFi network.  In AP mode the Organelle creates its own network (Access Point, or hot-spot).  
+
+The easiest way to get the Organelle connected to an existing network is to first start in AP mode.  Then you can join this newly created network with your computer and enter credentials for any other networks from the Organelle's web interface.  So we'll cover AP mode first.
+
+## 5.1 Using AP mode
+
+Starting the Organelle in AP mode allows you to connect to the Organelle with a computer and nothing else (wireless router) is required.  Once connected you can access the web interface and transfer patches or setup other existing WiFi networks to join.
+
+From the Settings menu select WiFi Setup to launch the main WiFi Setup screen.  First will be a list of stored networks.  On a new Organelle there is just one, named 'music'.  We don't want to connect to an existing network just yet, so we select **Start AP**.  This will create a WiFi network named 'Organelle'.
+
+![](images/wifistartap.png)
+
+The screen will indicate the WiFi network has been created:
+
+![](images/wificonnectedap.png)
+
+Now we can join this network from another device.  On your computer open WiFi settings and look for the network named 'Organelle'.
+
+When you are prompted for a password type 'coolmusic'.  We are now connected to the Organelle's own WiFi network.
+
+## 5.2 Web Interface
+
+In order to manage patches and enter the credentials for existing networks to join we use the Organelle's web interface. The Organelle's web interface is disabled by default, so first we need to turn it on.  In WiFi Setup select **Start Web Server** 
+
+![](images/wifistartweb.png)
+
+Now on your computer open a web browser and navigate to 'http://organellem.local'. This will bring you to the Organelle's simple home page:
+
+![](images/webhomepage.png)
+
+> **NOTE:** If you are not able to open http://organellem.local, you can also access this page using the Organelle's IP address.  First get the Organelle's IP address. In the Settings choose Info.  Then use the numbers listed next to 'IP'.  For example http://192.168.1.143.
+  
+There are 3 items.  Patch Manager opens a file browser to add and manage patches (described in the next section), Info lists some system info (similar to the Info screen in the Settings menu), and WiFi Setup lets you add existing networks to join.
+
+## 5.3 Joining Existing WiFi Network   
+
+It is perfectly reasonable to use the Organelle in AP mode to access all the WiFi capabilities, but it is often more convenient to join an existing network in your home or studio.  There is an easy way to achieve this once you have started in AP mode.
+
+Once you are connected to the Organelle in AP mode and have opened the web interface (see above), click on WiFi Setup to bring up the configuration screen.
+
+![](images/webwifi.png)
+
+The WiFi Setup page allows you to enter WiFi network name and password to be stored on the Organelle. To add a new network click add and enter the network name (aka SSID), and password and click OK.  You can also delete networks from the list.
+
+These networks will now show up in the WiFi Setup menu on the Organelle.  To join one, navigate to WiFi Setup and click the network you want to join. 
+
+![](images/wificonnectingnet.png)
+
+AP mode will be halted and the Organelle will attempt to join this network.  When this is successful the network will have a '*' next to it in the list and it will say 'Connected' at the top of the screen.  
+
+![](images/wificonnectednet.png)
+
+## 5.4 Patch Manager 
+
+In order to access and manage the patches on the internal microSD card we use a web browser based file manager. We can access and manipulate both the USB drive and internal microSD card in this manner.
+
+Once the Organelle WiFi is started in either AP mode or by connecting to existing network, navigate to the web interface and click Patch Manager.  This will open the web browser based patch manager.  
+
+![](images/webfiles.png)
+
+From this screen we can upload, move, and delete patches on both the USB drive (if one is connected) and the microSD card. It is also possible to copy patches between USB to microSD. 
+
+The two buttons on the top left select either microSD or USB drive storage. Clicking on them will bring you to the top level of the storage device.  In other words if there is a USB drive inserted and you click **USB Drive** you will see exactly what you would see if you plugged the USB drive into your computer. From here you can enter the 'Patches' folder.
+
+There are also 3 buttons on the top right of the Patch Manager:
+
+-  **Refresh Button** On the left the circular arrows button tell the Organelle to refresh the patches in the patch menu.  This is the same as navigating to the Storage menu on the Organelle and clicking **Reload**.  Generally you will want to click this button after you have uploaded or moved or deleted patches to sync those changes with the Organelle's patch menu.
+
+-  **Flash Button** The lightning button flashes the Organelle's LED white.  This is useful if you have several Organelles on the same wireless network.  It can get confusing to remember what Organelle you are interacting with, so you can click this button to see which Organelle you are connected to.
+
+-  **Home Button** The home button returns to the Organelle home page. 
+
+### Managing Patch Files
+
+The Patch Mangager provides all the functions you will need to manage files.  Uploading new patches, moving them around, archiving and downloading backups are all possible.  The following are some common operations you can perform with the Patch Manager.
+
+**Uploading a New Patch:** The Patch Manager supports uploading one or more files at a time, but you can't upload whole folders. For this reason we want to upload patches in the .zip or .zop format.  This is convenient because patches are distributed in this format anyway.  
+
+To upload to the microSD card, press the **SD Card** button, and then click into the 'Patches' folder.
+
+After you download a patch from [the patches page](https://www.critterandguitari.com/organelle-patches) or [Patch Storage](http://www.patchstorage.com) or another source, press the **Upload** button in the Patch Manager. Select the .zip or .zop patch file and click OK.  A progress bar will indicate upload progress.  
+
+Next click the **Refresh Button** on the top right of the Patch Manager.  Now on the Organells's Patch Menu you should see **Install [Patch name].zip** (or .zop). For example, after uploading a patch named 'New Patch' in .zip format you should see:
+
+![](images/installpatch.png)
+
+Select this and it will uncompress the patch and remove the .zip or .zop file.  
+
+**Categorizing Patches in Sub Folders:** You can move patches around on the storage device (or even between USB and microSD).  In this example we will create a sub folder and then move in some patches.  
+
+First navigate to the microSD card by pressing the **SD Card** button.  Then click into the 'Patches' folder.  Now press the **New Folder** button to create a new sub folder and give it a name.  To move patches into the new folder is a 2 part operation.  First select one or more patch folders by checking the Select box next to the desired folder.  Then press the **Cut** button.  Navigate to the folder you want to move the items into and press the **Paste** button.
+
+Hit the **Refresh Button** to update the patch menu on the Organelle.
+
+**Renaming a Patch**: Select the the patch folder you wish to rename and hit the **Rename** button.  
+
+**Downloading a Patch:** The Patch Manager supports downloading single files by pressing the download icon next to any file in the browser.  To download an entire patch we must first zip into a single compressed file.  Select the patch folder you wish to download and press **Zip**.  This will create a .zip file of the same name that you can download.  
+
+**Deleting a Patch:** Select one or more patch folders and press the **Delete** button. 
+
+## 5.5 Syncing Instruments
+
+It is possible to synchronize tempo and beat between patches and other music devices / apps on the network using the Ableton LINK protocol.  If there are other LINK enabled devices on the network and the patch you are using has support for this, it will join and synchronize automatically.  Not all user contributed patches have this feature, so check the patch documentation when in doubt.
+
+------------------------------------------------------------------------ 
+
+# 6. Editing and Creating Patches
+
+### Using the Organelle as a computer. 
 
 Well, you have made it to the final chapter. Mazel tov! We hope you have enjoyed the journey thus far, and it is worth mentioning that repeat visits to this document tend to be rewarding. 
 
 This chapter covers the basics of running the Organelle with a monitor, keyboard and mouse attached for the purpose of editing or creating patches. The actual process of creating and editing patches is covered in a series of [tutorial videos](https://youtu.be/wMmq8n2iq8U?list=PLsGeYhHwePZjYOvyj7xcMxFs-hO95L1ju).
 
-While we have continually mentioned the microcomputer within Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want run Organelle with a monitor, keyboard, and mouse — some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
+While we have continually mentioned the microcomputer within the Organelle, we have also pointed out the "un-computer" nature of this instrument. But we also recognize that you might want to run the Organelle with a monitor, keyboard, and mouse — some folks might find it particularly nice to edit patches in this fashion. So our main theme has reemerged: it's your choice. 
 
-This chapter will walk us through the general use of Organelle along with HDMI, which presumes the use of a keyboard and mouse as well. We will do this by going through a general narrative of using Organelle as a computer. 
+While we are keen on the "un-computer" nature of this instrument, there is a microcomputer within the Organelle.
+
+you might want to connect a monitor, keyboard, and mouse as editing patches in this fashion can be quite enjoyable.
+So our main theme has reemerged: it's your choice. 
+
+This chapter will walk us through the general use of the Organelle along with HDMI, which presumes the use of a keyboard and mouse as well. We will do this by going through a general narrative of using the Organelle as a computer. 
 
 Let's get visual. And peripheral. 
 
------------------------------------------------------------------------- 
 
-## 7.1 Keyboards and Mice
+## 6.1 Keyboards and Mice
 
-Connecting an HDMI monitor to Organelle is simple enough. But the function of the HDMI device is to provide the visual output of Organelle's functioning microcomputer. (As we will see very shortly, connecting only a monitor will show you, well, not much.) As with any computer, you need a keyboard and mouse to actually interface with Organelle. 
+Connecting an HDMI monitor to the Organelle is simple enough. But the function of the HDMI device is to provide the visual output of the Organelle's functioning microcomputer. (As we will see very shortly, connecting only a monitor will show you, well, not much.) As with any computer, you need a keyboard and mouse to actually interface with the Organelle. 
 
-Just about any USB mouse should work with Organelle, and most PC-style USB keyboards should also be fine. Additionally, mice and keyboards that have their own USB wireless dongles should also work with Organelle. So long as the data is coming across a USB port, your peripherals will probably work. 
+Just about any USB mouse should work with the Organelle, and most PC-style USB keyboards should also be fine. Additionally, mice and keyboards that have their own USB wireless dongles should also work with the Organelle. So long as the data is coming across a USB port, your peripherals will probably work. 
 
-> **NOTE:** While we have aimed to support regular USB keyboards, not all manufacturers implement the general USB standards in the same way. Accordingly, some keyboards may not work with Organelle. Please report any finding of incompatibility on [our forum](http://forum.critterandguitari.com). 
+> **NOTE:** While we have aimed to support regular USB keyboards, not all manufacturers implement the general USB standards in the same way. Accordingly, some keyboards may not work with the Organelle. Please report any finding of incompatibility on [our forum](http://forum.critterandguitari.com). 
 
-Finally, we are talking about more and more USB devices being used with Organelle. (And don't forget the USB drive housing your `Patches` folder!) Before you worry about running out of ports, remember that a USB hub can be connected to Organelle. 
+Finally, we are talking about more and more USB devices being used with the Organelle. Before you worry about running out of ports, remember that a USB hub can be connected to the Organelle. 
 
------------------------------------------------------------------------- 
+## 6.2 Operating the Organelle as a Computer  
 
-## 7.2 Operating Organelle as a Computer  
+After you have connected an HDMI monitor and powered it on, you will immediately see a semi-cryptic terminal window for text entry. To optimize performance, the Organelle runs in this fashion (with no graphical user interface, or GUI) by default. 
 
-After you have connected an HDMI monitor and powered it on, you will immediately see a semi-cryptic terminal window for text entry. To optimize performance, Organelle runs in this fashion (with no graphical user interface, or GUI) by default. 
+This window helpfully suggests that you run the command **startx** to start up the standard graphical environment. So if we want to go beyond this screen, we will need a keyboard. (And we can say now that if you want to edit your Pure Data patches on the Organelle, you will definitely need a mouse as well.) 
 
-This window helpfully suggests that you run the command `startx` to start up the standard graphical environment. So if we want to go beyond this screen, we will need a keyboard. (And we can say now that if you want to edit your Pure Data patches on Organelle, you will definitely need a mouse as well.) 
+**To start the Organelle's graphical operation mode:** type **startx**, and then press the \[ENTER\] / \[RETURN\] key to execute the function. 
 
-**To start Organelle's graphical operation mode:** type `startx`, and then press the \[ENTER\]/\[RETURN\] key to execute the function. 
-
-> **NOTE:** Booting Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
+> **NOTE:** Booting the Organelle's graphical operation mode causes the system itself to be reloaded. This means that any currently loaded patch will be unloaded, and any audio output being produced will cease. 
 > 
-> **NOTE:** It is also possible to edit patches from another computer in realtime, using VNC. For more informaiton on that, check out [Advanced Topics](/advanced_topics.md).
+> **NOTE:** It is also possible to edit patches from another computer in realtime, using VNC. For more information on that, check out [this forum posting](https://forum.critterandguitari.com/t/remote-patching-using-vnc/3607).
 
 ![](images/Ch7%20-%201%20screen.png) 
 
 The options on this screen are fairly sparse. This matches the character of the running operating system, which has been stripped down in favor of achieving the most stable audio performance. There are four elements here. 
 
--   The disk icon labeled `USB Drive` at the top left of the screen     represents the USB drive containing your `Patches` folder. 
--   The `Read me First!` file contains some helpful notes from our technical team. You should probably do as they say.    
+-   The disk icon labeled **USB Drive** at the top left of the screen represents the USB drive containing your **Patches** folder. 
+-   The **Read me First!** file contains some helpful notes from our technical team. You should probably do as they say.    
 -   The dark icon at the bottom left of the screen represents a command-line interface (CLI). If you click on this icon, a terminal emulator instance is started. 
 -   The red octagonal icon at the bottom right of the screen represents a stop sign. When you are done working in this graphical operation mode, you should click this icon. 
 
-**To exit Organelle's graphical operation mode:** click the red octagonal icon at the bottom right of the screen. This will close out all open windows and unload the current Organelle patch, interrupting any ongoing audio output (the same as when we entered this graphical mode). This red "exit" button is the primary interface option that you will need. 
+**To exit the Organelle's graphical operation mode:** click the red octagonal icon at the bottom right of the screen. This will close out all open windows and unload the current the Organelle patch, interrupting any ongoing audio output (the same as when we entered this graphical mode). This red "exit" button is the primary interface option that you will need. 
 
-While you can navigate the file system with the keyboard and mouse, the best way to load a patch is to do it from Organelle's hardware. By using the Selector encoder to choose and load a patch, you will then see the patch visually loaded by Organelle along with a crucial helper patch. 
+While you can navigate the file system with the keyboard and mouse, the best way to load a patch is to do it from the Organelle's hardware. By using the Selector encoder to choose and load a patch, you will then see the patch visually loaded by the Organelle along with a crucial helper patch. 
 
 ![](images/Ch7%20-%202%20mother.png) 
 
-The Organelle unit itself is now functioning as we would normally expect it to: the patch has been loaded, Organelle's hardware display has shifted to the patch information screen, and audio can now be produced. 
+The Organelle unit itself is now functioning as we would normally expect it to: the patch has been loaded, the Organelle's hardware display has shifted to the patch information screen, and audio can now be produced. 
 
 Within the computer interface, we are now seeing the behind-the-scenes implications of loading a patch. Our patch (in this case, **Basic Poly**) has been loaded, and its main.pd file is taking up most of the screen. But sitting atop the patch we expected is one we did not. 
 
-#### The `mother.pd` Helper Patch
+#### The **mother.pd** Helper Patch
 
-`mother.pd` exists at the root (or top) directory of Organelle, which is located on the microSD that comes preloaded within the Organelle hardware. This helper patch is the other half of the data handshake between the Pure Data patches we run and Organelle's hardware. 
+**mother.pd** exists at the root (or top) directory of the Organelle, which is located on the microSD that comes preloaded within the Organelle hardware. This helper patch is the other half of the data handshake between the Pure Data patches we run and the Organelle's hardware. 
 
 In short, this helper patch is executing the raw communications with the Organelle hardware. (This is done using the *Open Sound Control* \[*OSC*\] protocol.) 
 
-Accordingly, `mother.pd` is necessary for the general operation of Organelle. That is why this patch is loaded concurrently with any patch that you call up. 
+Accordingly, **mother.pd** is necessary for the general operation of the Organelle. That is why this patch is loaded concurrently with any patch that you call up. 
 
-> **NOTE:** In general, you should not edit `mother.pd`. That being said, Organelle will use any file named `mother.pd` that it finds within the `Patches` folder of your USB drive. By copying the root directory's `mother.pd` to your `Patches` folder, you could experiment with editing this patch while keeping the master version clean. Again, you probably don't want to do this. 
+> **NOTE:** In general, you should not edit **mother.pd**. That being said, the Organelle will use any file named **mother.pd** that it finds within the **Patches** folder of your microSD card or USB drive. By copying the root directory's **mother.pd** to your **Patches** folder, you could experiment with editing this patch while keeping the master version clean. Again, you probably don't want to do this. 
 
 #### The Patch Load Sequence 
 
-To better understand the full relationship at hand, let's take a step back for a moment. Anytime a patch is loaded, Organelle goes through a sequence of steps. 
+To better understand the full relationship at hand, let's take a step back for a moment. Anytime a patch is loaded, the Organelle goes through a sequence of steps. 
 
 1.  If a patch is currently loaded, it receives a quitting message. This allows any "cleanup" processes to be executed. 
-2.  If a patch is currently loaded, it then prompts the Pure Data application to quit. This effectively closes any and all open patches, including the `mother.pd` helper patch. 
+2.  If a patch is currently loaded, it then prompts the Pure Data application to quit. This effectively closes any and all open patches, including the **mother.pd** helper patch. 
 3.  The Pure Data application is relaunched, and the patch we have requested is then opened, specifically the file main.pd in the patch's folder. 
-4.  The `mother.pd` helper patch is loaded. 
+4.  The **mother.pd** helper patch is loaded. 
 
-Once this sequence completes, all assets needed for your patch to communicate with Organelle will be loaded and ready to go. So the general flurry of windows closing and opening that you see in Organelle's graphical operation mode is both expected and proper. 
+Once this sequence completes, all assets needed for your patch to communicate with the Organelle will be loaded and ready to go. So the general flurry of windows closing and opening that you see in the Organelle's graphical operation mode is both expected and proper. 
 
-By clicking on your loaded patch, it will move `mother.pd` to the background (without closing it) and allow you to focus on working with your patch. 
+By clicking on your loaded patch, it will move **mother.pd** to the background (without closing it) and allow you to focus on working with your patch. 
 
 #### Other Operational Tips 
 
 Just a few parting notes on this mode of operation. 
 
--   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see [Chapter 3](#3)). 
--   **To create a new patch:** duplicate a simple patch in your `Patches` folder, rename the new folder, and then open the contained `main.pd` patch for editing. (You could also create your own "new patch" template for this purpose.) 
+-   **The Linux file browser can be used as you would *File Explorer* (on Windows) or *Finder* (on Mac).** If you are running the Organelle as a computer, you can navigate to your USB drive in order to rename or delete files in the same fashion described earlier (see Chapter 3). 
+-   **To create a new patch:** duplicate a simple patch in your **Patches** folder, rename the new folder, and then open the contained **main.pd** patch for editing. (You could also create your own "new patch" template for this purpose.) 
 -   **Explore the factory patches.** In addition to finding ideas and platforms that you can build upon, you will also encounter some external objects that are not part of the Vanilla Pd distribution. To use an external in a patch of your own, copy it to your patch's folder. 
 
-> **NOTE:** Externals that you encounter here are built for the Linux operating system that Organelle is running. If you are building patches on your own computer, these externals will only work if you are also running Linux (these compiled externals are platform-specific). 
+> **NOTE:** Externals that you encounter here are built for the Linux operating system that the Organelle is running. If you are building patches on your own computer, these externals will only work if you are also running Linux (these compiled externals are platform-specific). 
 
--   **Do click the red "exit" button when you are done working in this graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
+-   **Do click the red "exit" button when you are done working in this graphical operation mode.** While you could simply unplug your HDMI monitor and resume working with the Organelle as usual, this will leave some processing resources allocated for graphics that you are no longer using. It is better to revert the Organelle to its normal CLI mode and keep the processor focused on audio tasks. 
 
 
+# 7. Additional Info
 
+## 7.1 Burning SD Card Disk Image 
+
+In addition to storing patches, the micro SD card also stores the Organelle's operating system.  
+
+Burning a new disk image on the micro SD card will reset your Organelle M to the factory state.  This is useful to update to the latest Organelle OS, or to fix a problem with the micro SD card.  
+
+This will completely wipe the micro SD card clean, so make sure to backup anything on there that you need.  See Chapter 5 for information on downloading your patches and files or moving them to a USB drive. You can also use a brand new card if you wanted to keep your old OS available.   
+Follow these steps to flash:
+
+1. Download the microSD card disk image to your computer: 
+
+Current OS release: [OGM-4.0](http://thepeacetreaty.org/organellem/images/OGM-v4.0.img.zip)
+
+Previous OS release: [OGM-3.2](http://thepeacetreaty.org/organellem/images/20190619-ogm-v3.2.img.zip)
+
+ 
+2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs: 
+
+
+Windows: [7-Zip](http://www.7-zip.org)
+    
+Mac: [The Unarchiver](http://unarchiver.c3.cx/unarchiver)
+    
+Linux: [Unzip](https://linux.die.net/man/1/unzip) 
+
+
+3. Download the flasher program to your computer: https://www.balena.io/etcher/  (Note: even though Etcher says it can flash a zipped file, we have not found this to be true. Please follow step #2!)
+4. Power down the Organelle
+5. Locate the thin slit in the rear of the enclosure (between the MIDI In port and the HDMI Port.)
+6. Use a pin or paperclip to press in on the black SD card to eject it and it will spring out gently.
+7. Insert microSD into your computer (you may need an adapter or card reader)
+8. Use the Etcher program to burn the unzipped OS on to the SD Card. When Etcher is finished your computer may display a message similar to 'This disk is not readable.' This message is normal and you may click 'Eject' to proceed.
+9. Remove the microSD card from your computer and reinsert it in Organelle. Make sure that the SD card is going into the socket on the circuit board, as it is easy to drop it into the device. Holding the Organelle upside down helps the orient the SD card. If you can wiggle it a lot, it probably is not in socket. Use the same pin/paperclip to press it in until you hear/feel a 'click.'
+10. Restart the Organelle. Check your OS version in Settings/Info. 
 
 
