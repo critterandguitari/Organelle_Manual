@@ -793,7 +793,7 @@ Follow these steps to flash:
 
     * Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
 
-2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs::
+2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs:
 
     * Windows: [7-Zip](http://www.7-zip.org)
 
