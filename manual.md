@@ -4,7 +4,7 @@
 
 First edition by Dave Linnenbank - October 2015    
   
-Updated for OS v3.1 - January 2019
+Updated for OS v4.0 - Feb 2020
 
 
 ------------------------------------------------------------------------ 
@@ -19,11 +19,9 @@ Welcome to the world of Organelle! You seem to be in a hurry so here is the shor
 
 ## WAIT AM I IN THE RIGHT PLACE? 
 
- Before we get started, please note that this version of the Organelle manual is for hardware units running version 3.1 (v3.1) or later of the Organelle OS. You can check your OS version number from the Info menu item in the SYSTEM menu (see [Chapter 3](#3)). 
+Before we get started, please note that this manual is for the original Organelle 1, without a built-in speaker and battery power. Visit [this page](https://www.critterandguitari.com/manual?m=Organelle_M_Manual) if you are looking for the manual for the Organelle M.
 
-If your hardware unit is running a version earlier than v3.1, you should update your Organelle OS. You can download the update patch [here](http://thepeacetreaty.org/organelle/patches/UpdateOS-3.1.zip). 
-
-> **NOTE:** If your hardware unit is running an operating system earlier than v2.1, you will need to update to v2.1 first. The update patch is available from the [Organelle patch repository (organelle.io)](http://organelle.io/), along with all the other Critter & Guitari patches. If you don't update to v3.1, be sure to mind any notes about a patch's friendliness with software earlier than v3.1.
+This manual is for OS version 4.0.  You can check your OS version number from the Info menu item in the SYSTEM menu. If your hardware unit is running a version earlier than v4.0, see Chapter 7 for information on updating your Organelle OS.  
 
 ------------------------------------------------------------------------
 ### Package Manifest 
