@@ -810,4 +810,25 @@ Follow these steps to flash:
 9. Remove the microSD card from your computer and reinsert it in Organelle. Make sure that the SD card is going into the socket on the circuit board, as it is easy to drop it into the device. Holding the Organelle upside down helps the orient the SD card. If you can wiggle it a lot, it probably is not in socket. Use the same pin/paperclip to press it in until you hear/feel a 'click.'
 10. Restart the Organelle. Check your OS version in Settings/Info. 
 
+## 7.2 Editing Patches Remotely
+
+The Organelle OS includes a VNC server, allowing you to connect from another computer and edit patches as if you had a monitor and keyboard plugged into the Organelle (screen sharing).  
+
+To use this feature you have to first enable the VNC server on the Organelle.  First make sure you have WiFi enabled, either in AP mode or connected to another network.  Then in the WiFi Setup menu, select **Start VNC**.  This will cause the Organelle menu to reload.  If you navigate to the Info screen in the Settings menu, it should report that the VNC server is running.  
+
+Now you can connect using a VNC client on your computer.  The [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) program seems to work well for this.  Mac OS has built in VNC support for screen sharing, but we have not had good luck using it with the Organelle.  You can connect using organelle.local or using the IP address reported on the Info screen.  You might have to append the port number 5901 to the end.  So:
+
+- organelle.local:5901 
+
+or using IP (but replace with IP from the Info screen)
+
+- 192.168.80.86:5901  
+
+For login use the following:
+
+- username: music
+
+- password: music
+
+And you should see the Organelle desktop appear.  Now when you start a patch on the Organelle, it will appear in the VNC viewer.   
 
