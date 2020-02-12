@@ -824,9 +824,9 @@ or using IP (but replace with IP from the Info screen)
 
 For login use the following:
 
-- username: music
+- username: root
 
-- password: music
+- password: organelle
 
 And you should see the Organelle desktop appear.  Now when you start a patch on the Organelle, it will appear in the VNC viewer.   
 
