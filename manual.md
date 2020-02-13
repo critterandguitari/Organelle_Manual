@@ -785,7 +785,8 @@ In addition to storing patches, the micro SD card also stores the Organelle's op
 Burning a new disk image on the micro SD card will reset your Organelle M to the factory state.  This is useful to update to the latest Organelle OS, or to fix a problem with the micro SD card.  
 
 This will completely wipe the micro SD card clean, so make sure to backup anything on there that you need.  See Chapter 5 for information on downloading your patches and files or moving them to a USB drive. You can also use a brand new card if you wanted to keep your old OS available.   
-Follow these steps to flash:
+
+Follow these steps to burn a new disk image:
 
 1. Download the microSD card disk image to your computer: 
 
