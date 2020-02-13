@@ -791,7 +791,7 @@ Follow these steps to flash:
 
     * Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip)
 
-    * Current OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
+    * Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip)
 
 2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs:
 
