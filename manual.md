@@ -565,13 +565,13 @@ Patches are stored on the internal microSD in the same manner as the USB drive. 
 
 # 5. Using WiFi with the Organelle
 
-The Organelle has always been able to connect to WiFi networks and we have been building out its WiFi capabilities over time.  At this point the WiFi capabilites have grown to allow many powerful and convenient features, and the Organelle now ships with a USB WiFi adapter standard.
+The Organelle has always been able to connect to WiFi networks and we have been building out its WiFi capabilities over time.  At this point the WiFi capabilites have grown to allow many powerful and convenient features.
 
 The two major features are a web based interface and the support for Ableton [LINK](https://www.ableton.com/en/link/), for wireless tempo synchronization.  The web based interface allows you to access and manage the Organelle's patches and configure WiFi settings.  You can access this interface from any web browser.  
 
-In order to get the Organelle connected we use a USB WiFi adapter.  To get started, insert the included WiFi adapter into one of the Organelle's USB ports.
+In order to get the Organelle connected we use a USB-WiFi adapter.  To get started, insert your WiFi adapter into one of the Organelle's USB ports.
 
-> **NOTE:**  The included WiFi usb adapter uses the Ralink 5370 chipset.  This will only connect to 2.4 GHz WiFi networks.  We have experimented with other WiFi adapters but we don't have a conclusive list of what works and what doesn't.  Please consult the [forum](https://forum.critterandguitari.com) to discuss other possible adapters.  When in doubt, stick with the included adapter which has been proven to work very well.
+> **NOTE:**  The USB-WiFi adapter sold on the C&G website uses the Ralink 5370 chipset.  This will only connect to 2.4 GHz WiFi networks.  We have experimented with other WiFi adapters but we don't have a conclusive list of what works and what doesn't.  It is recommended to use a WiFi adapter this Ralink 5370 chipset. Please consult the [forum](https://forum.critterandguitari.com) to discuss other possible adapters.  
 
 The Organelle has 2 modes of WiFi operation: normal and AP mode.  In normal mode the Organelle connects to an existing WiFi network.  In AP mode the Organelle creates its own network (Access Point, or hot-spot).  
 
