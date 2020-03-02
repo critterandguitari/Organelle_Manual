@@ -381,7 +381,7 @@ This menu may contain additional user defined functions for the Organelle. Some 
 
 The way the Organelle handles MIDI will be relevant to all users, even if you are mainly pressing the unit's own maple keys to trigger note messages. There are certain default MIDI assignments in the Organelle patches that you should know. 
  
-The most simple MIDI configuration is to use the 1/8" MIDI jacks to send or receive notes or MIDI clock with another instrument. By default a patch running on the Organelle will send and receive MIDI on the 1/8" jacks.  It is also possible to use class compliant USB MIDI devices.
+The Organelle uses its USB ports to send and receive MIDI. This is called USB-MIDI. The Organelle requires the use  of *class compliant* USB-MIDI devices. More on this below. 
 
 > **NOTE:** As the Organelle is an open platform, it is possible for a patch to ignore these MIDI settings and send and receive MIDI directly as it pleases.  These are the settings by default, but if you are experiencing something different, please review any documentation about the patch you are running.
 
@@ -450,11 +450,11 @@ Patches are stored in the Favourites list in the order they are added. Each patc
 
 Any other MIDI message is passed directly to the current patch. If the patch is configured to handle that particular message, it will respond as configured. If the patch is not listening for that message, then nothing will happen. 
 
-### Using a USB MIDI Device 
+### Using a USB-MIDI Device 
 
  Using a USB MIDI device with the Organelle is rather painless but not "hot swappable." 
 
-1.  **Connect your USB MIDI device.** As long as a USB MIDI device requires no special, proprietary driver, you need only to connect it to the Organelle. This can be done via a USB port either on the Organelle itself or on a USB hub that is connected to the Organelle. 
+1.  **Connect your USB-MIDI device.** As long as a USB-MIDI device is *class-compliant*, that is to say it requires no special, proprietary driver, you can connect it to the Organelle. This can be done via a USB port either on the Organelle itself or on a USB hub that is connected to the Organelle. 
 
 2.  **Select the MIDI device in MIDI Setup** In the MIDI menu select **Device**.  You can now scroll through a list of MIDI devices (if you have connected more than one, they will all be on the list).  The device name usually contains the manufacturer or model number. Press the encoder to make your selection, then select **Save**.
  
