@@ -599,11 +599,11 @@ In order to manage patches and enter the credentials for existing networks to jo
 
 ![](images/wifistartweb.png)
 
-Now on your computer open a web browser and navigate to 'http://organellem.local'. This will bring you to the Organelle's simple home page:
+Now on your computer open a web browser and navigate to 'http://organelle.local'. This will bring you to the Organelle's simple home page:
 
 ![](images/webhomepage.png)
 
-> **NOTE:** If you are not able to open http://organellem.local, you can also access this page using the Organelle's IP address.  First get the Organelle's IP address. In the Settings choose Info.  Then use the numbers listed next to 'IP'.  For example http://192.168.1.143.
+> **NOTE:** If you are not able to open http://organelle.local, you can also access this page using the Organelle's IP address.  First get the Organelle's IP address. In the Settings choose Info.  Then use the numbers listed next to 'IP'.  For example http://192.168.1.143.
   
 There are 3 items.  Patch Manager opens a file browser to add and manage patches (described in the next section), Info lists some system info (similar to the Info screen in the Settings menu), and WiFi Setup lets you add existing networks to join.
 
