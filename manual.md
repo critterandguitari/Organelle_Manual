@@ -519,7 +519,7 @@ To have the Organelle load patches from the USB drive, the drive must either be 
 
 An attached USB drive must be appropriately configured. 
 
--   This USB disk should be formatted with a FAT file system, often associated with MS-DOS. This is most often the default for small USB flash drives.
+-   This USB disk should be formatted with the FAT32 file system, often associated with MS-DOS. This is most often the default for small USB flash drives. The ExFat file system will not work with the Organelle.
 
 -   This USB drive must contain a folder called **Patches** at its top-level. (This name is case-sensitive.)  
   
