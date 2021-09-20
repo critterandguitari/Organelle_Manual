@@ -788,26 +788,20 @@ This will completely wipe the micro SD card clean, so make sure to backup anythi
 
 Follow these steps to burn a new disk image:
 
-1. Download the microSD card disk image to your computer: 
+1. Download the newest version of the burner/flasher program to your computer: https://www.balena.io/etcher/
+
+2. Download the microSD card disk image to your computer: 
 
     * Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip). Requires 8GB or larger microSD card.
 
     * Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip). Requires 8GB or larger microSD card.
 
-2. Unzip the disk image.  To ensure proper unzipping, please use one of the following programs:
-
-    * Windows: [7-Zip](http://www.7-zip.org)
-
-    * Mac: [The Unarchiver](http://unarchiver.c3.cx/unarchiver)
-
-    * Linux: [Unzip](https://linux.die.net/man/1/unzip) 
-
-3. Download the flasher program to your computer: https://www.balena.io/etcher/  (Note: even though Etcher says it can flash a zipped file, we have not found this to be true. Please follow step #2!)
-4. Power down the Organelle
-5. Locate the thin slit in the rear of the enclosure (between the MIDI In port and the HDMI Port.)
+3. **Do not unzip the disk image.**  To ensure proper flashing, the Etcher program should flash it while the disk image is still in the zipped state.
+4. Power down the Organelle.
+5. Locate the thin slit in the rear of the enclosure (between the MIDI In port and the HDMI Port).
 6. Use a pin or paperclip to press in on the black SD card to eject it and it will spring out gently.
-7. Insert microSD into your computer (you may need an adapter or card reader)
-8. Use the Etcher program to burn the unzipped OS on to the SD Card. When Etcher is finished your computer may display a message similar to 'This disk is not readable.' This message is normal and you may click 'Eject' to proceed.
+7. Insert microSD into your computer. You may need an adapter or card reader.
+8. Use the Etcher program to burn the zipped OS on to the SD Card. When Etcher is finished your computer may display a message similar to 'This disk is not readable.' This message is normal and you may click 'Eject' to proceed.
 9. Remove the microSD card from your computer and reinsert it in Organelle. Make sure that the SD card is going into the socket on the circuit board, as it is easy to drop it into the device. Holding the Organelle upside down helps the orient the SD card. If you can wiggle it a lot, it probably is not in socket. Use the same pin/paperclip to press it in until you hear/feel a 'click.'
 10. Restart the Organelle. Check your OS version in Settings/Info. 
 
