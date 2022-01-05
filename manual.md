@@ -792,7 +792,7 @@ Follow these steps to burn a new disk image:
 
 2. Download the microSD card disk image to your computer: 
 
-    * Current OS release: [OG1-4.0](http://thepeacetreaty.org/organelle/diskimages/OG1-v4.0.img.zip). Requires 8GB or larger microSD card.
+    * Current OS release: [OG1-4.0](https://cgdiskimages.nyc3.digitaloceanspaces.com/OG1-v4.0.img.zip). Requires 8GB or larger microSD card.
 
     * Previous OS release: [OG1-3.1](http://thepeacetreaty.org/organelle/diskimages/20180529-v3.1.img.zip). Requires 8GB or larger microSD card.
 
